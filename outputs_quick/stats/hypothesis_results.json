@@ -1,0 +1,59 @@
+{
+  "H1a": {
+    "hypothesis": "Transformers outperform classical ML",
+    "comparisons": 30,
+    "significantly_better": 0,
+    "significantly_worse": 30,
+    "not_significant": 0,
+    "mean_f1_diff": -0.3457069591979318,
+    "decision": "Fail to reject H0: transformer significantly better in only 0/30 comparisons"
+  },
+  "H1b_part1": {
+    "hypothesis": "BiLSTM outperforms classical ML",
+    "comparisons": 15,
+    "significantly_better": 0,
+    "significantly_worse": 15,
+    "not_significant": 0,
+    "mean_f1_diff": -0.15126267928067788,
+    "decision": "Fail to reject H0: deep_learning significantly better in only 0/15 comparisons"
+  },
+  "H1b_part2": {
+    "hypothesis": "Transformers outperform BiLSTM",
+    "comparisons": 10,
+    "significantly_better": 0,
+    "significantly_worse": 8,
+    "not_significant": 2,
+    "mean_f1_diff": -0.19444427991725402,
+    "decision": "Fail to reject H0: transformer significantly better in only 0/10 comparisons"
+  },
+  "friedman_all_models": {
+    "blocks": 5,
+    "models": [
+      "logreg",
+      "svm",
+      "random_forest",
+      "bilstm",
+      "bert",
+      "afriberta"
+    ],
+    "chi2": 22.88235294117647,
+    "p_value": 0.0003555021087451637,
+    "average_rank": {
+      "logreg": 1.4,
+      "random_forest": 2.2,
+      "svm": 2.4,
+      "bilstm": 4.0,
+      "bert": 5.5,
+      "afriberta": 5.5
+    }
+  },
+  "H1c": {
+    "hypothesis": "H1c: lower performance on implicit than explicit cyberbullying",
+    "pairs": 12,
+    "models_with_lower_implicit_f1": 12,
+    "median_f1_gap_explicit_minus_implicit": 0.3376686788482609,
+    "wilcoxon_stat": 78.0,
+    "wilcoxon_p": 0.000244140625,
+    "decision": "Reject H0: implicit cyberbullying is detected significantly worse than explicit cyberbullying"
+  }
+}

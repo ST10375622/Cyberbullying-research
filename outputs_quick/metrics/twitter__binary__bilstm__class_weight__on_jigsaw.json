@@ -1,0 +1,87 @@
+{
+  "run_id": "twitter__binary__bilstm__class_weight__on_jigsaw",
+  "train_dataset": "twitter",
+  "eval_dataset": "jigsaw",
+  "cross_dataset": true,
+  "task": "binary",
+  "model": "bilstm",
+  "model_family": "deep_learning",
+  "variant": "class_weight",
+  "is_main": true,
+  "labels": [
+    "not_cyberbullying",
+    "cyberbullying"
+  ],
+  "n_test": 450,
+  "quick_mode": true,
+  "accuracy": 0.62,
+  "precision_macro": 0.5508924018357981,
+  "recall_macro": 0.6342552733534224,
+  "f1_macro": 0.5020674392871702,
+  "f1_macro_ci_low": 0.4598867619478795,
+  "f1_macro_ci_high": 0.5514262728332685,
+  "precision_weighted": 0.8601489036206018,
+  "recall_weighted": 0.62,
+  "f1_weighted": 0.6948521732378234,
+  "auc_roc": 0.659061558329746,
+  "per_class": {
+    "not_cyberbullying": {
+      "precision": 0.939622641509434,
+      "recall": 0.6163366336633663,
+      "f1": 0.7443946188340808,
+      "support": 404
+    },
+    "cyberbullying": {
+      "precision": 0.16216216216216217,
+      "recall": 0.6521739130434783,
+      "f1": 0.2597402597402597,
+      "support": 46
+    }
+  },
+  "confusion_matrix": [
+    [
+      249,
+      155
+    ],
+    [
+      16,
+      30
+    ]
+  ],
+  "precision_pos": 0.16216216216216217,
+  "recall_pos": 0.6521739130434783,
+  "f1_pos": 0.2597402597402597,
+  "imbalance_strategy": "class_weight",
+  "train_time_s": 6.697858499999711,
+  "inference_ms_per_post": 0.29340846325195125,
+  "n_train": 2094,
+  "best_epoch": 1,
+  "val_f1_macro": 0.657523493561024,
+  "epoch_history": [
+    {
+      "epoch": 1,
+      "val_f1_macro": 0.657523493561024,
+      "loss": 0.6802158951759338
+    },
+    {
+      "epoch": 2,
+      "val_f1_macro": 0.6303824721377913,
+      "loss": 0.5012186169624329
+    }
+  ],
+  "vocab_size": 2699,
+  "keras_backend": "torch",
+  "hyperparameters": {
+    "max_vocab": 50000,
+    "min_freq": 2,
+    "max_len": 50,
+    "embed_dim": 128,
+    "lstm_units": 64,
+    "dense_units": 64,
+    "dropout": 0.3,
+    "batch_size": 128,
+    "epochs": 2,
+    "patience": 2,
+    "lr": 0.001
+  }
+}

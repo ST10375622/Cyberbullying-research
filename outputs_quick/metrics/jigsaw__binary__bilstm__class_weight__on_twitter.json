@@ -1,0 +1,87 @@
+{
+  "run_id": "jigsaw__binary__bilstm__class_weight__on_twitter",
+  "train_dataset": "jigsaw",
+  "eval_dataset": "twitter",
+  "cross_dataset": true,
+  "task": "binary",
+  "model": "bilstm",
+  "model_family": "deep_learning",
+  "variant": "class_weight",
+  "is_main": true,
+  "labels": [
+    "not_cyberbullying",
+    "cyberbullying"
+  ],
+  "n_test": 449,
+  "quick_mode": true,
+  "accuracy": 0.6926503340757239,
+  "precision_macro": 0.5220476564545693,
+  "recall_macro": 0.534172077922078,
+  "f1_macro": 0.5165262172284644,
+  "f1_macro_ci_low": 0.46863688569134243,
+  "f1_macro_ci_high": 0.5676301157998214,
+  "precision_weighted": 0.7698461158047529,
+  "recall_weighted": 0.6926503340757239,
+  "f1_weighted": 0.7251455585862882,
+  "auc_roc": 0.5485795454545453,
+  "per_class": {
+    "not_cyberbullying": {
+      "precision": 0.17543859649122806,
+      "recall": 0.3125,
+      "f1": 0.2247191011235955,
+      "support": 64
+    },
+    "cyberbullying": {
+      "precision": 0.8686567164179104,
+      "recall": 0.7558441558441559,
+      "f1": 0.8083333333333333,
+      "support": 385
+    }
+  },
+  "confusion_matrix": [
+    [
+      20,
+      44
+    ],
+    [
+      94,
+      291
+    ]
+  ],
+  "precision_pos": 0.8686567164179104,
+  "recall_pos": 0.7558441558441559,
+  "f1_pos": 0.8083333333333333,
+  "imbalance_strategy": "class_weight",
+  "train_time_s": 6.529185899999902,
+  "inference_ms_per_post": 0.2996011111109611,
+  "n_train": 2097,
+  "best_epoch": 2,
+  "val_f1_macro": 0.6065881228411913,
+  "epoch_history": [
+    {
+      "epoch": 1,
+      "val_f1_macro": 0.5610693932525689,
+      "loss": 0.6884399652481079
+    },
+    {
+      "epoch": 2,
+      "val_f1_macro": 0.6065881228411913,
+      "loss": 0.6014680862426758
+    }
+  ],
+  "vocab_size": 5729,
+  "keras_backend": "torch",
+  "hyperparameters": {
+    "max_vocab": 50000,
+    "min_freq": 2,
+    "max_len": 50,
+    "embed_dim": 128,
+    "lstm_units": 64,
+    "dense_units": 64,
+    "dropout": 0.3,
+    "batch_size": 128,
+    "epochs": 2,
+    "patience": 2,
+    "lr": 0.001
+  }
+}

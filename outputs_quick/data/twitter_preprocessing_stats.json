@@ -1,0 +1,12 @@
+{
+  "dataset": "twitter",
+  "n_raw": 47692,
+  "n_empty_after_cleaning": 285,
+  "n_conflicting_duplicates_removed": 3454,
+  "n_exact_duplicates_removed": 578,
+  "n_empty_after_stopwords_removed": 8,
+  "n_final": 2992,
+  "n_train": 2094,
+  "n_val": 449,
+  "n_test": 449
+}

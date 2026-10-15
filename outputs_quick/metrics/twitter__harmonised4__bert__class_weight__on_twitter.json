@@ -1,0 +1,108 @@
+{
+  "run_id": "twitter__harmonised4__bert__class_weight__on_twitter",
+  "train_dataset": "twitter",
+  "eval_dataset": "twitter",
+  "cross_dataset": false,
+  "task": "harmonised4",
+  "model": "bert",
+  "model_family": "transformer",
+  "variant": "class_weight",
+  "is_main": true,
+  "labels": [
+    "not_cyberbullying",
+    "explicit_cyberbullying",
+    "implicit_cyberbullying",
+    "hate_speech"
+  ],
+  "n_test": 449,
+  "quick_mode": true,
+  "accuracy": 0.23385300668151449,
+  "precision_macro": 0.3134562076869769,
+  "recall_macro": 0.3194546882270129,
+  "f1_macro": 0.21727262025262328,
+  "f1_macro_ci_low": 0.18586047259381633,
+  "f1_macro_ci_high": 0.2536424650429268,
+  "precision_weighted": 0.46090153489502467,
+  "recall_weighted": 0.23385300668151449,
+  "f1_weighted": 0.1797109942976088,
+  "auc_roc": 0.6072779599556044,
+  "per_class": {
+    "not_cyberbullying": {
+      "precision": 0.1952662721893491,
+      "recall": 0.515625,
+      "f1": 0.2832618025751073,
+      "support": 64
+    },
+    "explicit_cyberbullying": {
+      "precision": 0.2918918918918919,
+      "recall": 0.5346534653465347,
+      "f1": 0.3776223776223776,
+      "support": 101
+    },
+    "implicit_cyberbullying": {
+      "precision": 0.1,
+      "recall": 0.18604651162790697,
+      "f1": 0.13008130081300814,
+      "support": 43
+    },
+    "hate_speech": {
+      "precision": 0.6666666666666666,
+      "recall": 0.04149377593360996,
+      "f1": 0.078125,
+      "support": 241
+    }
+  },
+  "confusion_matrix": [
+    [
+      33,
+      20,
+      7,
+      4
+    ],
+    [
+      24,
+      54,
+      22,
+      1
+    ],
+    [
+      22,
+      13,
+      8,
+      0
+    ],
+    [
+      90,
+      98,
+      43,
+      10
+    ]
+  ],
+  "imbalance_strategy": "class_weight",
+  "hf_model": "google/bert_uncased_L-2_H-128_A-2",
+  "device": "cpu",
+  "train_time_s": 5.05385780000006,
+  "inference_ms_per_post": 0.254567928730665,
+  "n_train": 2094,
+  "hyperparameters": {
+    "max_len": 64,
+    "batch_size": 32,
+    "eval_batch_size": 128,
+    "epochs": 1,
+    "lr": 2e-05,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "max_grad_norm": 1.0,
+    "log_every": 20
+  },
+  "n_parameters": 4386436,
+  "val_f1_macro": 0.17002077420903733,
+  "best_epoch": 1,
+  "epoch_history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.3834248221281804,
+      "val_f1_macro": 0.17002077420903733
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "dataset": "jigsaw",
+  "n_raw": 159571,
+  "n_empty_after_cleaning": 14,
+  "n_conflicting_duplicates_removed": 73,
+  "n_exact_duplicates_removed": 735,
+  "n_empty_after_stopwords_removed": 4,
+  "n_final": 2996,
+  "n_train": 2097,
+  "n_val": 449,
+  "n_test": 450
+}

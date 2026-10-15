@@ -1,0 +1,65 @@
+{
+  "run_id": "jigsaw__binary__svm__none__on_jigsaw",
+  "train_dataset": "jigsaw",
+  "eval_dataset": "jigsaw",
+  "cross_dataset": false,
+  "task": "binary",
+  "model": "svm",
+  "model_family": "classical",
+  "variant": "none",
+  "is_main": false,
+  "labels": [
+    "not_cyberbullying",
+    "cyberbullying"
+  ],
+  "n_test": 450,
+  "quick_mode": true,
+  "accuracy": 0.9288888888888889,
+  "precision_macro": 0.963302752293578,
+  "recall_macro": 0.6521739130434783,
+  "f1_macro": 0.7142857142857143,
+  "f1_macro_ci_low": 0.6360481690686732,
+  "f1_macro_ci_high": 0.7987377996638038,
+  "precision_weighted": 0.9341080530071355,
+  "recall_weighted": 0.9288888888888889,
+  "f1_weighted": 0.9112804232804234,
+  "auc_roc": 0.9335987946620748,
+  "per_class": {
+    "not_cyberbullying": {
+      "precision": 0.926605504587156,
+      "recall": 1.0,
+      "f1": 0.9619047619047619,
+      "support": 404
+    },
+    "cyberbullying": {
+      "precision": 1.0,
+      "recall": 0.30434782608695654,
+      "f1": 0.4666666666666667,
+      "support": 46
+    }
+  },
+  "confusion_matrix": [
+    [
+      404,
+      0
+    ],
+    [
+      32,
+      14
+    ]
+  ],
+  "precision_pos": 1.0,
+  "recall_pos": 0.30434782608695654,
+  "f1_pos": 0.4666666666666667,
+  "imbalance_strategy": "none",
+  "best_params": {
+    "C": 0.5
+  },
+  "val_f1_macro": 0.769546621043627,
+  "train_time_s": 0.027345299999979034,
+  "inference_ms_per_post": 0.04625422222185686,
+  "n_train": 2097,
+  "n_train_original": 2097,
+  "smote": {},
+  "n_features": 9490
+}

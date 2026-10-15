@@ -1,0 +1,27 @@
+# Core data / ML
+pandas>=2.0
+numpy>=1.24
+scipy>=1.10
+scikit-learn>=1.3
+imbalanced-learn>=0.12
+joblib>=1.3
+
+# NLP pre-processing
+nltk>=3.8
+langdetect>=1.0.9
+
+# Visualisation
+matplotlib>=3.7
+seaborn>=0.13
+
+# Deep learning
+torch>=2.2
+transformers>=4.40
+sentencepiece>=0.1.99      # AfriBERTa tokenizer
+protobuf>=4.0
+keras>=3.0                 # BiLSTM; uses TensorFlow if installed (Colab), else the torch backend
+# tensorflow>=2.16         # optional - pre-installed on Google Colab
+
+# Deployment framework
+fastapi>=0.110
+uvicorn>=0.29

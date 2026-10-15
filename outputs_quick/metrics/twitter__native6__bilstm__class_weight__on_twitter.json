@@ -1,0 +1,152 @@
+{
+  "run_id": "twitter__native6__bilstm__class_weight__on_twitter",
+  "train_dataset": "twitter",
+  "eval_dataset": "twitter",
+  "cross_dataset": false,
+  "task": "native6",
+  "model": "bilstm",
+  "model_family": "deep_learning",
+  "variant": "class_weight",
+  "is_main": true,
+  "labels": [
+    "not_cyberbullying",
+    "age",
+    "ethnicity",
+    "gender",
+    "religion",
+    "other_cyberbullying"
+  ],
+  "n_test": 449,
+  "quick_mode": true,
+  "accuracy": 0.6302895322939867,
+  "precision_macro": 0.5301388954637901,
+  "recall_macro": 0.5990614059962083,
+  "f1_macro": 0.5538778193627404,
+  "f1_macro_ci_low": 0.5140589599575321,
+  "f1_macro_ci_high": 0.5948917262592475,
+  "precision_weighted": 0.5516313289694457,
+  "recall_weighted": 0.6302895322939867,
+  "f1_weighted": 0.5794287365977605,
+  "auc_roc": 0.8694209530985549,
+  "per_class": {
+    "not_cyberbullying": {
+      "precision": 0.5892857142857143,
+      "recall": 0.515625,
+      "f1": 0.55,
+      "support": 64
+    },
+    "age": {
+      "precision": 0.7326732673267327,
+      "recall": 0.891566265060241,
+      "f1": 0.8043478260869565,
+      "support": 83
+    },
+    "ethnicity": {
+      "precision": 0.5467625899280576,
+      "recall": 0.9382716049382716,
+      "f1": 0.6909090909090909,
+      "support": 81
+    },
+    "gender": {
+      "precision": 0.6811594202898551,
+      "recall": 0.6025641025641025,
+      "f1": 0.6394557823129252,
+      "support": 78
+    },
+    "religion": {
+      "precision": 0.6309523809523809,
+      "recall": 0.6463414634146342,
+      "f1": 0.6385542168674698,
+      "support": 82
+    },
+    "other_cyberbullying": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 61
+    }
+  },
+  "confusion_matrix": [
+    [
+      33,
+      4,
+      13,
+      8,
+      6,
+      0
+    ],
+    [
+      2,
+      74,
+      1,
+      1,
+      5,
+      0
+    ],
+    [
+      1,
+      3,
+      76,
+      0,
+      1,
+      0
+    ],
+    [
+      6,
+      4,
+      12,
+      47,
+      9,
+      0
+    ],
+    [
+      4,
+      5,
+      14,
+      6,
+      53,
+      0
+    ],
+    [
+      10,
+      11,
+      23,
+      7,
+      10,
+      0
+    ]
+  ],
+  "imbalance_strategy": "class_weight",
+  "train_time_s": 6.450831799999833,
+  "inference_ms_per_post": 0.27608329621402755,
+  "n_train": 2094,
+  "best_epoch": 1,
+  "val_f1_macro": 0.5612957593526167,
+  "epoch_history": [
+    {
+      "epoch": 1,
+      "val_f1_macro": 0.5612957593526167,
+      "loss": 1.7722642421722412
+    },
+    {
+      "epoch": 2,
+      "val_f1_macro": 0.5342117127922754,
+      "loss": 1.527161717414856
+    }
+  ],
+  "vocab_size": 2699,
+  "keras_backend": "torch",
+  "hyperparameters": {
+    "max_vocab": 50000,
+    "min_freq": 2,
+    "max_len": 50,
+    "embed_dim": 128,
+    "lstm_units": 64,
+    "dense_units": 64,
+    "dropout": 0.3,
+    "batch_size": 128,
+    "epochs": 2,
+    "patience": 2,
+    "lr": 0.001
+  }
+}

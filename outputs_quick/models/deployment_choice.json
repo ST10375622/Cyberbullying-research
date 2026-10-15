@@ -1,0 +1,29 @@
+{
+  "recommended": {
+    "train_dataset": "jigsaw",
+    "model": "logreg",
+    "family": "classical",
+    "f1_in_domain": 0.7881023387223356,
+    "f1_cross_mean": 0.4152218152218152,
+    "selection_score": 0.6016620769720754,
+    "latency_ms": 0.046555777777636344,
+    "artifact": "C:\\Users\\mosia\\OneDrive\\Documents\\2026\\School\\Semester 2\\RPDA8412\\Cyberbullying code\\outputs_quick\\models\\jigsaw__binary__logreg.joblib",
+    "artifact_exists": true
+  },
+  "lightweight_alternative": {
+    "train_dataset": "jigsaw",
+    "model": "logreg",
+    "family": "classical",
+    "f1_in_domain": 0.7881023387223356,
+    "f1_cross_mean": 0.4152218152218152,
+    "selection_score": 0.6016620769720754,
+    "latency_ms": 0.046555777777636344,
+    "artifact": "C:\\Users\\mosia\\OneDrive\\Documents\\2026\\School\\Semester 2\\RPDA8412\\Cyberbullying code\\outputs_quick\\models\\jigsaw__binary__logreg.joblib",
+    "artifact_exists": true
+  },
+  "selection_rule": "mean of in-domain and cross-dataset macro F1 on the binary task",
+  "thresholds": {
+    "flag_for_review": 0.5,
+    "auto_hide": 0.85
+  }
+}

@@ -1,0 +1,369 @@
+23:24:54 | INFO | Output directory: C:\Users\mosia\OneDrive\Documents\2026\School\Semester 2\RPDA8412\Cyberbullying code\outputs_quick | data: C:\Users\mosia\OneDrive\Documents\2026\School\Semester 2\RPDA8412\Datasets | quick=True
+23:24:54 | INFO | ========== STAGE: prepare ==========
+23:25:05 | INFO | [prepare] twitter: loading raw data
+23:25:07 | INFO | [prepare] twitter: tokenising / stop-words / lemmatising 3,000 texts
+23:25:23 | INFO | [prepare] twitter: language identification
+23:25:32 | INFO | [prepare] twitter: done -> {'dataset': 'twitter', 'n_raw': 47692, 'n_empty_after_cleaning': 285, 'n_conflicting_duplicates_removed': 3454, 'n_exact_duplicates_removed': 578, 'n_empty_after_stopwords_removed': 8, 'n_final': 2992, 'n_train': 2094, 'n_val': 449, 'n_test': 449}
+23:25:32 | INFO | [prepare] jigsaw: loading raw data
+23:25:57 | INFO | [prepare] jigsaw: tokenising / stop-words / lemmatising 3,000 texts
+23:25:58 | INFO | [prepare] jigsaw: language identification
+23:26:03 | INFO | [prepare] jigsaw: done -> {'dataset': 'jigsaw', 'n_raw': 159571, 'n_empty_after_cleaning': 14, 'n_conflicting_duplicates_removed': 73, 'n_exact_duplicates_removed': 735, 'n_empty_after_stopwords_removed': 4, 'n_final': 2996, 'n_train': 2097, 'n_val': 449, 'n_test': 450}
+23:26:03 | INFO | ========== prepare finished in 69.1s ==========
+23:26:03 | INFO | ========== STAGE: eda ==========
+23:26:04 | INFO | [eda] twitter
+23:26:08 | INFO | [eda] jigsaw
+23:26:11 | INFO | [eda] done
+23:26:11 | INFO | ========== eda finished in 7.6s ==========
+23:26:11 | INFO | ========== STAGE: classical ==========
+23:26:11 | INFO | [classical] twitter/binary: TF-IDF (2094, 4391), classes=[297, 1797]
+23:26:11 | INFO | [classical] twitter/binary: logreg (imbalance=none)
+23:26:12 | INFO |      logreg {'C': 2.0} val F1=0.6820 (0.0s)
+23:26:12 | INFO |    -> twitter__binary__logreg__none__on_twitter: acc=0.8753 F1(macro)=0.6399 AUC=0.9219
+23:26:12 | INFO | [classical] twitter/binary: logreg (imbalance=class_weight)
+23:26:12 | INFO |      logreg {'C': 2.0} val F1=0.7434 (0.0s)
+23:26:12 | INFO |    -> twitter__binary__logreg__class_weight__on_twitter: acc=0.8708 F1(macro)=0.7574 AUC=0.9226
+23:26:12 | INFO |    SMOTE: {'before': [297, 1797], 'after': [898, 1797], 'k_neighbors': 5}
+23:26:12 | INFO | [classical] twitter/binary: logreg (imbalance=smote)
+23:26:12 | INFO |      logreg {'C': 2.0} val F1=0.7396 (0.0s)
+23:26:12 | INFO |    -> twitter__binary__logreg__smote__on_twitter: acc=0.8909 F1(macro)=0.7660 AUC=0.9213
+23:26:12 | INFO |    -> twitter__binary__logreg__smote__on_jigsaw: acc=0.2044 F1(macro)=0.2042 AUC=0.6144
+23:26:12 | INFO | [classical] twitter/binary: svm (imbalance=none)
+23:26:12 | INFO |      svm {'C': 0.5} val F1=0.7284 (0.0s)
+23:26:12 | INFO |    -> twitter__binary__svm__none__on_twitter: acc=0.8864 F1(macro)=0.7204 AUC=0.9145
+23:26:12 | INFO | [classical] twitter/binary: svm (imbalance=class_weight)
+23:26:12 | INFO |      svm {'C': 0.5} val F1=0.7168 (0.1s)
+23:26:12 | INFO |    -> twitter__binary__svm__class_weight__on_twitter: acc=0.8931 F1(macro)=0.7390 AUC=0.9183
+23:26:12 | INFO | [classical] twitter/binary: svm (imbalance=smote)
+23:26:12 | INFO |      svm {'C': 0.5} val F1=0.7173 (0.0s)
+23:26:13 | INFO |    -> twitter__binary__svm__smote__on_twitter: acc=0.8886 F1(macro)=0.7595 AUC=0.9177
+23:26:13 | INFO |    -> twitter__binary__svm__smote__on_jigsaw: acc=0.2022 F1(macro)=0.2020 AUC=0.6037
+23:26:13 | INFO | [classical] twitter/binary: random_forest (imbalance=smote)
+23:26:13 | INFO |      random_forest {'min_samples_leaf': 1, 'n_estimators': 50} val F1=0.7589 (0.1s)
+23:26:14 | INFO |    -> twitter__binary__random_forest__smote__on_twitter: acc=0.8931 F1(macro)=0.7552 AUC=0.9309
+23:26:14 | INFO |    -> twitter__binary__random_forest__smote__on_jigsaw: acc=0.2356 F1(macro)=0.2346 AUC=0.6659
+23:26:14 | INFO | [classical] twitter/harmonised4: TF-IDF (2094, 4391), classes=[297, 436, 233, 1128]
+23:26:14 | INFO | [classical] twitter/harmonised4: logreg (imbalance=none)
+23:26:15 | INFO |      logreg {'C': 2.0} val F1=0.6233 (0.4s)
+23:26:15 | INFO |    -> twitter__harmonised4__logreg__none__on_twitter: acc=0.7996 F1(macro)=0.6599 AUC=0.9323
+23:26:15 | INFO | [classical] twitter/harmonised4: logreg (imbalance=class_weight)
+23:26:15 | INFO |      logreg {'C': 2.0} val F1=0.7123 (0.4s)
+23:26:15 | INFO |    -> twitter__harmonised4__logreg__class_weight__on_twitter: acc=0.8040 F1(macro)=0.7081 AUC=0.9267
+23:26:15 | INFO |    SMOTE: {'before': [297, 436, 233, 1128], 'after': [564, 564, 564, 1128], 'k_neighbors': 5}
+23:26:15 | INFO | [classical] twitter/harmonised4: logreg (imbalance=smote)
+23:26:15 | INFO |      logreg {'C': 2.0} val F1=0.7195 (0.3s)
+23:26:16 | INFO |    -> twitter__harmonised4__logreg__smote__on_twitter: acc=0.8129 F1(macro)=0.7098 AUC=0.9341
+23:26:16 | INFO | [classical] twitter/harmonised4: svm (imbalance=none)
+23:26:16 | INFO |      svm {'C': 0.5} val F1=0.6787 (0.0s)
+23:26:16 | INFO |    -> twitter__harmonised4__svm__none__on_twitter: acc=0.8263 F1(macro)=0.7146 AUC=0.9329
+23:26:16 | INFO | [classical] twitter/harmonised4: svm (imbalance=class_weight)
+23:26:16 | INFO |      svm {'C': 0.5} val F1=0.6770 (0.1s)
+23:26:16 | INFO |    -> twitter__harmonised4__svm__class_weight__on_twitter: acc=0.8307 F1(macro)=0.7240 AUC=0.9337
+23:26:16 | INFO | [classical] twitter/harmonised4: svm (imbalance=smote)
+23:26:16 | INFO |      svm {'C': 0.5} val F1=0.7096 (0.1s)
+23:26:17 | INFO |    -> twitter__harmonised4__svm__smote__on_twitter: acc=0.8151 F1(macro)=0.7127 AUC=0.9274
+23:26:17 | INFO | [classical] twitter/harmonised4: random_forest (imbalance=smote)
+23:26:17 | INFO |      random_forest {'min_samples_leaf': 1, 'n_estimators': 50} val F1=0.7315 (0.1s)
+23:26:17 | INFO |    -> twitter__harmonised4__random_forest__smote__on_twitter: acc=0.8352 F1(macro)=0.7419 AUC=0.9446
+23:26:18 | INFO | [classical] twitter/native6: TF-IDF (2094, 4391), classes=[297, 385, 379, 363, 386, 284]
+23:26:18 | INFO | [classical] twitter/native6: logreg (imbalance=none)
+23:26:18 | INFO |      logreg {'C': 2.0} val F1=0.8056 (0.3s)
+23:26:18 | INFO |    -> twitter__native6__logreg__none__on_twitter: acc=0.8330 F1(macro)=0.8185 AUC=0.9635
+23:26:18 | INFO | [classical] twitter/native6: logreg (imbalance=class_weight)
+23:26:18 | INFO |      logreg {'C': 2.0} val F1=0.8046 (0.3s)
+23:26:18 | INFO |    -> twitter__native6__logreg__class_weight__on_twitter: acc=0.8285 F1(macro)=0.8168 AUC=0.9632
+23:26:18 | INFO |    SMOTE: {}
+23:26:18 | INFO | [classical] twitter/native6: logreg (imbalance=smote)
+23:26:19 | INFO |      logreg {'C': 2.0} val F1=0.8056 (0.3s)
+23:26:19 | INFO |    -> twitter__native6__logreg__smote__on_twitter: acc=0.8330 F1(macro)=0.8185 AUC=0.9635
+23:26:19 | INFO | [classical] twitter/native6: svm (imbalance=none)
+23:26:19 | INFO |      svm {'C': 0.5} val F1=0.7846 (0.1s)
+23:26:19 | INFO |    -> twitter__native6__svm__none__on_twitter: acc=0.8307 F1(macro)=0.8127 AUC=0.9630
+23:26:19 | INFO | [classical] twitter/native6: svm (imbalance=class_weight)
+23:26:20 | INFO |      svm {'C': 0.5} val F1=0.7846 (0.1s)
+23:26:20 | INFO |    -> twitter__native6__svm__class_weight__on_twitter: acc=0.8307 F1(macro)=0.8127 AUC=0.9630
+23:26:20 | INFO | [classical] twitter/native6: svm (imbalance=smote)
+23:26:20 | INFO |      svm {'C': 0.5} val F1=0.7846 (0.1s)
+23:26:20 | INFO |    -> twitter__native6__svm__smote__on_twitter: acc=0.8307 F1(macro)=0.8127 AUC=0.9630
+23:26:20 | INFO | [classical] twitter/native6: random_forest (imbalance=smote)
+23:26:21 | INFO |      random_forest {'min_samples_leaf': 1, 'n_estimators': 50} val F1=0.8119 (0.1s)
+23:26:21 | INFO |    -> twitter__native6__random_forest__smote__on_twitter: acc=0.8307 F1(macro)=0.8158 AUC=0.9633
+23:26:22 | INFO | [classical] jigsaw/binary: TF-IDF (2097, 9490), classes=[1884, 213]
+23:26:22 | INFO | [classical] jigsaw/binary: logreg (imbalance=none)
+23:26:22 | INFO |      logreg {'C': 2.0} val F1=0.6909 (0.0s)
+23:26:22 | INFO |    -> jigsaw__binary__logreg__none__on_jigsaw: acc=0.9156 F1(macro)=0.6257 AUC=0.9264
+23:26:22 | INFO | [classical] jigsaw/binary: logreg (imbalance=class_weight)
+23:26:22 | INFO |      logreg {'C': 2.0} val F1=0.7900 (0.0s)
+23:26:22 | INFO |    -> jigsaw__binary__logreg__class_weight__on_jigsaw: acc=0.9467 F1(macro)=0.8316 AUC=0.9284
+23:26:22 | INFO |    SMOTE: {'before': [1884, 213], 'after': [1884, 942], 'k_neighbors': 5}
+23:26:22 | INFO | [classical] jigsaw/binary: logreg (imbalance=smote)
+23:26:22 | INFO |      logreg {'C': 2.0} val F1=0.7831 (0.0s)
+23:26:22 | INFO |    -> jigsaw__binary__logreg__smote__on_jigsaw: acc=0.9400 F1(macro)=0.7881 AUC=0.9237
+23:26:22 | INFO |    -> jigsaw__binary__logreg__smote__on_twitter: acc=0.4298 F1(macro)=0.4152 AUC=0.6636
+23:26:22 | INFO | [classical] jigsaw/binary: svm (imbalance=none)
+23:26:22 | INFO |      svm {'C': 0.5} val F1=0.8088 (0.0s)
+23:26:22 | INFO |    -> jigsaw__binary__svm__none__on_jigsaw: acc=0.9378 F1(macro)=0.7831 AUC=0.9336
+23:26:22 | INFO | [classical] jigsaw/binary: svm (imbalance=class_weight)
+23:26:22 | INFO |      svm {'C': 0.5} val F1=0.7986 (0.0s)
+23:26:22 | INFO |    -> jigsaw__binary__svm__class_weight__on_jigsaw: acc=0.9378 F1(macro)=0.7773 AUC=0.9318
+23:26:22 | INFO | [classical] jigsaw/binary: svm (imbalance=smote)
+23:26:22 | INFO |      svm {'C': 0.5} val F1=0.8126 (0.0s)
+23:26:23 | INFO |    -> jigsaw__binary__svm__smote__on_jigsaw: acc=0.9422 F1(macro)=0.8086 AUC=0.9287
+23:26:23 | INFO |    -> jigsaw__binary__svm__smote__on_twitter: acc=0.4521 F1(macro)=0.4286 AUC=0.6589
+23:26:23 | INFO | [classical] jigsaw/binary: random_forest (imbalance=smote)
+23:26:23 | INFO |      random_forest {'min_samples_leaf': 1, 'n_estimators': 50} val F1=0.8188 (0.1s)
+23:26:24 | INFO |    -> jigsaw__binary__random_forest__smote__on_jigsaw: acc=0.9333 F1(macro)=0.7477 AUC=0.8891
+23:26:24 | INFO |    -> jigsaw__binary__random_forest__smote__on_twitter: acc=0.4388 F1(macro)=0.4226 AUC=0.6716
+23:26:24 | INFO | [classical] jigsaw/harmonised4: TF-IDF (2097, 9490), classes=[1884, 153, 42, 18]
+23:26:24 | INFO | [classical] jigsaw/harmonised4: logreg (imbalance=none)
+23:26:25 | INFO |      logreg {'C': 2.0} val F1=0.3247 (0.3s)
+23:26:25 | INFO |    -> jigsaw__harmonised4__logreg__none__on_jigsaw: acc=0.9111 F1(macro)=0.3119 AUC=0.9020
+23:26:25 | INFO | [classical] jigsaw/harmonised4: logreg (imbalance=class_weight)
+23:26:25 | INFO |      logreg {'C': 2.0} val F1=0.5350 (0.3s)
+23:26:25 | INFO |    -> jigsaw__harmonised4__logreg__class_weight__on_jigsaw: acc=0.9333 F1(macro)=0.5819 AUC=0.8914
+23:26:25 | INFO |    SMOTE: {'before': [1884, 153, 42, 18], 'after': [1884, 942, 942, 942], 'k_neighbors': 5}
+23:26:25 | INFO | [classical] jigsaw/harmonised4: logreg (imbalance=smote)
+23:26:26 | INFO |      logreg {'C': 2.0} val F1=0.5526 (0.7s)
+23:26:26 | INFO |    -> jigsaw__harmonised4__logreg__smote__on_jigsaw: acc=0.9311 F1(macro)=0.5381 AUC=0.8989
+23:26:27 | INFO | [classical] jigsaw/harmonised4: svm (imbalance=none)
+23:26:27 | INFO |      svm {'C': 0.5} val F1=0.5592 (0.1s)
+23:26:27 | INFO |    -> jigsaw__harmonised4__svm__none__on_jigsaw: acc=0.9244 F1(macro)=0.3685 AUC=0.8947
+23:26:27 | INFO | [classical] jigsaw/harmonised4: svm (imbalance=class_weight)
+23:26:27 | INFO |      svm {'C': 0.5} val F1=0.5592 (0.1s)
+23:26:27 | INFO |    -> jigsaw__harmonised4__svm__class_weight__on_jigsaw: acc=0.9244 F1(macro)=0.3685 AUC=0.8949
+23:26:27 | INFO | [classical] jigsaw/harmonised4: svm (imbalance=smote)
+23:26:27 | INFO |      svm {'C': 0.5} val F1=0.5093 (0.1s)
+23:26:27 | INFO |    -> jigsaw__harmonised4__svm__smote__on_jigsaw: acc=0.9289 F1(macro)=0.3920 AUC=0.8617
+23:26:28 | INFO | [classical] jigsaw/harmonised4: random_forest (imbalance=smote)
+23:26:28 | INFO |      random_forest {'min_samples_leaf': 1, 'n_estimators': 50} val F1=0.5511 (0.2s)
+23:26:28 | INFO |    -> jigsaw__harmonised4__random_forest__smote__on_jigsaw: acc=0.9244 F1(macro)=0.3707 AUC=0.8548
+23:26:28 | INFO | ========== classical finished in 17.3s ==========
+23:26:28 | INFO | ========== STAGE: bilstm ==========
+23:26:33 | INFO | [bilstm] twitter/binary: vocab=2,699 train=2,094 backend=torch
+23:26:36 | INFO |      epoch 1: val F1(macro)=0.6575
+23:26:40 | INFO |      epoch 2: val F1(macro)=0.6304
+23:26:40 | INFO |    -> twitter__binary__bilstm__class_weight__on_twitter: acc=0.7996 F1(macro)=0.6820 AUC=0.8583
+23:26:40 | INFO |    -> twitter__binary__bilstm__class_weight__on_jigsaw: acc=0.6200 F1(macro)=0.5021 AUC=0.6591
+23:26:41 | INFO | [bilstm] twitter/harmonised4: vocab=2,699 train=2,094 backend=torch
+23:26:44 | INFO |      epoch 1: val F1(macro)=0.3737
+23:26:48 | INFO |      epoch 2: val F1(macro)=0.5736
+23:26:48 | INFO |    -> twitter__harmonised4__bilstm__class_weight__on_twitter: acc=0.7327 F1(macro)=0.5696 AUC=0.8882
+23:26:49 | INFO | [bilstm] twitter/native6: vocab=2,699 train=2,094 backend=torch
+23:26:52 | INFO |      epoch 1: val F1(macro)=0.5613
+23:26:55 | INFO |      epoch 2: val F1(macro)=0.5342
+23:26:56 | INFO |    -> twitter__native6__bilstm__class_weight__on_twitter: acc=0.6303 F1(macro)=0.5539 AUC=0.8694
+23:26:57 | INFO | [bilstm] jigsaw/binary: vocab=5,729 train=2,097 backend=torch
+23:27:00 | INFO |      epoch 1: val F1(macro)=0.5611
+23:27:03 | INFO |      epoch 2: val F1(macro)=0.6066
+23:27:04 | INFO |    -> jigsaw__binary__bilstm__class_weight__on_jigsaw: acc=0.7778 F1(macro)=0.6468 AUC=0.8482
+23:27:04 | INFO |    -> jigsaw__binary__bilstm__class_weight__on_twitter: acc=0.6927 F1(macro)=0.5165 AUC=0.5486
+23:27:05 | INFO | [bilstm] jigsaw/harmonised4: vocab=5,729 train=2,097 backend=torch
+23:27:08 | INFO |      epoch 1: val F1(macro)=0.2252
+23:27:11 | INFO |      epoch 2: val F1(macro)=0.4616
+23:27:12 | INFO |    -> jigsaw__harmonised4__bilstm__class_weight__on_jigsaw: acc=0.8889 F1(macro)=0.2863 AUC=0.7300
+23:27:12 | INFO | ========== bilstm finished in 43.9s ==========
+23:27:12 | INFO | ========== STAGE: transformers ==========
+23:27:12 | WARNING | [transformer] No GPU detected - fine-tuning BERT/AfriBERTa on CPU will be very slow. Use Google Colab/Kaggle (see README) or --max-rows.
+23:27:12 | INFO | [transformer] bert (prajjwal1/bert-tiny) twitter/binary on cpu: train=2,094 val=449 test=449
+23:29:27 | INFO | Output directory: C:\Users\mosia\OneDrive\Documents\2026\School\Semester 2\RPDA8412\Cyberbullying code\outputs_quick | data: C:\Users\mosia\OneDrive\Documents\2026\School\Semester 2\RPDA8412\Datasets | quick=True
+23:29:27 | INFO | ========== STAGE: classical ==========
+23:29:35 | INFO | [classical] twitter/binary: TF-IDF (2094, 4391), classes=[297, 1797]
+23:29:35 | INFO | [classical] twitter/binary: logreg (imbalance=none)
+23:29:35 | INFO |      logreg {'C': 2.0} val F1=0.6820 (0.0s)
+23:29:35 | INFO |    -> twitter__binary__logreg__none__on_twitter: acc=0.8753 F1(macro)=0.6399 AUC=0.9219
+23:29:35 | INFO | [classical] twitter/binary: logreg (imbalance=class_weight)
+23:29:35 | INFO |      logreg {'C': 2.0} val F1=0.7434 (0.0s)
+23:29:35 | INFO |    -> twitter__binary__logreg__class_weight__on_twitter: acc=0.8708 F1(macro)=0.7574 AUC=0.9226
+23:29:35 | INFO |    SMOTE: {'before': [297, 1797], 'after': [898, 1797], 'k_neighbors': 5}
+23:29:35 | INFO | [classical] twitter/binary: logreg (imbalance=smote)
+23:29:35 | INFO |      logreg {'C': 2.0} val F1=0.7396 (0.0s)
+23:29:36 | INFO |    -> twitter__binary__logreg__smote__on_twitter: acc=0.8909 F1(macro)=0.7660 AUC=0.9213
+23:29:36 | INFO |    -> twitter__binary__logreg__smote__on_jigsaw: acc=0.2044 F1(macro)=0.2042 AUC=0.6144
+23:29:36 | INFO | [classical] twitter/binary: svm (imbalance=none)
+23:29:36 | INFO |      svm {'C': 0.5} val F1=0.7317 (0.0s)
+23:29:36 | INFO |    -> twitter__binary__svm__none__on_twitter: acc=0.8909 F1(macro)=0.7219 AUC=0.9145
+23:29:36 | INFO | [classical] twitter/binary: svm (imbalance=class_weight)
+23:29:36 | INFO |      svm {'C': 0.5} val F1=0.7220 (0.1s)
+23:29:36 | INFO |    -> twitter__binary__svm__class_weight__on_twitter: acc=0.8753 F1(macro)=0.7574 AUC=0.9183
+23:29:36 | INFO | [classical] twitter/binary: svm (imbalance=smote)
+23:29:36 | INFO |      svm {'C': 0.5} val F1=0.7504 (0.1s)
+23:29:37 | INFO |    -> twitter__binary__svm__smote__on_twitter: acc=0.8753 F1(macro)=0.7482 AUC=0.9177
+23:29:37 | INFO |    -> twitter__binary__svm__smote__on_jigsaw: acc=0.2622 F1(macro)=0.2569 AUC=0.6037
+23:29:37 | INFO | [classical] twitter/binary: random_forest (imbalance=smote)
+23:29:37 | INFO |      random_forest {'min_samples_leaf': 1, 'n_estimators': 50} val F1=0.7589 (0.1s)
+23:29:37 | INFO |    -> twitter__binary__random_forest__smote__on_twitter: acc=0.8931 F1(macro)=0.7552 AUC=0.9309
+23:29:38 | INFO |    -> twitter__binary__random_forest__smote__on_jigsaw: acc=0.2356 F1(macro)=0.2346 AUC=0.6659
+23:29:38 | INFO | [classical] twitter/harmonised4: TF-IDF (2094, 4391), classes=[297, 436, 233, 1128]
+23:29:38 | INFO | [classical] twitter/harmonised4: logreg (imbalance=none)
+23:29:38 | INFO |      logreg {'C': 2.0} val F1=0.6233 (0.3s)
+23:29:38 | INFO |    -> twitter__harmonised4__logreg__none__on_twitter: acc=0.7996 F1(macro)=0.6599 AUC=0.9323
+23:29:38 | INFO | [classical] twitter/harmonised4: logreg (imbalance=class_weight)
+23:29:38 | INFO |      logreg {'C': 2.0} val F1=0.7123 (0.2s)
+23:29:38 | INFO |    -> twitter__harmonised4__logreg__class_weight__on_twitter: acc=0.8040 F1(macro)=0.7081 AUC=0.9267
+23:29:38 | INFO |    SMOTE: {'before': [297, 436, 233, 1128], 'after': [564, 564, 564, 1128], 'k_neighbors': 5}
+23:29:38 | INFO | [classical] twitter/harmonised4: logreg (imbalance=smote)
+23:29:39 | INFO |      logreg {'C': 2.0} val F1=0.7195 (0.4s)
+23:29:39 | INFO |    -> twitter__harmonised4__logreg__smote__on_twitter: acc=0.8129 F1(macro)=0.7098 AUC=0.9341
+23:29:39 | INFO | [classical] twitter/harmonised4: svm (imbalance=none)
+23:29:39 | INFO |      svm {'C': 0.5} val F1=0.6685 (0.1s)
+23:29:39 | INFO |    -> twitter__harmonised4__svm__none__on_twitter: acc=0.8196 F1(macro)=0.7023 AUC=0.9329
+23:29:39 | INFO | [classical] twitter/harmonised4: svm (imbalance=class_weight)
+23:29:39 | INFO |      svm {'C': 0.5} val F1=0.7001 (0.1s)
+23:29:39 | INFO |    -> twitter__harmonised4__svm__class_weight__on_twitter: acc=0.8107 F1(macro)=0.7030 AUC=0.9337
+23:29:39 | INFO | [classical] twitter/harmonised4: svm (imbalance=smote)
+23:29:39 | INFO |      svm {'C': 0.5} val F1=0.7104 (0.1s)
+23:29:40 | INFO |    -> twitter__harmonised4__svm__smote__on_twitter: acc=0.8196 F1(macro)=0.7209 AUC=0.9274
+23:29:40 | INFO | [classical] twitter/harmonised4: random_forest (imbalance=smote)
+23:29:40 | INFO |      random_forest {'min_samples_leaf': 1, 'n_estimators': 50} val F1=0.7315 (0.1s)
+23:29:40 | INFO |    -> twitter__harmonised4__random_forest__smote__on_twitter: acc=0.8352 F1(macro)=0.7419 AUC=0.9445
+23:29:40 | INFO | [classical] twitter/native6: TF-IDF (2094, 4391), classes=[297, 385, 379, 363, 386, 284]
+23:29:40 | INFO | [classical] twitter/native6: logreg (imbalance=none)
+23:29:41 | INFO |      logreg {'C': 2.0} val F1=0.8056 (0.3s)
+23:29:41 | INFO |    -> twitter__native6__logreg__none__on_twitter: acc=0.8330 F1(macro)=0.8185 AUC=0.9635
+23:29:41 | INFO | [classical] twitter/native6: logreg (imbalance=class_weight)
+23:29:41 | INFO |      logreg {'C': 2.0} val F1=0.8046 (0.3s)
+23:29:41 | INFO |    -> twitter__native6__logreg__class_weight__on_twitter: acc=0.8285 F1(macro)=0.8168 AUC=0.9632
+23:29:41 | INFO |    SMOTE: {}
+23:29:41 | INFO | [classical] twitter/native6: logreg (imbalance=smote)
+23:29:41 | INFO |      logreg {'C': 2.0} val F1=0.8056 (0.3s)
+23:29:42 | INFO |    -> twitter__native6__logreg__smote__on_twitter: acc=0.8330 F1(macro)=0.8185 AUC=0.9635
+23:29:42 | INFO | [classical] twitter/native6: svm (imbalance=none)
+23:29:42 | INFO |      svm {'C': 0.5} val F1=0.8000 (0.1s)
+23:29:42 | INFO |    -> twitter__native6__svm__none__on_twitter: acc=0.8263 F1(macro)=0.8080 AUC=0.9630
+23:29:42 | INFO | [classical] twitter/native6: svm (imbalance=class_weight)
+23:29:42 | INFO |      svm {'C': 0.5} val F1=0.7933 (0.1s)
+23:29:42 | INFO |    -> twitter__native6__svm__class_weight__on_twitter: acc=0.8174 F1(macro)=0.8004 AUC=0.9630
+23:29:42 | INFO | [classical] twitter/native6: svm (imbalance=smote)
+23:29:42 | INFO |      svm {'C': 0.5} val F1=0.8000 (0.1s)
+23:29:43 | INFO |    -> twitter__native6__svm__smote__on_twitter: acc=0.8263 F1(macro)=0.8080 AUC=0.9630
+23:29:43 | INFO | [classical] twitter/native6: random_forest (imbalance=smote)
+23:29:43 | INFO |      random_forest {'min_samples_leaf': 1, 'n_estimators': 50} val F1=0.8119 (0.1s)
+23:29:43 | INFO |    -> twitter__native6__random_forest__smote__on_twitter: acc=0.8307 F1(macro)=0.8158 AUC=0.9633
+23:29:44 | INFO | [classical] jigsaw/binary: TF-IDF (2097, 9490), classes=[1884, 213]
+23:29:44 | INFO | [classical] jigsaw/binary: logreg (imbalance=none)
+23:29:44 | INFO |      logreg {'C': 2.0} val F1=0.6909 (0.0s)
+23:29:44 | INFO |    -> jigsaw__binary__logreg__none__on_jigsaw: acc=0.9156 F1(macro)=0.6257 AUC=0.9264
+23:29:44 | INFO | [classical] jigsaw/binary: logreg (imbalance=class_weight)
+23:29:44 | INFO |      logreg {'C': 2.0} val F1=0.7900 (0.0s)
+23:29:44 | INFO |    -> jigsaw__binary__logreg__class_weight__on_jigsaw: acc=0.9467 F1(macro)=0.8316 AUC=0.9284
+23:29:44 | INFO |    SMOTE: {'before': [1884, 213], 'after': [1884, 942], 'k_neighbors': 5}
+23:29:44 | INFO | [classical] jigsaw/binary: logreg (imbalance=smote)
+23:29:44 | INFO |      logreg {'C': 2.0} val F1=0.7831 (0.0s)
+23:29:44 | INFO |    -> jigsaw__binary__logreg__smote__on_jigsaw: acc=0.9400 F1(macro)=0.7881 AUC=0.9237
+23:29:44 | INFO |    -> jigsaw__binary__logreg__smote__on_twitter: acc=0.4298 F1(macro)=0.4152 AUC=0.6636
+23:29:44 | INFO | [classical] jigsaw/binary: svm (imbalance=none)
+23:29:44 | INFO |      svm {'C': 0.5} val F1=0.7695 (0.0s)
+23:29:44 | INFO |    -> jigsaw__binary__svm__none__on_jigsaw: acc=0.9289 F1(macro)=0.7143 AUC=0.9336
+23:29:44 | INFO | [classical] jigsaw/binary: svm (imbalance=class_weight)
+23:29:44 | INFO |      svm {'C': 0.5} val F1=0.8082 (0.0s)
+23:29:44 | INFO |    -> jigsaw__binary__svm__class_weight__on_jigsaw: acc=0.9400 F1(macro)=0.7987 AUC=0.9318
+23:29:44 | INFO | [classical] jigsaw/binary: svm (imbalance=smote)
+23:29:44 | INFO |      svm {'C': 0.5} val F1=0.8380 (0.0s)
+23:29:45 | INFO |    -> jigsaw__binary__svm__smote__on_jigsaw: acc=0.9356 F1(macro)=0.7783 AUC=0.9287
+23:29:45 | INFO |    -> jigsaw__binary__svm__smote__on_twitter: acc=0.4410 F1(macro)=0.4217 AUC=0.6589
+23:29:45 | INFO | [classical] jigsaw/binary: random_forest (imbalance=smote)
+23:29:45 | INFO |      random_forest {'min_samples_leaf': 1, 'n_estimators': 50} val F1=0.8188 (0.1s)
+23:29:45 | INFO |    -> jigsaw__binary__random_forest__smote__on_jigsaw: acc=0.9333 F1(macro)=0.7477 AUC=0.8891
+23:29:46 | INFO |    -> jigsaw__binary__random_forest__smote__on_twitter: acc=0.4388 F1(macro)=0.4226 AUC=0.6716
+23:29:46 | INFO | [classical] jigsaw/harmonised4: TF-IDF (2097, 9490), classes=[1884, 153, 42, 18]
+23:29:46 | INFO | [classical] jigsaw/harmonised4: logreg (imbalance=none)
+23:29:46 | INFO |      logreg {'C': 2.0} val F1=0.3247 (0.2s)
+23:29:46 | INFO |    -> jigsaw__harmonised4__logreg__none__on_jigsaw: acc=0.9111 F1(macro)=0.3119 AUC=0.9020
+23:29:46 | INFO | [classical] jigsaw/harmonised4: logreg (imbalance=class_weight)
+23:29:46 | INFO |      logreg {'C': 2.0} val F1=0.5350 (0.2s)
+23:29:46 | INFO |    -> jigsaw__harmonised4__logreg__class_weight__on_jigsaw: acc=0.9333 F1(macro)=0.5819 AUC=0.8914
+23:29:46 | INFO |    SMOTE: {'before': [1884, 153, 42, 18], 'after': [1884, 942, 942, 942], 'k_neighbors': 5}
+23:29:46 | INFO | [classical] jigsaw/harmonised4: logreg (imbalance=smote)
+23:29:47 | INFO |      logreg {'C': 2.0} val F1=0.5526 (0.3s)
+23:29:47 | INFO |    -> jigsaw__harmonised4__logreg__smote__on_jigsaw: acc=0.9311 F1(macro)=0.5381 AUC=0.8989
+23:29:47 | INFO | [classical] jigsaw/harmonised4: svm (imbalance=none)
+23:29:47 | INFO |      svm {'C': 0.5} val F1=0.4770 (0.1s)
+23:29:47 | INFO |    -> jigsaw__harmonised4__svm__none__on_jigsaw: acc=0.9156 F1(macro)=0.3324 AUC=0.8947
+23:29:47 | INFO | [classical] jigsaw/harmonised4: svm (imbalance=class_weight)
+23:29:47 | INFO |      svm {'C': 0.5} val F1=0.5592 (0.1s)
+23:29:47 | INFO |    -> jigsaw__harmonised4__svm__class_weight__on_jigsaw: acc=0.9244 F1(macro)=0.3685 AUC=0.8949
+23:29:47 | INFO | [classical] jigsaw/harmonised4: svm (imbalance=smote)
+23:29:48 | INFO |      svm {'C': 0.5} val F1=0.5421 (0.2s)
+23:29:48 | INFO |    -> jigsaw__harmonised4__svm__smote__on_jigsaw: acc=0.9244 F1(macro)=0.3777 AUC=0.8617
+23:29:48 | INFO | [classical] jigsaw/harmonised4: random_forest (imbalance=smote)
+23:29:48 | INFO |      random_forest {'min_samples_leaf': 1, 'n_estimators': 50} val F1=0.5511 (0.2s)
+23:29:49 | INFO |    -> jigsaw__harmonised4__random_forest__smote__on_jigsaw: acc=0.9244 F1(macro)=0.3707 AUC=0.8548
+23:29:49 | INFO | ========== classical finished in 22.3s ==========
+23:29:49 | INFO | ========== STAGE: transformers ==========
+23:29:49 | WARNING | [transformer] No GPU detected - fine-tuning BERT/AfriBERTa on CPU will be very slow. Use Google Colab/Kaggle (see README) or --max-rows.
+23:29:49 | INFO | [transformer] bert (google/bert_uncased_L-2_H-128_A-2) twitter/binary on cpu: train=2,094 val=449 test=449
+23:30:09 | INFO |      epoch 1 step 20/66 loss=0.6889
+23:30:11 | INFO |      epoch 1 step 40/66 loss=0.6833
+23:30:12 | INFO |      epoch 1 step 60/66 loss=0.6801
+23:30:13 | INFO |      epoch 1: train loss=0.6792 val F1(macro)=0.5241
+23:30:13 | INFO |    -> twitter__binary__bert__class_weight__on_twitter: acc=0.6704 F1(macro)=0.5624 AUC=0.6834
+23:30:13 | INFO |    -> twitter__binary__bert__class_weight__on_jigsaw: acc=0.3133 F1(macro)=0.2879 AUC=0.3848
+23:30:14 | INFO | [transformer] afriberta (google/bert_uncased_L-2_H-128_A-2) twitter/binary on cpu: train=2,094 val=449 test=449
+23:30:16 | INFO |      epoch 1 step 20/66 loss=0.6889
+23:30:18 | INFO |      epoch 1 step 40/66 loss=0.6833
+23:30:19 | INFO |      epoch 1 step 60/66 loss=0.6801
+23:30:20 | INFO |      epoch 1: train loss=0.6792 val F1(macro)=0.5241
+23:30:20 | INFO |    -> twitter__binary__afriberta__class_weight__on_twitter: acc=0.6704 F1(macro)=0.5624 AUC=0.6834
+23:30:21 | INFO |    -> twitter__binary__afriberta__class_weight__on_jigsaw: acc=0.3133 F1(macro)=0.2879 AUC=0.3848
+23:30:21 | INFO | [transformer] bert (google/bert_uncased_L-2_H-128_A-2) twitter/harmonised4 on cpu: train=2,094 val=449 test=449
+23:30:24 | INFO |      epoch 1 step 20/66 loss=1.3882
+23:30:25 | INFO |      epoch 1 step 40/66 loss=1.3844
+23:30:27 | INFO |      epoch 1 step 60/66 loss=1.3829
+23:30:27 | INFO |      epoch 1: train loss=1.3834 val F1(macro)=0.1700
+23:30:28 | INFO |    -> twitter__harmonised4__bert__class_weight__on_twitter: acc=0.2339 F1(macro)=0.2173 AUC=0.6073
+23:30:28 | INFO | [transformer] afriberta (google/bert_uncased_L-2_H-128_A-2) twitter/harmonised4 on cpu: train=2,094 val=449 test=449
+23:30:31 | INFO |      epoch 1 step 20/66 loss=1.3882
+23:30:32 | INFO |      epoch 1 step 40/66 loss=1.3844
+23:30:34 | INFO |      epoch 1 step 60/66 loss=1.3829
+23:30:34 | INFO |      epoch 1: train loss=1.3834 val F1(macro)=0.1700
+23:30:35 | INFO |    -> twitter__harmonised4__afriberta__class_weight__on_twitter: acc=0.2339 F1(macro)=0.2173 AUC=0.6073
+23:30:35 | INFO | [transformer] bert (google/bert_uncased_L-2_H-128_A-2) twitter/native6 on cpu: train=2,094 val=449 test=449
+23:30:38 | INFO |      epoch 1 step 20/66 loss=1.7879
+23:30:39 | INFO |      epoch 1 step 40/66 loss=1.7769
+23:30:41 | INFO |      epoch 1 step 60/66 loss=1.7717
+23:30:41 | INFO |      epoch 1: train loss=1.7720 val F1(macro)=0.2723
+23:30:42 | INFO |    -> twitter__native6__bert__class_weight__on_twitter: acc=0.3408 F1(macro)=0.2583 AUC=0.6747
+23:30:42 | INFO | [transformer] afriberta (google/bert_uncased_L-2_H-128_A-2) twitter/native6 on cpu: train=2,094 val=449 test=449
+23:30:45 | INFO |      epoch 1 step 20/66 loss=1.7879
+23:30:46 | INFO |      epoch 1 step 40/66 loss=1.7769
+23:30:48 | INFO |      epoch 1 step 60/66 loss=1.7717
+23:30:48 | INFO |      epoch 1: train loss=1.7720 val F1(macro)=0.2723
+23:30:49 | INFO |    -> twitter__native6__afriberta__class_weight__on_twitter: acc=0.3408 F1(macro)=0.2583 AUC=0.6747
+23:30:49 | INFO | [transformer] bert (google/bert_uncased_L-2_H-128_A-2) jigsaw/binary on cpu: train=2,097 val=449 test=450
+23:30:52 | INFO |      epoch 1 step 20/66 loss=0.7008
+23:30:54 | INFO |      epoch 1 step 40/66 loss=0.7011
+23:30:55 | INFO |      epoch 1 step 60/66 loss=0.6997
+23:30:56 | INFO |      epoch 1: train loss=0.6997 val F1(macro)=0.4776
+23:30:56 | INFO |    -> jigsaw__binary__bert__class_weight__on_jigsaw: acc=0.7067 F1(macro)=0.5079 AUC=0.6113
+23:30:56 | INFO |    -> jigsaw__binary__bert__class_weight__on_twitter: acc=0.4298 F1(macro)=0.3913 AUC=0.5058
+23:30:56 | INFO | [transformer] afriberta (google/bert_uncased_L-2_H-128_A-2) jigsaw/binary on cpu: train=2,097 val=449 test=450
+23:30:59 | INFO |      epoch 1 step 20/66 loss=0.7008
+23:31:01 | INFO |      epoch 1 step 40/66 loss=0.7011
+23:31:03 | INFO |      epoch 1 step 60/66 loss=0.6997
+23:31:03 | INFO |      epoch 1: train loss=0.6997 val F1(macro)=0.4776
+23:31:04 | INFO |    -> jigsaw__binary__afriberta__class_weight__on_jigsaw: acc=0.7067 F1(macro)=0.5079 AUC=0.6113
+23:31:04 | INFO |    -> jigsaw__binary__afriberta__class_weight__on_twitter: acc=0.4298 F1(macro)=0.3913 AUC=0.5058
+23:31:04 | INFO | [transformer] bert (google/bert_uncased_L-2_H-128_A-2) jigsaw/harmonised4 on cpu: train=2,097 val=449 test=450
+23:31:07 | INFO |      epoch 1 step 20/66 loss=1.3837
+23:31:09 | INFO |      epoch 1 step 40/66 loss=1.3700
+23:31:10 | INFO |      epoch 1 step 60/66 loss=1.3673
+23:31:11 | INFO |      epoch 1: train loss=1.3681 val F1(macro)=0.2067
+23:31:11 | INFO |    -> jigsaw__harmonised4__bert__class_weight__on_jigsaw: acc=0.6778 F1(macro)=0.2205 AUC=0.5817
+23:31:11 | INFO | [transformer] afriberta (google/bert_uncased_L-2_H-128_A-2) jigsaw/harmonised4 on cpu: train=2,097 val=449 test=450
+23:31:14 | INFO |      epoch 1 step 20/66 loss=1.3837
+23:31:16 | INFO |      epoch 1 step 40/66 loss=1.3700
+23:31:18 | INFO |      epoch 1 step 60/66 loss=1.3673
+23:31:18 | INFO |      epoch 1: train loss=1.3681 val F1(macro)=0.2067
+23:31:19 | INFO |    -> jigsaw__harmonised4__afriberta__class_weight__on_jigsaw: acc=0.6778 F1(macro)=0.2205 AUC=0.5817
+23:31:19 | INFO | ========== transformers finished in 89.9s ==========
+23:31:19 | INFO | ========== STAGE: stats ==========
+23:31:20 | INFO | [stats] 62 result files
+23:31:22 | INFO | [stats] hypothesis results: {'H1a': {'hypothesis': 'Transformers outperform classical ML', 'comparisons': 30, 'significantly_better': 0, 'significantly_worse': 30, 'not_significant': 0, 'mean_f1_diff': -0.3457069591979318, 'decision': 'Fail to reject H0: transformer significantly better in only 0/30 comparisons'}, 'H1b_part1': {'hypothesis': 'BiLSTM outperforms classical ML', 'comparisons': 15, 'significantly_better': 0, 'significantly_worse': 15, 'not_significant': 0, 'mean_f1_diff': -0.15126267928067788, 'decision': 'Fail to reject H0: deep_learning significantly better in only 0/15 comparisons'}, 'H1b_part2': {'hypothesis': 'Transformers outperform BiLSTM', 'comparisons': 10, 'significantly_better': 0, 'significantly_worse': 8, 'not_significant': 2, 'mean_f1_diff': -0.19444427991725402, 'decision': 'Fail to reject H0: transformer significantly better in only 0/10 comparisons'}, 'friedman_all_models': {'blocks': 5, 'models': ['logreg', 'svm', 'random_forest', 'bilstm', 'bert', 'afriberta'], 'chi2': 22.88235294117647, 'p_value': 0.0003555021087451637, 'average_rank': {'logreg': 1.4, 'random_forest': 2.2, 'svm': 2.4, 'bilstm': 4.0, 'bert': 5.5, 'afriberta': 5.5}}, 'H1c': {'hypothesis': 'H1c: lower performance on implicit than explicit cyberbullying', 'pairs': 12, 'models_with_lower_implicit_f1': 12, 'median_f1_gap_explicit_minus_implicit': 0.3376686788482609, 'wilcoxon_stat': 78.0, 'wilcoxon_p': 0.000244140625, 'decision': 'Reject H0: implicit cyberbullying is detected significantly worse than explicit cyberbullying'}}
+23:31:22 | INFO | ========== stats finished in 3.2s ==========
+23:31:22 | INFO | ========== STAGE: analysis ==========
+23:31:22 | INFO | [analysis] feature importance
+23:31:25 | INFO | [analysis] misclassified examples
+23:31:25 | INFO | [analysis] performance by length / language
+23:31:25 | INFO | ========== analysis finished in 3.3s ==========
+23:31:25 | INFO | ========== STAGE: report ==========
+23:31:29 | INFO | [report] summary written to C:\Users\mosia\OneDrive\Documents\2026\School\Semester 2\RPDA8412\Cyberbullying code\outputs_quick\tables\findings_summary.md
+23:31:29 | INFO | ========== report finished in 3.4s ==========

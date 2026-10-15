@@ -1,0 +1,6 @@
+true -> predicted,count
+explicit_cyberbullying -> not_cyberbullying,18
+implicit_cyberbullying -> not_cyberbullying,8
+not_cyberbullying -> explicit_cyberbullying,2
+hate_speech -> not_cyberbullying,2
+hate_speech -> explicit_cyberbullying,1
