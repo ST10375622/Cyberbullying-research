@@ -1,0 +1,1669 @@
+﻿section,research_question,dataset,task,model,variant,eval_dataset,category,metric,value,detail
+01_preprocessing,Objective 2,twitter,,,,,,n_raw,47692,
+01_preprocessing,Objective 2,twitter,,,,,,n_empty_after_cleaning,285,
+01_preprocessing,Objective 2,twitter,,,,,,n_conflicting_duplicates_removed,3454,
+01_preprocessing,Objective 2,twitter,,,,,,n_exact_duplicates_removed,578,
+01_preprocessing,Objective 2,twitter,,,,,,n_empty_after_stopwords_removed,74,
+01_preprocessing,Objective 2,twitter,,,,,,n_final,43301,
+01_preprocessing,Objective 2,twitter,,,,,,n_train,30310,
+01_preprocessing,Objective 2,twitter,,,,,,n_val,6495,
+01_preprocessing,Objective 2,twitter,,,,,,n_test,6496,
+01_preprocessing,Objective 2,jigsaw,,,,,,n_raw,159571,
+01_preprocessing,Objective 2,jigsaw,,,,,,n_empty_after_cleaning,14,
+01_preprocessing,Objective 2,jigsaw,,,,,,n_conflicting_duplicates_removed,73,
+01_preprocessing,Objective 2,jigsaw,,,,,,n_exact_duplicates_removed,735,
+01_preprocessing,Objective 2,jigsaw,,,,,,n_empty_after_stopwords_removed,52,
+01_preprocessing,Objective 2,jigsaw,,,,,,n_final,158697,
+01_preprocessing,Objective 2,jigsaw,,,,,,n_train,111087,
+01_preprocessing,Objective 2,jigsaw,,,,,,n_val,23805,
+01_preprocessing,Objective 2,jigsaw,,,,,,n_test,23805,
+02_dataset_characteristics,SQ4,twitter,,,,,,n_raw,47692,Twitter Cyberbullying Classification (Kaggle)
+02_dataset_characteristics,SQ4,twitter,,,,,,n_after_cleaning,43301,Twitter Cyberbullying Classification (Kaggle)
+02_dataset_characteristics,SQ4,twitter,,,,,,duplicates_removed,4032,Twitter Cyberbullying Classification (Kaggle)
+02_dataset_characteristics,SQ4,twitter,,,,,,cyberbullying_share,0.8573,Twitter Cyberbullying Classification (Kaggle)
+02_dataset_characteristics,SQ4,twitter,,,,,,mean_tokens,24.36,Twitter Cyberbullying Classification (Kaggle)
+02_dataset_characteristics,SQ4,twitter,,,,,,median_tokens,20.0,Twitter Cyberbullying Classification (Kaggle)
+02_dataset_characteristics,SQ4,twitter,,,,,,p95_tokens,52.0,Twitter Cyberbullying Classification (Kaggle)
+02_dataset_characteristics,SQ4,twitter,,,,,,mean_chars,141.8,Twitter Cyberbullying Classification (Kaggle)
+02_dataset_characteristics,SQ4,twitter,,,,,,vocabulary_size,36516,Twitter Cyberbullying Classification (Kaggle)
+02_dataset_characteristics,SQ4,twitter,,,,,,type_token_ratio,0.0576,Twitter Cyberbullying Classification (Kaggle)
+02_dataset_characteristics,SQ4,twitter,,,,,,share_english,0.9328,Twitter Cyberbullying Classification (Kaggle)
+02_dataset_characteristics,SQ4,twitter,,,,,,n_languages_detected,33,Twitter Cyberbullying Classification (Kaggle)
+02_dataset_characteristics,SQ4,twitter,,,,,,explicit_term_share,0.5174,Twitter Cyberbullying Classification (Kaggle)
+02_dataset_characteristics,SQ4,jigsaw,,,,,,n_raw,159571,Jigsaw Toxic Comment Classification (Kaggle)
+02_dataset_characteristics,SQ4,jigsaw,,,,,,n_after_cleaning,158697,Jigsaw Toxic Comment Classification (Kaggle)
+02_dataset_characteristics,SQ4,jigsaw,,,,,,duplicates_removed,808,Jigsaw Toxic Comment Classification (Kaggle)
+02_dataset_characteristics,SQ4,jigsaw,,,,,,cyberbullying_share,0.1015,Jigsaw Toxic Comment Classification (Kaggle)
+02_dataset_characteristics,SQ4,jigsaw,,,,,,mean_tokens,67.5,Jigsaw Toxic Comment Classification (Kaggle)
+02_dataset_characteristics,SQ4,jigsaw,,,,,,median_tokens,36.0,Jigsaw Toxic Comment Classification (Kaggle)
+02_dataset_characteristics,SQ4,jigsaw,,,,,,p95_tokens,231.0,Jigsaw Toxic Comment Classification (Kaggle)
+02_dataset_characteristics,SQ4,jigsaw,,,,,,mean_chars,394.1,Jigsaw Toxic Comment Classification (Kaggle)
+02_dataset_characteristics,SQ4,jigsaw,,,,,,vocabulary_size,151932,Jigsaw Toxic Comment Classification (Kaggle)
+02_dataset_characteristics,SQ4,jigsaw,,,,,,type_token_ratio,0.0256,Jigsaw Toxic Comment Classification (Kaggle)
+02_dataset_characteristics,SQ4,jigsaw,,,,,,share_english,0.9693,Jigsaw Toxic Comment Classification (Kaggle)
+02_dataset_characteristics,SQ4,jigsaw,,,,,,n_languages_detected,37,Jigsaw Toxic Comment Classification (Kaggle)
+02_dataset_characteristics,SQ4,jigsaw,,,,,,explicit_term_share,0.105,Jigsaw Toxic Comment Classification (Kaggle)
+03_class_distribution,SQ4,twitter,binary,,,,cyberbullying,count,37124,
+03_class_distribution,SQ4,twitter,binary,,,,cyberbullying,percent,85.73,
+03_class_distribution,SQ4,twitter,binary,,,,not_cyberbullying,count,6177,
+03_class_distribution,SQ4,twitter,binary,,,,not_cyberbullying,percent,14.27,
+03_class_distribution,SQ4,twitter,harmonised4,,,,hate_speech,count,23287,
+03_class_distribution,SQ4,twitter,harmonised4,,,,hate_speech,percent,53.78,
+03_class_distribution,SQ4,twitter,harmonised4,,,,explicit_cyberbullying,count,9169,
+03_class_distribution,SQ4,twitter,harmonised4,,,,explicit_cyberbullying,percent,21.18,
+03_class_distribution,SQ4,twitter,harmonised4,,,,not_cyberbullying,count,6177,
+03_class_distribution,SQ4,twitter,harmonised4,,,,not_cyberbullying,percent,14.27,
+03_class_distribution,SQ4,twitter,harmonised4,,,,implicit_cyberbullying,count,4668,
+03_class_distribution,SQ4,twitter,harmonised4,,,,implicit_cyberbullying,percent,10.78,
+03_class_distribution,SQ4,twitter,native6,,,,religion,count,7966,
+03_class_distribution,SQ4,twitter,native6,,,,religion,percent,18.4,
+03_class_distribution,SQ4,twitter,native6,,,,age,count,7948,
+03_class_distribution,SQ4,twitter,native6,,,,age,percent,18.36,
+03_class_distribution,SQ4,twitter,native6,,,,ethnicity,count,7823,
+03_class_distribution,SQ4,twitter,native6,,,,ethnicity,percent,18.07,
+03_class_distribution,SQ4,twitter,native6,,,,gender,count,7498,
+03_class_distribution,SQ4,twitter,native6,,,,gender,percent,17.32,
+03_class_distribution,SQ4,twitter,native6,,,,not_cyberbullying,count,6177,
+03_class_distribution,SQ4,twitter,native6,,,,not_cyberbullying,percent,14.27,
+03_class_distribution,SQ4,twitter,native6,,,,other_cyberbullying,count,5889,
+03_class_distribution,SQ4,twitter,native6,,,,other_cyberbullying,percent,13.6,
+03_class_distribution,SQ4,jigsaw,binary,,,,not_cyberbullying,count,142588,
+03_class_distribution,SQ4,jigsaw,binary,,,,not_cyberbullying,percent,89.85,
+03_class_distribution,SQ4,jigsaw,binary,,,,cyberbullying,count,16109,
+03_class_distribution,SQ4,jigsaw,binary,,,,cyberbullying,percent,10.15,
+03_class_distribution,SQ4,jigsaw,harmonised4,,,,not_cyberbullying,count,142588,
+03_class_distribution,SQ4,jigsaw,harmonised4,,,,not_cyberbullying,percent,89.85,
+03_class_distribution,SQ4,jigsaw,harmonised4,,,,explicit_cyberbullying,count,11527,
+03_class_distribution,SQ4,jigsaw,harmonised4,,,,explicit_cyberbullying,percent,7.26,
+03_class_distribution,SQ4,jigsaw,harmonised4,,,,implicit_cyberbullying,count,3190,
+03_class_distribution,SQ4,jigsaw,harmonised4,,,,implicit_cyberbullying,percent,2.01,
+03_class_distribution,SQ4,jigsaw,harmonised4,,,,hate_speech,count,1392,
+03_class_distribution,SQ4,jigsaw,harmonised4,,,,hate_speech,percent,0.88,
+04_imbalance,SQ4,twitter,binary,,,,,n_classes,2,majority=cyberbullying; minority=not_cyberbullying
+04_imbalance,SQ4,twitter,binary,,,,,majority_share,0.8573,majority=cyberbullying; minority=not_cyberbullying
+04_imbalance,SQ4,twitter,binary,,,,,minority_share,0.1427,majority=cyberbullying; minority=not_cyberbullying
+04_imbalance,SQ4,twitter,binary,,,,,imbalance_ratio,6.01,majority=cyberbullying; minority=not_cyberbullying
+04_imbalance,SQ4,twitter,harmonised4,,,,,n_classes,4,majority=hate_speech; minority=implicit_cyberbullying
+04_imbalance,SQ4,twitter,harmonised4,,,,,majority_share,0.5378,majority=hate_speech; minority=implicit_cyberbullying
+04_imbalance,SQ4,twitter,harmonised4,,,,,minority_share,0.1078,majority=hate_speech; minority=implicit_cyberbullying
+04_imbalance,SQ4,twitter,harmonised4,,,,,imbalance_ratio,4.99,majority=hate_speech; minority=implicit_cyberbullying
+04_imbalance,SQ4,twitter,native6,,,,,n_classes,6,majority=religion; minority=other_cyberbullying
+04_imbalance,SQ4,twitter,native6,,,,,majority_share,0.184,majority=religion; minority=other_cyberbullying
+04_imbalance,SQ4,twitter,native6,,,,,minority_share,0.136,majority=religion; minority=other_cyberbullying
+04_imbalance,SQ4,twitter,native6,,,,,imbalance_ratio,1.35,majority=religion; minority=other_cyberbullying
+04_imbalance,SQ4,jigsaw,binary,,,,,n_classes,2,majority=not_cyberbullying; minority=cyberbullying
+04_imbalance,SQ4,jigsaw,binary,,,,,majority_share,0.8985,majority=not_cyberbullying; minority=cyberbullying
+04_imbalance,SQ4,jigsaw,binary,,,,,minority_share,0.1015,majority=not_cyberbullying; minority=cyberbullying
+04_imbalance,SQ4,jigsaw,binary,,,,,imbalance_ratio,8.85,majority=not_cyberbullying; minority=cyberbullying
+04_imbalance,SQ4,jigsaw,harmonised4,,,,,n_classes,4,majority=not_cyberbullying; minority=hate_speech
+04_imbalance,SQ4,jigsaw,harmonised4,,,,,majority_share,0.8985,majority=not_cyberbullying; minority=hate_speech
+04_imbalance,SQ4,jigsaw,harmonised4,,,,,minority_share,0.0088,majority=not_cyberbullying; minority=hate_speech
+04_imbalance,SQ4,jigsaw,harmonised4,,,,,imbalance_ratio,102.43,majority=not_cyberbullying; minority=hate_speech
+05_model_performance,Main RQ / SQ2,jigsaw,binary,Logistic Regression,smote,jigsaw,,accuracy,0.93913,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,Logistic Regression,smote,jigsaw,,precision_macro,0.822333,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,Logistic Regression,smote,jigsaw,,recall_macro,0.87489,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,Logistic Regression,smote,jigsaw,,f1_macro,0.845847,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,Logistic Regression,smote,jigsaw,,f1_macro_ci_low,0.837646,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,Logistic Regression,smote,jigsaw,,f1_macro_ci_high,0.853138,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,Logistic Regression,smote,jigsaw,,f1_weighted,0.941422,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,Logistic Regression,smote,jigsaw,,auc_roc,0.951471,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,Logistic Regression,smote,jigsaw,,precision_pos,0.668408,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,Logistic Regression,smote,jigsaw,,recall_pos,0.794288,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,Logistic Regression,smote,jigsaw,,f1_pos,0.725932,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,Logistic Regression,smote,jigsaw,,val_f1_macro,0.852349,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,Logistic Regression,smote,jigsaw,,train_time_s,4.702791,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,Logistic Regression,smote,jigsaw,,inference_ms_per_post,0.155845,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,Logistic Regression,smote,jigsaw,,n_train,149716,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,Logistic Regression,smote,jigsaw,,n_test,23805,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,SVM,smote,jigsaw,,accuracy,0.939509,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,SVM,smote,jigsaw,,precision_macro,0.82399,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,SVM,smote,jigsaw,,recall_macro,0.872163,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,SVM,smote,jigsaw,,f1_macro,0.845757,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,SVM,smote,jigsaw,,f1_macro_ci_low,0.837195,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,SVM,smote,jigsaw,,f1_macro_ci_high,0.853074,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,SVM,smote,jigsaw,,f1_weighted,0.9416,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,SVM,smote,jigsaw,,auc_roc,0.945832,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,SVM,smote,jigsaw,,precision_pos,0.672438,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,SVM,smote,jigsaw,,recall_pos,0.787666,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,SVM,smote,jigsaw,,f1_pos,0.725505,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,SVM,smote,jigsaw,,val_f1_macro,0.849695,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,SVM,smote,jigsaw,,train_time_s,9.409413,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,SVM,smote,jigsaw,,inference_ms_per_post,0.160308,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,SVM,smote,jigsaw,,n_train,149716,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,SVM,smote,jigsaw,,n_test,23805,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,Random Forest,smote,jigsaw,,accuracy,0.949506,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,Random Forest,smote,jigsaw,,precision_macro,0.923276,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,Random Forest,smote,jigsaw,,recall_macro,0.781532,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,Random Forest,smote,jigsaw,,f1_macro,0.834464,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,Random Forest,smote,jigsaw,,f1_macro_ci_low,0.825951,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,Random Forest,smote,jigsaw,,f1_macro_ci_high,0.843505,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,Random Forest,smote,jigsaw,,f1_weighted,0.944451,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,Random Forest,smote,jigsaw,,auc_roc,0.960022,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,Random Forest,smote,jigsaw,,precision_pos,0.893135,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,Random Forest,smote,jigsaw,,recall_pos,0.570778,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,Random Forest,smote,jigsaw,,f1_pos,0.696465,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,Random Forest,smote,jigsaw,,val_f1_macro,0.836567,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,Random Forest,smote,jigsaw,,train_time_s,36.666693,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,Random Forest,smote,jigsaw,,inference_ms_per_post,0.102359,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,Random Forest,smote,jigsaw,,n_train,149716,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,Random Forest,smote,jigsaw,,n_test,23805,classical
+05_model_performance,Main RQ / SQ2,jigsaw,binary,BiLSTM,class_weight,jigsaw,,accuracy,0.944213,deep_learning
+05_model_performance,Main RQ / SQ2,jigsaw,binary,BiLSTM,class_weight,jigsaw,,precision_macro,0.832924,deep_learning
+05_model_performance,Main RQ / SQ2,jigsaw,binary,BiLSTM,class_weight,jigsaw,,recall_macro,0.894974,deep_learning
+05_model_performance,Main RQ / SQ2,jigsaw,binary,BiLSTM,class_weight,jigsaw,,f1_macro,0.860267,deep_learning
+05_model_performance,Main RQ / SQ2,jigsaw,binary,BiLSTM,class_weight,jigsaw,,f1_macro_ci_low,0.852636,deep_learning
+05_model_performance,Main RQ / SQ2,jigsaw,binary,BiLSTM,class_weight,jigsaw,,f1_macro_ci_high,0.866971,deep_learning
+05_model_performance,Main RQ / SQ2,jigsaw,binary,BiLSTM,class_weight,jigsaw,,f1_weighted,0.946588,deep_learning
+05_model_performance,Main RQ / SQ2,jigsaw,binary,BiLSTM,class_weight,jigsaw,,auc_roc,0.964035,deep_learning
+05_model_performance,Main RQ / SQ2,jigsaw,binary,BiLSTM,class_weight,jigsaw,,precision_pos,0.68516,deep_learning
+05_model_performance,Main RQ / SQ2,jigsaw,binary,BiLSTM,class_weight,jigsaw,,recall_pos,0.833195,deep_learning
+05_model_performance,Main RQ / SQ2,jigsaw,binary,BiLSTM,class_weight,jigsaw,,f1_pos,0.751961,deep_learning
+05_model_performance,Main RQ / SQ2,jigsaw,binary,BiLSTM,class_weight,jigsaw,,val_f1_macro,0.860915,deep_learning
+05_model_performance,Main RQ / SQ2,jigsaw,binary,BiLSTM,class_weight,jigsaw,,train_time_s,6423.851764,deep_learning
+05_model_performance,Main RQ / SQ2,jigsaw,binary,BiLSTM,class_weight,jigsaw,,inference_ms_per_post,0.648052,deep_learning
+05_model_performance,Main RQ / SQ2,jigsaw,binary,BiLSTM,class_weight,jigsaw,,n_train,111087,deep_learning
+05_model_performance,Main RQ / SQ2,jigsaw,binary,BiLSTM,class_weight,jigsaw,,n_test,23805,deep_learning
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,Logistic Regression,smote,jigsaw,,accuracy,0.908339,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,Logistic Regression,smote,jigsaw,,precision_macro,0.554162,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,Logistic Regression,smote,jigsaw,,recall_macro,0.64845,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,Logistic Regression,smote,jigsaw,,f1_macro,0.583266,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,Logistic Regression,smote,jigsaw,,f1_macro_ci_low,0.565839,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,Logistic Regression,smote,jigsaw,,f1_macro_ci_high,0.601274,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,Logistic Regression,smote,jigsaw,,f1_weighted,0.920348,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,Logistic Regression,smote,jigsaw,,auc_roc,0.936831,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,Logistic Regression,smote,jigsaw,,precision_pos,,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,Logistic Regression,smote,jigsaw,,recall_pos,,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,Logistic Regression,smote,jigsaw,,f1_pos,,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,Logistic Regression,smote,jigsaw,,val_f1_macro,0.59789,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,Logistic Regression,smote,jigsaw,,train_time_s,62.615331,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,Logistic Regression,smote,jigsaw,,inference_ms_per_post,0.070582,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,Logistic Regression,smote,jigsaw,,n_train,249526,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,Logistic Regression,smote,jigsaw,,n_test,23805,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,SVM,smote,jigsaw,,accuracy,0.904516,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,SVM,smote,jigsaw,,precision_macro,0.534978,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,SVM,smote,jigsaw,,recall_macro,0.639343,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,SVM,smote,jigsaw,,f1_macro,0.568656,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,SVM,smote,jigsaw,,f1_macro_ci_low,0.551764,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,SVM,smote,jigsaw,,f1_macro_ci_high,0.585057,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,SVM,smote,jigsaw,,f1_weighted,0.91637,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,SVM,smote,jigsaw,,auc_roc,0.923414,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,SVM,smote,jigsaw,,precision_pos,,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,SVM,smote,jigsaw,,recall_pos,,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,SVM,smote,jigsaw,,f1_pos,,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,SVM,smote,jigsaw,,val_f1_macro,0.583062,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,SVM,smote,jigsaw,,train_time_s,45.277368,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,SVM,smote,jigsaw,,inference_ms_per_post,0.204531,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,SVM,smote,jigsaw,,n_train,249526,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,SVM,smote,jigsaw,,n_test,23805,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,Random Forest,smote,jigsaw,,accuracy,0.93829,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,Random Forest,smote,jigsaw,,precision_macro,0.653071,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,Random Forest,smote,jigsaw,,recall_macro,0.506532,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,Random Forest,smote,jigsaw,,f1_macro,0.559428,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,Random Forest,smote,jigsaw,,f1_macro_ci_low,0.539466,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,Random Forest,smote,jigsaw,,f1_macro_ci_high,0.57855,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,Random Forest,smote,jigsaw,,f1_weighted,0.928918,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,Random Forest,smote,jigsaw,,auc_roc,0.94324,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,Random Forest,smote,jigsaw,,precision_pos,,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,Random Forest,smote,jigsaw,,recall_pos,,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,Random Forest,smote,jigsaw,,f1_pos,,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,Random Forest,smote,jigsaw,,val_f1_macro,0.572353,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,Random Forest,smote,jigsaw,,train_time_s,590.821527,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,Random Forest,smote,jigsaw,,inference_ms_per_post,0.52446,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,Random Forest,smote,jigsaw,,n_train,249526,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,Random Forest,smote,jigsaw,,n_test,23805,classical
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,BiLSTM,class_weight,jigsaw,,accuracy,0.909515,deep_learning
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,BiLSTM,class_weight,jigsaw,,precision_macro,0.560269,deep_learning
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,BiLSTM,class_weight,jigsaw,,recall_macro,0.68208,deep_learning
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,BiLSTM,class_weight,jigsaw,,f1_macro,0.597865,deep_learning
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,BiLSTM,class_weight,jigsaw,,f1_macro_ci_low,0.58179,deep_learning
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,BiLSTM,class_weight,jigsaw,,f1_macro_ci_high,0.614167,deep_learning
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,BiLSTM,class_weight,jigsaw,,f1_weighted,0.92437,deep_learning
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,BiLSTM,class_weight,jigsaw,,auc_roc,0.946466,deep_learning
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,BiLSTM,class_weight,jigsaw,,precision_pos,,deep_learning
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,BiLSTM,class_weight,jigsaw,,recall_pos,,deep_learning
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,BiLSTM,class_weight,jigsaw,,f1_pos,,deep_learning
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,BiLSTM,class_weight,jigsaw,,val_f1_macro,0.598571,deep_learning
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,BiLSTM,class_weight,jigsaw,,train_time_s,2453.547235,deep_learning
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,BiLSTM,class_weight,jigsaw,,inference_ms_per_post,0.545501,deep_learning
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,BiLSTM,class_weight,jigsaw,,n_train,111087,deep_learning
+05_model_performance,Main RQ / SQ2,jigsaw,harmonised4,BiLSTM,class_weight,jigsaw,,n_test,23805,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,binary,Logistic Regression,smote,twitter,,accuracy,0.897937,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,Logistic Regression,smote,twitter,,precision_macro,0.790179,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,Logistic Regression,smote,twitter,,recall_macro,0.798225,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,Logistic Regression,smote,twitter,,f1_macro,0.79411,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,Logistic Regression,smote,twitter,,f1_macro_ci_low,0.780059,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,Logistic Regression,smote,twitter,,f1_macro_ci_high,0.809249,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,Logistic Regression,smote,twitter,,f1_weighted,0.898635,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,Logistic Regression,smote,twitter,,auc_roc,0.935261,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,Logistic Regression,smote,twitter,,precision_pos,0.94295,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,Logistic Regression,smote,twitter,,recall_pos,0.937702,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,Logistic Regression,smote,twitter,,f1_pos,0.940319,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,Logistic Regression,smote,twitter,,val_f1_macro,0.785552,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,Logistic Regression,smote,twitter,,train_time_s,1.068616,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,Logistic Regression,smote,twitter,,inference_ms_per_post,0.029072,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,Logistic Regression,smote,twitter,,n_train,38979,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,Logistic Regression,smote,twitter,,n_test,6496,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,SVM,smote,twitter,,accuracy,0.894704,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,SVM,smote,twitter,,precision_macro,0.782875,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,SVM,smote,twitter,,recall_macro,0.799941,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,SVM,smote,twitter,,f1_macro,0.790986,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,SVM,smote,twitter,,f1_macro_ci_low,0.777062,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,SVM,smote,twitter,,f1_macro_ci_high,0.805649,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,SVM,smote,twitter,,f1_weighted,0.896246,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,SVM,smote,twitter,,auc_roc,0.910042,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,SVM,smote,twitter,,precision_pos,0.94402,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,SVM,smote,twitter,,recall_pos,0.932496,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,SVM,smote,twitter,,f1_pos,0.938223,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,SVM,smote,twitter,,val_f1_macro,0.789345,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,SVM,smote,twitter,,train_time_s,0.254624,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,SVM,smote,twitter,,inference_ms_per_post,0.021705,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,SVM,smote,twitter,,n_train,38979,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,SVM,smote,twitter,,n_test,6496,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,Random Forest,smote,twitter,,accuracy,0.900708,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,Random Forest,smote,twitter,,precision_macro,0.802007,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,Random Forest,smote,twitter,,recall_macro,0.77508,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,Random Forest,smote,twitter,,f1_macro,0.787539,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,Random Forest,smote,twitter,,f1_macro_ci_low,0.773705,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,Random Forest,smote,twitter,,f1_macro_ci_high,0.80335,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,Random Forest,smote,twitter,,f1_weighted,0.898393,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,Random Forest,smote,twitter,,auc_roc,0.938296,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,Random Forest,smote,twitter,,precision_pos,0.934533,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,Random Forest,smote,twitter,,recall_pos,0.950808,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,Random Forest,smote,twitter,,f1_pos,0.9426,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,Random Forest,smote,twitter,,val_f1_macro,0.774824,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,Random Forest,smote,twitter,,train_time_s,148.264196,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,Random Forest,smote,twitter,,inference_ms_per_post,0.495786,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,Random Forest,smote,twitter,,n_train,38979,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,Random Forest,smote,twitter,,n_test,6496,classical
+05_model_performance,Main RQ / SQ2,twitter,binary,BiLSTM,class_weight,twitter,,accuracy,0.869458,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,binary,BiLSTM,class_weight,twitter,,precision_macro,0.744738,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,binary,BiLSTM,class_weight,twitter,,recall_macro,0.83429,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,binary,BiLSTM,class_weight,twitter,,f1_macro,0.776149,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,binary,BiLSTM,class_weight,twitter,,f1_macro_ci_low,0.761822,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,binary,BiLSTM,class_weight,twitter,,f1_macro_ci_high,0.789253,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,binary,BiLSTM,class_weight,twitter,,f1_weighted,0.87947,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,binary,BiLSTM,class_weight,twitter,,auc_roc,0.929132,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,binary,BiLSTM,class_weight,twitter,,precision_pos,0.961133,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,binary,BiLSTM,class_weight,twitter,,recall_pos,0.883483,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,binary,BiLSTM,class_weight,twitter,,f1_pos,0.920674,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,binary,BiLSTM,class_weight,twitter,,val_f1_macro,0.773914,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,binary,BiLSTM,class_weight,twitter,,train_time_s,1423.815975,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,binary,BiLSTM,class_weight,twitter,,inference_ms_per_post,0.596806,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,binary,BiLSTM,class_weight,twitter,,n_train,30310,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,binary,BiLSTM,class_weight,twitter,,n_test,6496,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,Logistic Regression,smote,twitter,,accuracy,0.854834,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,Logistic Regression,smote,twitter,,precision_macro,0.77743,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,Logistic Regression,smote,twitter,,recall_macro,0.773942,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,Logistic Regression,smote,twitter,,f1_macro,0.7751,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,Logistic Regression,smote,twitter,,f1_macro_ci_low,0.761775,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,Logistic Regression,smote,twitter,,f1_macro_ci_high,0.788257,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,Logistic Regression,smote,twitter,,f1_weighted,0.853742,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,Logistic Regression,smote,twitter,,auc_roc,0.963693,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,Logistic Regression,smote,twitter,,precision_pos,,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,Logistic Regression,smote,twitter,,recall_pos,,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,Logistic Regression,smote,twitter,,f1_pos,,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,Logistic Regression,smote,twitter,,val_f1_macro,0.764593,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,Logistic Regression,smote,twitter,,train_time_s,17.819765,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,Logistic Regression,smote,twitter,,inference_ms_per_post,0.072046,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,Logistic Regression,smote,twitter,,n_train,40751,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,Logistic Regression,smote,twitter,,n_test,6496,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,SVM,smote,twitter,,accuracy,0.857759,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,SVM,smote,twitter,,precision_macro,0.782522,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,SVM,smote,twitter,,recall_macro,0.776918,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,SVM,smote,twitter,,f1_macro,0.778926,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,SVM,smote,twitter,,f1_macro_ci_low,0.766686,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,SVM,smote,twitter,,f1_macro_ci_high,0.792032,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,SVM,smote,twitter,,f1_weighted,0.856277,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,SVM,smote,twitter,,auc_roc,0.949013,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,SVM,smote,twitter,,precision_pos,,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,SVM,smote,twitter,,recall_pos,,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,SVM,smote,twitter,,f1_pos,,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,SVM,smote,twitter,,val_f1_macro,0.76751,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,SVM,smote,twitter,,train_time_s,4.279823,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,SVM,smote,twitter,,inference_ms_per_post,0.062961,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,SVM,smote,twitter,,n_train,40751,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,SVM,smote,twitter,,n_test,6496,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,Random Forest,smote,twitter,,accuracy,0.851755,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,Random Forest,smote,twitter,,precision_macro,0.77015,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,Random Forest,smote,twitter,,recall_macro,0.76493,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,Random Forest,smote,twitter,,f1_macro,0.767157,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,Random Forest,smote,twitter,,f1_macro_ci_low,0.753881,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,Random Forest,smote,twitter,,f1_macro_ci_high,0.779813,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,Random Forest,smote,twitter,,f1_weighted,0.850268,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,Random Forest,smote,twitter,,auc_roc,0.96248,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,Random Forest,smote,twitter,,precision_pos,,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,Random Forest,smote,twitter,,recall_pos,,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,Random Forest,smote,twitter,,f1_pos,,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,Random Forest,smote,twitter,,val_f1_macro,0.756498,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,Random Forest,smote,twitter,,train_time_s,90.19086,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,Random Forest,smote,twitter,,inference_ms_per_post,0.072437,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,Random Forest,smote,twitter,,n_train,40751,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,Random Forest,smote,twitter,,n_test,6496,classical
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,BiLSTM,class_weight,twitter,,accuracy,0.843442,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,BiLSTM,class_weight,twitter,,precision_macro,0.75778,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,BiLSTM,class_weight,twitter,,recall_macro,0.78336,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,BiLSTM,class_weight,twitter,,f1_macro,0.769357,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,BiLSTM,class_weight,twitter,,f1_macro_ci_low,0.756584,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,BiLSTM,class_weight,twitter,,f1_macro_ci_high,0.781151,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,BiLSTM,class_weight,twitter,,f1_weighted,0.84762,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,BiLSTM,class_weight,twitter,,auc_roc,0.963005,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,BiLSTM,class_weight,twitter,,precision_pos,,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,BiLSTM,class_weight,twitter,,recall_pos,,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,BiLSTM,class_weight,twitter,,f1_pos,,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,BiLSTM,class_weight,twitter,,val_f1_macro,0.770091,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,BiLSTM,class_weight,twitter,,train_time_s,357.581125,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,BiLSTM,class_weight,twitter,,inference_ms_per_post,0.528785,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,BiLSTM,class_weight,twitter,,n_train,30310,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,harmonised4,BiLSTM,class_weight,twitter,,n_test,6496,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,native6,Logistic Regression,smote,twitter,,accuracy,0.879464,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,Logistic Regression,smote,twitter,,precision_macro,0.865483,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,Logistic Regression,smote,twitter,,recall_macro,0.865647,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,Logistic Regression,smote,twitter,,f1_macro,0.865074,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,Logistic Regression,smote,twitter,,f1_macro_ci_low,0.856928,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,Logistic Regression,smote,twitter,,f1_macro_ci_high,0.873452,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,Logistic Regression,smote,twitter,,f1_weighted,0.879119,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,Logistic Regression,smote,twitter,,auc_roc,0.98024,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,Logistic Regression,smote,twitter,,precision_pos,,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,Logistic Regression,smote,twitter,,recall_pos,,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,Logistic Regression,smote,twitter,,f1_pos,,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,Logistic Regression,smote,twitter,,val_f1_macro,0.856303,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,Logistic Regression,smote,twitter,,train_time_s,15.574995,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,Logistic Regression,smote,twitter,,inference_ms_per_post,0.071352,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,Logistic Regression,smote,twitter,,n_train,30310,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,Logistic Regression,smote,twitter,,n_test,6496,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,SVM,smote,twitter,,accuracy,0.880696,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,SVM,smote,twitter,,precision_macro,0.866261,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,SVM,smote,twitter,,recall_macro,0.866373,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,SVM,smote,twitter,,f1_macro,0.865781,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,SVM,smote,twitter,,f1_macro_ci_low,0.857028,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,SVM,smote,twitter,,f1_macro_ci_high,0.873899,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,SVM,smote,twitter,,f1_weighted,0.879773,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,SVM,smote,twitter,,auc_roc,0.979702,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,SVM,smote,twitter,,precision_pos,,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,SVM,smote,twitter,,recall_pos,,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,SVM,smote,twitter,,f1_pos,,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,SVM,smote,twitter,,val_f1_macro,0.85298,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,SVM,smote,twitter,,train_time_s,3.705688,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,SVM,smote,twitter,,inference_ms_per_post,0.076006,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,SVM,smote,twitter,,n_train,30310,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,SVM,smote,twitter,,n_test,6496,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,Random Forest,smote,twitter,,accuracy,0.871613,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,Random Forest,smote,twitter,,precision_macro,0.859367,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,Random Forest,smote,twitter,,recall_macro,0.85778,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,Random Forest,smote,twitter,,f1_macro,0.857406,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,Random Forest,smote,twitter,,f1_macro_ci_low,0.849134,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,Random Forest,smote,twitter,,f1_macro_ci_high,0.86602,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,Random Forest,smote,twitter,,f1_weighted,0.873024,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,Random Forest,smote,twitter,,auc_roc,0.97949,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,Random Forest,smote,twitter,,precision_pos,,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,Random Forest,smote,twitter,,recall_pos,,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,Random Forest,smote,twitter,,f1_pos,,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,Random Forest,smote,twitter,,val_f1_macro,0.852988,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,Random Forest,smote,twitter,,train_time_s,144.187741,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,Random Forest,smote,twitter,,inference_ms_per_post,0.400214,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,Random Forest,smote,twitter,,n_train,30310,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,Random Forest,smote,twitter,,n_test,6496,classical
+05_model_performance,Main RQ / SQ2,twitter,native6,BiLSTM,class_weight,twitter,,accuracy,0.873461,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,native6,BiLSTM,class_weight,twitter,,precision_macro,0.861454,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,native6,BiLSTM,class_weight,twitter,,recall_macro,0.860143,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,native6,BiLSTM,class_weight,twitter,,f1_macro,0.860056,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,native6,BiLSTM,class_weight,twitter,,f1_macro_ci_low,0.851405,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,native6,BiLSTM,class_weight,twitter,,f1_macro_ci_high,0.868484,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,native6,BiLSTM,class_weight,twitter,,f1_weighted,0.874617,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,native6,BiLSTM,class_weight,twitter,,auc_roc,0.979597,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,native6,BiLSTM,class_weight,twitter,,precision_pos,,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,native6,BiLSTM,class_weight,twitter,,recall_pos,,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,native6,BiLSTM,class_weight,twitter,,f1_pos,,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,native6,BiLSTM,class_weight,twitter,,val_f1_macro,0.848754,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,native6,BiLSTM,class_weight,twitter,,train_time_s,1195.430334,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,native6,BiLSTM,class_weight,twitter,,inference_ms_per_post,2.563826,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,native6,BiLSTM,class_weight,twitter,,n_train,30310,deep_learning
+05_model_performance,Main RQ / SQ2,twitter,native6,BiLSTM,class_weight,twitter,,n_test,6496,deep_learning
+06_best_model,Main RQ,jigsaw,binary,BiLSTM,,,,f1_macro,0.860267,highest macro F1 for this dataset/task
+06_best_model,Main RQ,jigsaw,harmonised4,BiLSTM,,,,f1_macro,0.597865,highest macro F1 for this dataset/task
+06_best_model,Main RQ,twitter,binary,Logistic Regression,,,,f1_macro,0.79411,highest macro F1 for this dataset/task
+06_best_model,Main RQ,twitter,harmonised4,SVM,,,,f1_macro,0.778926,highest macro F1 for this dataset/task
+06_best_model,Main RQ,twitter,native6,SVM,,,,f1_macro,0.865781,highest macro F1 for this dataset/task
+06_best_model,Main RQ,,,BiLSTM,,,,mean_f1_macro_all_settings,0.772739,
+06_best_model,Main RQ,,,BiLSTM,,,,mean_auc_roc_all_settings,0.956447,
+06_best_model,Main RQ,,,Logistic Regression,,,,mean_f1_macro_all_settings,0.77268,
+06_best_model,Main RQ,,,Logistic Regression,,,,mean_auc_roc_all_settings,0.953499,
+06_best_model,Main RQ,,,Random Forest,,,,mean_f1_macro_all_settings,0.761199,
+06_best_model,Main RQ,,,Random Forest,,,,mean_auc_roc_all_settings,0.956706,
+06_best_model,Main RQ,,,SVM,,,,mean_f1_macro_all_settings,0.770021,
+06_best_model,Main RQ,,,SVM,,,,mean_auc_roc_all_settings,0.941601,
+07_per_class,SQ3,jigsaw,binary,BiLSTM,,,not_cyberbullying,precision,0.980687,
+07_per_class,SQ3,jigsaw,binary,BiLSTM,,,not_cyberbullying,recall,0.956753,
+07_per_class,SQ3,jigsaw,binary,BiLSTM,,,not_cyberbullying,f1,0.968573,
+07_per_class,SQ3,jigsaw,binary,BiLSTM,,,not_cyberbullying,support,21389,
+07_per_class,SQ3,jigsaw,binary,BiLSTM,,,cyberbullying,precision,0.68516,
+07_per_class,SQ3,jigsaw,binary,BiLSTM,,,cyberbullying,recall,0.833195,
+07_per_class,SQ3,jigsaw,binary,BiLSTM,,,cyberbullying,f1,0.751961,
+07_per_class,SQ3,jigsaw,binary,BiLSTM,,,cyberbullying,support,2416,
+07_per_class,SQ3,jigsaw,binary,Logistic Regression,,,not_cyberbullying,precision,0.976259,
+07_per_class,SQ3,jigsaw,binary,Logistic Regression,,,not_cyberbullying,recall,0.955491,
+07_per_class,SQ3,jigsaw,binary,Logistic Regression,,,not_cyberbullying,f1,0.965763,
+07_per_class,SQ3,jigsaw,binary,Logistic Regression,,,not_cyberbullying,support,21389,
+07_per_class,SQ3,jigsaw,binary,Logistic Regression,,,cyberbullying,precision,0.668408,
+07_per_class,SQ3,jigsaw,binary,Logistic Regression,,,cyberbullying,recall,0.794288,
+07_per_class,SQ3,jigsaw,binary,Logistic Regression,,,cyberbullying,f1,0.725932,
+07_per_class,SQ3,jigsaw,binary,Logistic Regression,,,cyberbullying,support,2416,
+07_per_class,SQ3,jigsaw,binary,Random Forest,,,not_cyberbullying,precision,0.953416,
+07_per_class,SQ3,jigsaw,binary,Random Forest,,,not_cyberbullying,recall,0.992286,
+07_per_class,SQ3,jigsaw,binary,Random Forest,,,not_cyberbullying,f1,0.972463,
+07_per_class,SQ3,jigsaw,binary,Random Forest,,,not_cyberbullying,support,21389,
+07_per_class,SQ3,jigsaw,binary,Random Forest,,,cyberbullying,precision,0.893135,
+07_per_class,SQ3,jigsaw,binary,Random Forest,,,cyberbullying,recall,0.570778,
+07_per_class,SQ3,jigsaw,binary,Random Forest,,,cyberbullying,f1,0.696465,
+07_per_class,SQ3,jigsaw,binary,Random Forest,,,cyberbullying,support,2416,
+07_per_class,SQ3,jigsaw,binary,SVM,,,not_cyberbullying,precision,0.975542,
+07_per_class,SQ3,jigsaw,binary,SVM,,,not_cyberbullying,recall,0.95666,
+07_per_class,SQ3,jigsaw,binary,SVM,,,not_cyberbullying,f1,0.966009,
+07_per_class,SQ3,jigsaw,binary,SVM,,,not_cyberbullying,support,21389,
+07_per_class,SQ3,jigsaw,binary,SVM,,,cyberbullying,precision,0.672438,
+07_per_class,SQ3,jigsaw,binary,SVM,,,cyberbullying,recall,0.787666,
+07_per_class,SQ3,jigsaw,binary,SVM,,,cyberbullying,f1,0.725505,
+07_per_class,SQ3,jigsaw,binary,SVM,,,cyberbullying,support,2416,
+07_per_class,SQ3,jigsaw,harmonised4,BiLSTM,,,not_cyberbullying,precision,0.983658,
+07_per_class,SQ3,jigsaw,harmonised4,BiLSTM,,,not_cyberbullying,recall,0.934312,
+07_per_class,SQ3,jigsaw,harmonised4,BiLSTM,,,not_cyberbullying,f1,0.95835,
+07_per_class,SQ3,jigsaw,harmonised4,BiLSTM,,,not_cyberbullying,support,21389,
+07_per_class,SQ3,jigsaw,harmonised4,BiLSTM,,,explicit_cyberbullying,precision,0.734986,
+07_per_class,SQ3,jigsaw,harmonised4,BiLSTM,,,explicit_cyberbullying,recall,0.771544,
+07_per_class,SQ3,jigsaw,harmonised4,BiLSTM,,,explicit_cyberbullying,f1,0.752822,
+07_per_class,SQ3,jigsaw,harmonised4,BiLSTM,,,explicit_cyberbullying,support,1729,
+07_per_class,SQ3,jigsaw,harmonised4,BiLSTM,,,implicit_cyberbullying,precision,0.157973,
+07_per_class,SQ3,jigsaw,harmonised4,BiLSTM,,,implicit_cyberbullying,recall,0.443515,
+07_per_class,SQ3,jigsaw,harmonised4,BiLSTM,,,implicit_cyberbullying,f1,0.232967,
+07_per_class,SQ3,jigsaw,harmonised4,BiLSTM,,,implicit_cyberbullying,support,478,
+07_per_class,SQ3,jigsaw,harmonised4,BiLSTM,,,hate_speech,precision,0.364458,
+07_per_class,SQ3,jigsaw,harmonised4,BiLSTM,,,hate_speech,recall,0.578947,
+07_per_class,SQ3,jigsaw,harmonised4,BiLSTM,,,hate_speech,f1,0.44732,
+07_per_class,SQ3,jigsaw,harmonised4,BiLSTM,,,hate_speech,support,209,
+07_per_class,SQ3,jigsaw,harmonised4,Logistic Regression,,,not_cyberbullying,precision,0.977422,
+07_per_class,SQ3,jigsaw,harmonised4,Logistic Regression,,,not_cyberbullying,recall,0.941138,
+07_per_class,SQ3,jigsaw,harmonised4,Logistic Regression,,,not_cyberbullying,f1,0.958937,
+07_per_class,SQ3,jigsaw,harmonised4,Logistic Regression,,,not_cyberbullying,support,21389,
+07_per_class,SQ3,jigsaw,harmonised4,Logistic Regression,,,explicit_cyberbullying,precision,0.697454,
+07_per_class,SQ3,jigsaw,harmonised4,Logistic Regression,,,explicit_cyberbullying,recall,0.681319,
+07_per_class,SQ3,jigsaw,harmonised4,Logistic Regression,,,explicit_cyberbullying,f1,0.689292,
+07_per_class,SQ3,jigsaw,harmonised4,Logistic Regression,,,explicit_cyberbullying,support,1729,
+07_per_class,SQ3,jigsaw,harmonised4,Logistic Regression,,,implicit_cyberbullying,precision,0.163921,
+07_per_class,SQ3,jigsaw,harmonised4,Logistic Regression,,,implicit_cyberbullying,recall,0.416318,
+07_per_class,SQ3,jigsaw,harmonised4,Logistic Regression,,,implicit_cyberbullying,f1,0.235225,
+07_per_class,SQ3,jigsaw,harmonised4,Logistic Regression,,,implicit_cyberbullying,support,478,
+07_per_class,SQ3,jigsaw,harmonised4,Logistic Regression,,,hate_speech,precision,0.37785,
+07_per_class,SQ3,jigsaw,harmonised4,Logistic Regression,,,hate_speech,recall,0.555024,
+07_per_class,SQ3,jigsaw,harmonised4,Logistic Regression,,,hate_speech,f1,0.449612,
+07_per_class,SQ3,jigsaw,harmonised4,Logistic Regression,,,hate_speech,support,209,
+07_per_class,SQ3,jigsaw,harmonised4,Random Forest,,,not_cyberbullying,precision,0.950154,
+07_per_class,SQ3,jigsaw,harmonised4,Random Forest,,,not_cyberbullying,recall,0.9928,
+07_per_class,SQ3,jigsaw,harmonised4,Random Forest,,,not_cyberbullying,f1,0.971009,
+07_per_class,SQ3,jigsaw,harmonised4,Random Forest,,,not_cyberbullying,support,21389,
+07_per_class,SQ3,jigsaw,harmonised4,Random Forest,,,explicit_cyberbullying,precision,0.869875,
+07_per_class,SQ3,jigsaw,harmonised4,Random Forest,,,explicit_cyberbullying,recall,0.564488,
+07_per_class,SQ3,jigsaw,harmonised4,Random Forest,,,explicit_cyberbullying,f1,0.684672,
+07_per_class,SQ3,jigsaw,harmonised4,Random Forest,,,explicit_cyberbullying,support,1729,
+07_per_class,SQ3,jigsaw,harmonised4,Random Forest,,,implicit_cyberbullying,precision,0.25,
+07_per_class,SQ3,jigsaw,harmonised4,Random Forest,,,implicit_cyberbullying,recall,0.100418,
+07_per_class,SQ3,jigsaw,harmonised4,Random Forest,,,implicit_cyberbullying,f1,0.143284,
+07_per_class,SQ3,jigsaw,harmonised4,Random Forest,,,implicit_cyberbullying,support,478,
+07_per_class,SQ3,jigsaw,harmonised4,Random Forest,,,hate_speech,precision,0.542254,
+07_per_class,SQ3,jigsaw,harmonised4,Random Forest,,,hate_speech,recall,0.368421,
+07_per_class,SQ3,jigsaw,harmonised4,Random Forest,,,hate_speech,f1,0.438746,
+07_per_class,SQ3,jigsaw,harmonised4,Random Forest,,,hate_speech,support,209,
+07_per_class,SQ3,jigsaw,harmonised4,SVM,,,not_cyberbullying,precision,0.97579,
+07_per_class,SQ3,jigsaw,harmonised4,SVM,,,not_cyberbullying,recall,0.938426,
+07_per_class,SQ3,jigsaw,harmonised4,SVM,,,not_cyberbullying,f1,0.956743,
+07_per_class,SQ3,jigsaw,harmonised4,SVM,,,not_cyberbullying,support,21389,
+07_per_class,SQ3,jigsaw,harmonised4,SVM,,,explicit_cyberbullying,precision,0.664376,
+07_per_class,SQ3,jigsaw,harmonised4,SVM,,,explicit_cyberbullying,recall,0.670908,
+07_per_class,SQ3,jigsaw,harmonised4,SVM,,,explicit_cyberbullying,f1,0.667626,
+07_per_class,SQ3,jigsaw,harmonised4,SVM,,,explicit_cyberbullying,support,1729,
+07_per_class,SQ3,jigsaw,harmonised4,SVM,,,implicit_cyberbullying,precision,0.158772,
+07_per_class,SQ3,jigsaw,harmonised4,SVM,,,implicit_cyberbullying,recall,0.378661,
+07_per_class,SQ3,jigsaw,harmonised4,SVM,,,implicit_cyberbullying,f1,0.223733,
+07_per_class,SQ3,jigsaw,harmonised4,SVM,,,implicit_cyberbullying,support,478,
+07_per_class,SQ3,jigsaw,harmonised4,SVM,,,hate_speech,precision,0.340974,
+07_per_class,SQ3,jigsaw,harmonised4,SVM,,,hate_speech,recall,0.569378,
+07_per_class,SQ3,jigsaw,harmonised4,SVM,,,hate_speech,f1,0.426523,
+07_per_class,SQ3,jigsaw,harmonised4,SVM,,,hate_speech,support,209,
+07_per_class,SQ3,twitter,binary,BiLSTM,,,not_cyberbullying,precision,0.528343,
+07_per_class,SQ3,twitter,binary,BiLSTM,,,not_cyberbullying,recall,0.785097,
+07_per_class,SQ3,twitter,binary,BiLSTM,,,not_cyberbullying,f1,0.631625,
+07_per_class,SQ3,twitter,binary,BiLSTM,,,not_cyberbullying,support,926,
+07_per_class,SQ3,twitter,binary,BiLSTM,,,cyberbullying,precision,0.961133,
+07_per_class,SQ3,twitter,binary,BiLSTM,,,cyberbullying,recall,0.883483,
+07_per_class,SQ3,twitter,binary,BiLSTM,,,cyberbullying,f1,0.920674,
+07_per_class,SQ3,twitter,binary,BiLSTM,,,cyberbullying,support,5570,
+07_per_class,SQ3,twitter,binary,Logistic Regression,,,not_cyberbullying,precision,0.637409,
+07_per_class,SQ3,twitter,binary,Logistic Regression,,,not_cyberbullying,recall,0.658747,
+07_per_class,SQ3,twitter,binary,Logistic Regression,,,not_cyberbullying,f1,0.647902,
+07_per_class,SQ3,twitter,binary,Logistic Regression,,,not_cyberbullying,support,926,
+07_per_class,SQ3,twitter,binary,Logistic Regression,,,cyberbullying,precision,0.94295,
+07_per_class,SQ3,twitter,binary,Logistic Regression,,,cyberbullying,recall,0.937702,
+07_per_class,SQ3,twitter,binary,Logistic Regression,,,cyberbullying,f1,0.940319,
+07_per_class,SQ3,twitter,binary,Logistic Regression,,,cyberbullying,support,5570,
+07_per_class,SQ3,twitter,binary,Random Forest,,,not_cyberbullying,precision,0.669481,
+07_per_class,SQ3,twitter,binary,Random Forest,,,not_cyberbullying,recall,0.599352,
+07_per_class,SQ3,twitter,binary,Random Forest,,,not_cyberbullying,f1,0.632479,
+07_per_class,SQ3,twitter,binary,Random Forest,,,not_cyberbullying,support,926,
+07_per_class,SQ3,twitter,binary,Random Forest,,,cyberbullying,precision,0.934533,
+07_per_class,SQ3,twitter,binary,Random Forest,,,cyberbullying,recall,0.950808,
+07_per_class,SQ3,twitter,binary,Random Forest,,,cyberbullying,f1,0.9426,
+07_per_class,SQ3,twitter,binary,Random Forest,,,cyberbullying,support,5570,
+07_per_class,SQ3,twitter,binary,SVM,,,not_cyberbullying,precision,0.62173,
+07_per_class,SQ3,twitter,binary,SVM,,,not_cyberbullying,recall,0.667387,
+07_per_class,SQ3,twitter,binary,SVM,,,not_cyberbullying,f1,0.64375,
+07_per_class,SQ3,twitter,binary,SVM,,,not_cyberbullying,support,926,
+07_per_class,SQ3,twitter,binary,SVM,,,cyberbullying,precision,0.94402,
+07_per_class,SQ3,twitter,binary,SVM,,,cyberbullying,recall,0.932496,
+07_per_class,SQ3,twitter,binary,SVM,,,cyberbullying,f1,0.938223,
+07_per_class,SQ3,twitter,binary,SVM,,,cyberbullying,support,5570,
+07_per_class,SQ3,twitter,harmonised4,BiLSTM,,,not_cyberbullying,precision,0.630097,
+07_per_class,SQ3,twitter,harmonised4,BiLSTM,,,not_cyberbullying,recall,0.700864,
+07_per_class,SQ3,twitter,harmonised4,BiLSTM,,,not_cyberbullying,f1,0.663599,
+07_per_class,SQ3,twitter,harmonised4,BiLSTM,,,not_cyberbullying,support,926,
+07_per_class,SQ3,twitter,harmonised4,BiLSTM,,,explicit_cyberbullying,precision,0.843923,
+07_per_class,SQ3,twitter,harmonised4,BiLSTM,,,explicit_cyberbullying,recall,0.890671,
+07_per_class,SQ3,twitter,harmonised4,BiLSTM,,,explicit_cyberbullying,f1,0.866667,
+07_per_class,SQ3,twitter,harmonised4,BiLSTM,,,explicit_cyberbullying,support,1372,
+07_per_class,SQ3,twitter,harmonised4,BiLSTM,,,implicit_cyberbullying,precision,0.585398,
+07_per_class,SQ3,twitter,harmonised4,BiLSTM,,,implicit_cyberbullying,recall,0.637784,
+07_per_class,SQ3,twitter,harmonised4,BiLSTM,,,implicit_cyberbullying,f1,0.610469,
+07_per_class,SQ3,twitter,harmonised4,BiLSTM,,,implicit_cyberbullying,support,704,
+07_per_class,SQ3,twitter,harmonised4,BiLSTM,,,hate_speech,precision,0.971701,
+07_per_class,SQ3,twitter,harmonised4,BiLSTM,,,hate_speech,recall,0.904121,
+07_per_class,SQ3,twitter,harmonised4,BiLSTM,,,hate_speech,f1,0.936694,
+07_per_class,SQ3,twitter,harmonised4,BiLSTM,,,hate_speech,support,3494,
+07_per_class,SQ3,twitter,harmonised4,Logistic Regression,,,not_cyberbullying,precision,0.695913,
+07_per_class,SQ3,twitter,harmonised4,Logistic Regression,,,not_cyberbullying,recall,0.62527,
+07_per_class,SQ3,twitter,harmonised4,Logistic Regression,,,not_cyberbullying,f1,0.658703,
+07_per_class,SQ3,twitter,harmonised4,Logistic Regression,,,not_cyberbullying,support,926,
+07_per_class,SQ3,twitter,harmonised4,Logistic Regression,,,explicit_cyberbullying,precision,0.86202,
+07_per_class,SQ3,twitter,harmonised4,Logistic Regression,,,explicit_cyberbullying,recall,0.883382,
+07_per_class,SQ3,twitter,harmonised4,Logistic Regression,,,explicit_cyberbullying,f1,0.87257,
+07_per_class,SQ3,twitter,harmonised4,Logistic Regression,,,explicit_cyberbullying,support,1372,
+07_per_class,SQ3,twitter,harmonised4,Logistic Regression,,,implicit_cyberbullying,precision,0.611413,
+07_per_class,SQ3,twitter,harmonised4,Logistic Regression,,,implicit_cyberbullying,recall,0.639205,
+07_per_class,SQ3,twitter,harmonised4,Logistic Regression,,,implicit_cyberbullying,f1,0.625,
+07_per_class,SQ3,twitter,harmonised4,Logistic Regression,,,implicit_cyberbullying,support,704,
+07_per_class,SQ3,twitter,harmonised4,Logistic Regression,,,hate_speech,precision,0.940375,
+07_per_class,SQ3,twitter,harmonised4,Logistic Regression,,,hate_speech,recall,0.947911,
+07_per_class,SQ3,twitter,harmonised4,Logistic Regression,,,hate_speech,f1,0.944128,
+07_per_class,SQ3,twitter,harmonised4,Logistic Regression,,,hate_speech,support,3494,
+07_per_class,SQ3,twitter,harmonised4,Random Forest,,,not_cyberbullying,precision,0.66343,
+07_per_class,SQ3,twitter,harmonised4,Random Forest,,,not_cyberbullying,recall,0.664147,
+07_per_class,SQ3,twitter,harmonised4,Random Forest,,,not_cyberbullying,f1,0.663788,
+07_per_class,SQ3,twitter,harmonised4,Random Forest,,,not_cyberbullying,support,926,
+07_per_class,SQ3,twitter,harmonised4,Random Forest,,,explicit_cyberbullying,precision,0.863893,
+07_per_class,SQ3,twitter,harmonised4,Random Forest,,,explicit_cyberbullying,recall,0.892857,
+07_per_class,SQ3,twitter,harmonised4,Random Forest,,,explicit_cyberbullying,f1,0.878136,
+07_per_class,SQ3,twitter,harmonised4,Random Forest,,,explicit_cyberbullying,support,1372,
+07_per_class,SQ3,twitter,harmonised4,Random Forest,,,implicit_cyberbullying,precision,0.613105,
+07_per_class,SQ3,twitter,harmonised4,Random Forest,,,implicit_cyberbullying,recall,0.558239,
+07_per_class,SQ3,twitter,harmonised4,Random Forest,,,implicit_cyberbullying,f1,0.584387,
+07_per_class,SQ3,twitter,harmonised4,Random Forest,,,implicit_cyberbullying,support,704,
+07_per_class,SQ3,twitter,harmonised4,Random Forest,,,hate_speech,precision,0.940171,
+07_per_class,SQ3,twitter,harmonised4,Random Forest,,,hate_speech,recall,0.944476,
+07_per_class,SQ3,twitter,harmonised4,Random Forest,,,hate_speech,f1,0.942319,
+07_per_class,SQ3,twitter,harmonised4,Random Forest,,,hate_speech,support,3494,
+07_per_class,SQ3,twitter,harmonised4,SVM,,,not_cyberbullying,precision,0.714461,
+07_per_class,SQ3,twitter,harmonised4,SVM,,,not_cyberbullying,recall,0.62959,
+07_per_class,SQ3,twitter,harmonised4,SVM,,,not_cyberbullying,f1,0.669346,
+07_per_class,SQ3,twitter,harmonised4,SVM,,,not_cyberbullying,support,926,
+07_per_class,SQ3,twitter,harmonised4,SVM,,,explicit_cyberbullying,precision,0.857544,
+07_per_class,SQ3,twitter,harmonised4,SVM,,,explicit_cyberbullying,recall,0.890671,
+07_per_class,SQ3,twitter,harmonised4,SVM,,,explicit_cyberbullying,f1,0.873793,
+07_per_class,SQ3,twitter,harmonised4,SVM,,,explicit_cyberbullying,support,1372,
+07_per_class,SQ3,twitter,harmonised4,SVM,,,implicit_cyberbullying,precision,0.617607,
+07_per_class,SQ3,twitter,harmonised4,SVM,,,implicit_cyberbullying,recall,0.637784,
+07_per_class,SQ3,twitter,harmonised4,SVM,,,implicit_cyberbullying,f1,0.627533,
+07_per_class,SQ3,twitter,harmonised4,SVM,,,implicit_cyberbullying,support,704,
+07_per_class,SQ3,twitter,harmonised4,SVM,,,hate_speech,precision,0.940476,
+07_per_class,SQ3,twitter,harmonised4,SVM,,,hate_speech,recall,0.949628,
+07_per_class,SQ3,twitter,harmonised4,SVM,,,hate_speech,f1,0.94503,
+07_per_class,SQ3,twitter,harmonised4,SVM,,,hate_speech,support,3494,
+07_per_class,SQ3,twitter,native6,BiLSTM,,,not_cyberbullying,precision,0.683461,
+07_per_class,SQ3,twitter,native6,BiLSTM,,,not_cyberbullying,recall,0.673866,
+07_per_class,SQ3,twitter,native6,BiLSTM,,,not_cyberbullying,f1,0.67863,
+07_per_class,SQ3,twitter,native6,BiLSTM,,,not_cyberbullying,support,926,
+07_per_class,SQ3,twitter,native6,BiLSTM,,,age,precision,0.966639,
+07_per_class,SQ3,twitter,native6,BiLSTM,,,age,recall,0.9715,
+07_per_class,SQ3,twitter,native6,BiLSTM,,,age,f1,0.969064,
+07_per_class,SQ3,twitter,native6,BiLSTM,,,age,support,1193,
+07_per_class,SQ3,twitter,native6,BiLSTM,,,ethnicity,precision,0.990484,
+07_per_class,SQ3,twitter,native6,BiLSTM,,,ethnicity,recall,0.975298,
+07_per_class,SQ3,twitter,native6,BiLSTM,,,ethnicity,f1,0.982833,
+07_per_class,SQ3,twitter,native6,BiLSTM,,,ethnicity,support,1174,
+07_per_class,SQ3,twitter,native6,BiLSTM,,,gender,precision,0.92738,
+07_per_class,SQ3,twitter,native6,BiLSTM,,,gender,recall,0.84,
+07_per_class,SQ3,twitter,native6,BiLSTM,,,gender,f1,0.88153,
+07_per_class,SQ3,twitter,native6,BiLSTM,,,gender,support,1125,
+07_per_class,SQ3,twitter,native6,BiLSTM,,,religion,precision,0.937143,
+07_per_class,SQ3,twitter,native6,BiLSTM,,,religion,recall,0.960669,
+07_per_class,SQ3,twitter,native6,BiLSTM,,,religion,f1,0.94876,
+07_per_class,SQ3,twitter,native6,BiLSTM,,,religion,support,1195,
+07_per_class,SQ3,twitter,native6,BiLSTM,,,other_cyberbullying,precision,0.663618,
+07_per_class,SQ3,twitter,native6,BiLSTM,,,other_cyberbullying,recall,0.739524,
+07_per_class,SQ3,twitter,native6,BiLSTM,,,other_cyberbullying,f1,0.699518,
+07_per_class,SQ3,twitter,native6,BiLSTM,,,other_cyberbullying,support,883,
+07_per_class,SQ3,twitter,native6,Logistic Regression,,,not_cyberbullying,precision,0.695402,
+07_per_class,SQ3,twitter,native6,Logistic Regression,,,not_cyberbullying,recall,0.653348,
+07_per_class,SQ3,twitter,native6,Logistic Regression,,,not_cyberbullying,f1,0.673719,
+07_per_class,SQ3,twitter,native6,Logistic Regression,,,not_cyberbullying,support,926,
+07_per_class,SQ3,twitter,native6,Logistic Regression,,,age,precision,0.952576,
+07_per_class,SQ3,twitter,native6,Logistic Regression,,,age,recall,0.97653,
+07_per_class,SQ3,twitter,native6,Logistic Regression,,,age,f1,0.964404,
+07_per_class,SQ3,twitter,native6,Logistic Regression,,,age,support,1193,
+07_per_class,SQ3,twitter,native6,Logistic Regression,,,ethnicity,precision,0.979764,
+07_per_class,SQ3,twitter,native6,Logistic Regression,,,ethnicity,recall,0.989779,
+07_per_class,SQ3,twitter,native6,Logistic Regression,,,ethnicity,f1,0.984746,
+07_per_class,SQ3,twitter,native6,Logistic Regression,,,ethnicity,support,1174,
+07_per_class,SQ3,twitter,native6,Logistic Regression,,,gender,precision,0.919278,
+07_per_class,SQ3,twitter,native6,Logistic Regression,,,gender,recall,0.860444,
+07_per_class,SQ3,twitter,native6,Logistic Regression,,,gender,f1,0.888889,
+07_per_class,SQ3,twitter,native6,Logistic Regression,,,gender,support,1125,
+07_per_class,SQ3,twitter,native6,Logistic Regression,,,religion,precision,0.949545,
+07_per_class,SQ3,twitter,native6,Logistic Regression,,,religion,recall,0.960669,
+07_per_class,SQ3,twitter,native6,Logistic Regression,,,religion,f1,0.955075,
+07_per_class,SQ3,twitter,native6,Logistic Regression,,,religion,support,1195,
+07_per_class,SQ3,twitter,native6,Logistic Regression,,,other_cyberbullying,precision,0.696335,
+07_per_class,SQ3,twitter,native6,Logistic Regression,,,other_cyberbullying,recall,0.753114,
+07_per_class,SQ3,twitter,native6,Logistic Regression,,,other_cyberbullying,f1,0.723613,
+07_per_class,SQ3,twitter,native6,Logistic Regression,,,other_cyberbullying,support,883,
+07_per_class,SQ3,twitter,native6,Random Forest,,,not_cyberbullying,precision,0.669318,
+07_per_class,SQ3,twitter,native6,Random Forest,,,not_cyberbullying,recall,0.636069,
+07_per_class,SQ3,twitter,native6,Random Forest,,,not_cyberbullying,f1,0.65227,
+07_per_class,SQ3,twitter,native6,Random Forest,,,not_cyberbullying,support,926,
+07_per_class,SQ3,twitter,native6,Random Forest,,,age,precision,0.978114,
+07_per_class,SQ3,twitter,native6,Random Forest,,,age,recall,0.974015,
+07_per_class,SQ3,twitter,native6,Random Forest,,,age,f1,0.97606,
+07_per_class,SQ3,twitter,native6,Random Forest,,,age,support,1193,
+07_per_class,SQ3,twitter,native6,Random Forest,,,ethnicity,precision,0.988898,
+07_per_class,SQ3,twitter,native6,Random Forest,,,ethnicity,recall,0.986371,
+07_per_class,SQ3,twitter,native6,Random Forest,,,ethnicity,f1,0.987633,
+07_per_class,SQ3,twitter,native6,Random Forest,,,ethnicity,support,1174,
+07_per_class,SQ3,twitter,native6,Random Forest,,,gender,precision,0.919765,
+07_per_class,SQ3,twitter,native6,Random Forest,,,gender,recall,0.835556,
+07_per_class,SQ3,twitter,native6,Random Forest,,,gender,f1,0.87564,
+07_per_class,SQ3,twitter,native6,Random Forest,,,gender,support,1125,
+07_per_class,SQ3,twitter,native6,Random Forest,,,religion,precision,0.956558,
+07_per_class,SQ3,twitter,native6,Random Forest,,,religion,recall,0.958159,
+07_per_class,SQ3,twitter,native6,Random Forest,,,religion,f1,0.957358,
+07_per_class,SQ3,twitter,native6,Random Forest,,,religion,support,1195,
+07_per_class,SQ3,twitter,native6,Random Forest,,,other_cyberbullying,precision,0.643545,
+07_per_class,SQ3,twitter,native6,Random Forest,,,other_cyberbullying,recall,0.756512,
+07_per_class,SQ3,twitter,native6,Random Forest,,,other_cyberbullying,f1,0.695471,
+07_per_class,SQ3,twitter,native6,Random Forest,,,other_cyberbullying,support,883,
+07_per_class,SQ3,twitter,native6,SVM,,,not_cyberbullying,precision,0.713443,
+07_per_class,SQ3,twitter,native6,SVM,,,not_cyberbullying,recall,0.653348,
+07_per_class,SQ3,twitter,native6,SVM,,,not_cyberbullying,f1,0.682074,
+07_per_class,SQ3,twitter,native6,SVM,,,not_cyberbullying,support,926,
+07_per_class,SQ3,twitter,native6,SVM,,,age,precision,0.947154,
+07_per_class,SQ3,twitter,native6,SVM,,,age,recall,0.97653,
+07_per_class,SQ3,twitter,native6,SVM,,,age,f1,0.961618,
+07_per_class,SQ3,twitter,native6,SVM,,,age,support,1193,
+07_per_class,SQ3,twitter,native6,SVM,,,ethnicity,precision,0.971643,
+07_per_class,SQ3,twitter,native6,SVM,,,ethnicity,recall,0.992334,
+07_per_class,SQ3,twitter,native6,SVM,,,ethnicity,f1,0.981879,
+07_per_class,SQ3,twitter,native6,SVM,,,ethnicity,support,1174,
+07_per_class,SQ3,twitter,native6,SVM,,,gender,precision,0.921846,
+07_per_class,SQ3,twitter,native6,SVM,,,gender,recall,0.870222,
+07_per_class,SQ3,twitter,native6,SVM,,,gender,f1,0.89529,
+07_per_class,SQ3,twitter,native6,SVM,,,gender,support,1125,
+07_per_class,SQ3,twitter,native6,SVM,,,religion,precision,0.948148,
+07_per_class,SQ3,twitter,native6,SVM,,,religion,recall,0.964017,
+07_per_class,SQ3,twitter,native6,SVM,,,religion,f1,0.956017,
+07_per_class,SQ3,twitter,native6,SVM,,,religion,support,1195,
+07_per_class,SQ3,twitter,native6,SVM,,,other_cyberbullying,precision,0.695329,
+07_per_class,SQ3,twitter,native6,SVM,,,other_cyberbullying,recall,0.741789,
+07_per_class,SQ3,twitter,native6,SVM,,,other_cyberbullying,f1,0.717808,
+07_per_class,SQ3,twitter,native6,SVM,,,other_cyberbullying,support,883,
+08_explicit_vs_implicit,SQ3 / H1c,jigsaw,harmonised4,BiLSTM,,,,f1_explicit,0.752822,
+08_explicit_vs_implicit,SQ3 / H1c,jigsaw,harmonised4,BiLSTM,,,,f1_implicit,0.232967,
+08_explicit_vs_implicit,SQ3 / H1c,jigsaw,harmonised4,BiLSTM,,,,f1_hate_speech,0.44732,
+08_explicit_vs_implicit,SQ3 / H1c,jigsaw,harmonised4,BiLSTM,,,,f1_not_cyberbullying,0.95835,
+08_explicit_vs_implicit,SQ3 / H1c,jigsaw,harmonised4,BiLSTM,,,,recall_explicit,0.771544,
+08_explicit_vs_implicit,SQ3 / H1c,jigsaw,harmonised4,BiLSTM,,,,recall_implicit,0.443515,
+08_explicit_vs_implicit,SQ3 / H1c,jigsaw,harmonised4,BiLSTM,,,,n_explicit,1729,
+08_explicit_vs_implicit,SQ3 / H1c,jigsaw,harmonised4,BiLSTM,,,,n_implicit,478,
+08_explicit_vs_implicit,SQ3 / H1c,jigsaw,harmonised4,BiLSTM,,,,z,13.858626,
+08_explicit_vs_implicit,SQ3 / H1c,jigsaw,harmonised4,BiLSTM,,,,p_value,0.0,
+08_explicit_vs_implicit,SQ3 / H1c,jigsaw,harmonised4,BiLSTM,,,,p_value_holm,0.0,
+08_explicit_vs_implicit,SQ3 / H1c,jigsaw,harmonised4,Logistic Regression,,,,f1_explicit,0.689292,
+08_explicit_vs_implicit,SQ3 / H1c,jigsaw,harmonised4,Logistic Regression,,,,f1_implicit,0.235225,
+08_explicit_vs_implicit,SQ3 / H1c,jigsaw,harmonised4,Logistic Regression,,,,f1_hate_speech,0.449612,
+08_explicit_vs_implicit,SQ3 / H1c,jigsaw,harmonised4,Logistic Regression,,,,f1_not_cyberbullying,0.958937,
+08_explicit_vs_implicit,SQ3 / H1c,jigsaw,harmonised4,Logistic Regression,,,,recall_explicit,0.681319,
+08_explicit_vs_implicit,SQ3 / H1c,jigsaw,harmonised4,Logistic Regression,,,,recall_implicit,0.416318,
+08_explicit_vs_implicit,SQ3 / H1c,jigsaw,harmonised4,Logistic Regression,,,,n_explicit,1729,
+08_explicit_vs_implicit,SQ3 / H1c,jigsaw,harmonised4,Logistic Regression,,,,n_implicit,478,
+08_explicit_vs_implicit,SQ3 / H1c,jigsaw,harmonised4,Logistic Regression,,,,z,10.586529,
+08_explicit_vs_implicit,SQ3 / H1c,jigsaw,harmonised4,Logistic Regression,,,,p_value,0.0,
+08_explicit_vs_implicit,SQ3 / H1c,jigsaw,harmonised4,Logistic Regression,,,,p_value_holm,0.0,
+08_explicit_vs_implicit,SQ3 / H1c,jigsaw,harmonised4,Random Forest,,,,f1_explicit,0.684672,
+08_explicit_vs_implicit,SQ3 / H1c,jigsaw,harmonised4,Random Forest,,,,f1_implicit,0.143284,
+08_explicit_vs_implicit,SQ3 / H1c,jigsaw,harmonised4,Random Forest,,,,f1_hate_speech,0.438746,
+08_explicit_vs_implicit,SQ3 / H1c,jigsaw,harmonised4,Random Forest,,,,f1_not_cyberbullying,0.971009,
+08_explicit_vs_implicit,SQ3 / H1c,jigsaw,harmonised4,Random Forest,,,,recall_explicit,0.564488,
+08_explicit_vs_implicit,SQ3 / H1c,jigsaw,harmonised4,Random Forest,,,,recall_implicit,0.100418,
+08_explicit_vs_implicit,SQ3 / H1c,jigsaw,harmonised4,Random Forest,,,,n_explicit,1729,
+08_explicit_vs_implicit,SQ3 / H1c,jigsaw,harmonised4,Random Forest,,,,n_implicit,478,
+08_explicit_vs_implicit,SQ3 / H1c,jigsaw,harmonised4,Random Forest,,,,z,18.007503,
+08_explicit_vs_implicit,SQ3 / H1c,jigsaw,harmonised4,Random Forest,,,,p_value,0.0,
+08_explicit_vs_implicit,SQ3 / H1c,jigsaw,harmonised4,Random Forest,,,,p_value_holm,0.0,
+08_explicit_vs_implicit,SQ3 / H1c,jigsaw,harmonised4,SVM,,,,f1_explicit,0.667626,
+08_explicit_vs_implicit,SQ3 / H1c,jigsaw,harmonised4,SVM,,,,f1_implicit,0.223733,
+08_explicit_vs_implicit,SQ3 / H1c,jigsaw,harmonised4,SVM,,,,f1_hate_speech,0.426523,
+08_explicit_vs_implicit,SQ3 / H1c,jigsaw,harmonised4,SVM,,,,f1_not_cyberbullying,0.956743,
+08_explicit_vs_implicit,SQ3 / H1c,jigsaw,harmonised4,SVM,,,,recall_explicit,0.670908,
+08_explicit_vs_implicit,SQ3 / H1c,jigsaw,harmonised4,SVM,,,,recall_implicit,0.378661,
+08_explicit_vs_implicit,SQ3 / H1c,jigsaw,harmonised4,SVM,,,,n_explicit,1729,
+08_explicit_vs_implicit,SQ3 / H1c,jigsaw,harmonised4,SVM,,,,n_implicit,478,
+08_explicit_vs_implicit,SQ3 / H1c,jigsaw,harmonised4,SVM,,,,z,11.582152,
+08_explicit_vs_implicit,SQ3 / H1c,jigsaw,harmonised4,SVM,,,,p_value,0.0,
+08_explicit_vs_implicit,SQ3 / H1c,jigsaw,harmonised4,SVM,,,,p_value_holm,0.0,
+08_explicit_vs_implicit,SQ3 / H1c,twitter,harmonised4,BiLSTM,,,,f1_explicit,0.866667,
+08_explicit_vs_implicit,SQ3 / H1c,twitter,harmonised4,BiLSTM,,,,f1_implicit,0.610469,
+08_explicit_vs_implicit,SQ3 / H1c,twitter,harmonised4,BiLSTM,,,,f1_hate_speech,0.936694,
+08_explicit_vs_implicit,SQ3 / H1c,twitter,harmonised4,BiLSTM,,,,f1_not_cyberbullying,0.663599,
+08_explicit_vs_implicit,SQ3 / H1c,twitter,harmonised4,BiLSTM,,,,recall_explicit,0.890671,
+08_explicit_vs_implicit,SQ3 / H1c,twitter,harmonised4,BiLSTM,,,,recall_implicit,0.637784,
+08_explicit_vs_implicit,SQ3 / H1c,twitter,harmonised4,BiLSTM,,,,n_explicit,1372,
+08_explicit_vs_implicit,SQ3 / H1c,twitter,harmonised4,BiLSTM,,,,n_implicit,704,
+08_explicit_vs_implicit,SQ3 / H1c,twitter,harmonised4,BiLSTM,,,,z,13.765339,
+08_explicit_vs_implicit,SQ3 / H1c,twitter,harmonised4,BiLSTM,,,,p_value,0.0,
+08_explicit_vs_implicit,SQ3 / H1c,twitter,harmonised4,BiLSTM,,,,p_value_holm,0.0,
+08_explicit_vs_implicit,SQ3 / H1c,twitter,harmonised4,Logistic Regression,,,,f1_explicit,0.87257,
+08_explicit_vs_implicit,SQ3 / H1c,twitter,harmonised4,Logistic Regression,,,,f1_implicit,0.625,
+08_explicit_vs_implicit,SQ3 / H1c,twitter,harmonised4,Logistic Regression,,,,f1_hate_speech,0.944128,
+08_explicit_vs_implicit,SQ3 / H1c,twitter,harmonised4,Logistic Regression,,,,f1_not_cyberbullying,0.658703,
+08_explicit_vs_implicit,SQ3 / H1c,twitter,harmonised4,Logistic Regression,,,,recall_explicit,0.883382,
+08_explicit_vs_implicit,SQ3 / H1c,twitter,harmonised4,Logistic Regression,,,,recall_implicit,0.639205,
+08_explicit_vs_implicit,SQ3 / H1c,twitter,harmonised4,Logistic Regression,,,,n_explicit,1372,
+08_explicit_vs_implicit,SQ3 / H1c,twitter,harmonised4,Logistic Regression,,,,n_implicit,704,
+08_explicit_vs_implicit,SQ3 / H1c,twitter,harmonised4,Logistic Regression,,,,z,13.18156,
+08_explicit_vs_implicit,SQ3 / H1c,twitter,harmonised4,Logistic Regression,,,,p_value,0.0,
+08_explicit_vs_implicit,SQ3 / H1c,twitter,harmonised4,Logistic Regression,,,,p_value_holm,0.0,
+08_explicit_vs_implicit,SQ3 / H1c,twitter,harmonised4,Random Forest,,,,f1_explicit,0.878136,
+08_explicit_vs_implicit,SQ3 / H1c,twitter,harmonised4,Random Forest,,,,f1_implicit,0.584387,
+08_explicit_vs_implicit,SQ3 / H1c,twitter,harmonised4,Random Forest,,,,f1_hate_speech,0.942319,
+08_explicit_vs_implicit,SQ3 / H1c,twitter,harmonised4,Random Forest,,,,f1_not_cyberbullying,0.663788,
+08_explicit_vs_implicit,SQ3 / H1c,twitter,harmonised4,Random Forest,,,,recall_explicit,0.892857,
+08_explicit_vs_implicit,SQ3 / H1c,twitter,harmonised4,Random Forest,,,,recall_implicit,0.558239,
+08_explicit_vs_implicit,SQ3 / H1c,twitter,harmonised4,Random Forest,,,,n_explicit,1372,
+08_explicit_vs_implicit,SQ3 / H1c,twitter,harmonised4,Random Forest,,,,n_implicit,704,
+08_explicit_vs_implicit,SQ3 / H1c,twitter,harmonised4,Random Forest,,,,z,17.406242,
+08_explicit_vs_implicit,SQ3 / H1c,twitter,harmonised4,Random Forest,,,,p_value,0.0,
+08_explicit_vs_implicit,SQ3 / H1c,twitter,harmonised4,Random Forest,,,,p_value_holm,0.0,
+08_explicit_vs_implicit,SQ3 / H1c,twitter,harmonised4,SVM,,,,f1_explicit,0.873793,
+08_explicit_vs_implicit,SQ3 / H1c,twitter,harmonised4,SVM,,,,f1_implicit,0.627533,
+08_explicit_vs_implicit,SQ3 / H1c,twitter,harmonised4,SVM,,,,f1_hate_speech,0.94503,
+08_explicit_vs_implicit,SQ3 / H1c,twitter,harmonised4,SVM,,,,f1_not_cyberbullying,0.669346,
+08_explicit_vs_implicit,SQ3 / H1c,twitter,harmonised4,SVM,,,,recall_explicit,0.890671,
+08_explicit_vs_implicit,SQ3 / H1c,twitter,harmonised4,SVM,,,,recall_implicit,0.637784,
+08_explicit_vs_implicit,SQ3 / H1c,twitter,harmonised4,SVM,,,,n_explicit,1372,
+08_explicit_vs_implicit,SQ3 / H1c,twitter,harmonised4,SVM,,,,n_implicit,704,
+08_explicit_vs_implicit,SQ3 / H1c,twitter,harmonised4,SVM,,,,z,13.765339,
+08_explicit_vs_implicit,SQ3 / H1c,twitter,harmonised4,SVM,,,,p_value,0.0,
+08_explicit_vs_implicit,SQ3 / H1c,twitter,harmonised4,SVM,,,,p_value_holm,0.0,
+09_imbalance_ablation,SQ4,jigsaw,binary,Logistic Regression,class_weight,,,f1_macro,0.869195,
+09_imbalance_ablation,SQ4,jigsaw,binary,Logistic Regression,class_weight,,,recall_macro,0.897636,
+09_imbalance_ablation,SQ4,jigsaw,binary,Logistic Regression,class_weight,,,minority_class_f1,0.767238,
+09_imbalance_ablation,SQ4,jigsaw,binary,Logistic Regression,class_weight,,,accuracy,0.948666,
+09_imbalance_ablation,SQ4,jigsaw,binary,Logistic Regression,class_weight,,,auc_roc,0.972228,
+09_imbalance_ablation,SQ4,jigsaw,binary,Logistic Regression,none,,,f1_macro,0.880896,
+09_imbalance_ablation,SQ4,jigsaw,binary,Logistic Regression,none,,,recall_macro,0.846425,
+09_imbalance_ablation,SQ4,jigsaw,binary,Logistic Regression,none,,,minority_class_f1,0.783491,
+09_imbalance_ablation,SQ4,jigsaw,binary,Logistic Regression,none,,,accuracy,0.960555,
+09_imbalance_ablation,SQ4,jigsaw,binary,Logistic Regression,none,,,auc_roc,0.973168,
+09_imbalance_ablation,SQ4,jigsaw,binary,Logistic Regression,smote,,,f1_macro,0.845847,
+09_imbalance_ablation,SQ4,jigsaw,binary,Logistic Regression,smote,,,recall_macro,0.87489,
+09_imbalance_ablation,SQ4,jigsaw,binary,Logistic Regression,smote,,,minority_class_f1,0.725932,
+09_imbalance_ablation,SQ4,jigsaw,binary,Logistic Regression,smote,,,accuracy,0.93913,
+09_imbalance_ablation,SQ4,jigsaw,binary,Logistic Regression,smote,,,auc_roc,0.951471,
+09_imbalance_ablation,SQ4,jigsaw,binary,SVM,class_weight,,,f1_macro,0.866412,
+09_imbalance_ablation,SQ4,jigsaw,binary,SVM,class_weight,,,recall_macro,0.888477,
+09_imbalance_ablation,SQ4,jigsaw,binary,SVM,class_weight,,,minority_class_f1,0.761776,
+09_imbalance_ablation,SQ4,jigsaw,binary,SVM,class_weight,,,accuracy,0.948372,
+09_imbalance_ablation,SQ4,jigsaw,binary,SVM,class_weight,,,auc_roc,0.97085,
+09_imbalance_ablation,SQ4,jigsaw,binary,SVM,none,,,f1_macro,0.882629,
+09_imbalance_ablation,SQ4,jigsaw,binary,SVM,none,,,recall_macro,0.854065,
+09_imbalance_ablation,SQ4,jigsaw,binary,SVM,none,,,minority_class_f1,0.787071,
+09_imbalance_ablation,SQ4,jigsaw,binary,SVM,none,,,accuracy,0.960428,
+09_imbalance_ablation,SQ4,jigsaw,binary,SVM,none,,,auc_roc,0.971767,
+09_imbalance_ablation,SQ4,jigsaw,binary,SVM,smote,,,f1_macro,0.845757,
+09_imbalance_ablation,SQ4,jigsaw,binary,SVM,smote,,,recall_macro,0.872163,
+09_imbalance_ablation,SQ4,jigsaw,binary,SVM,smote,,,minority_class_f1,0.725505,
+09_imbalance_ablation,SQ4,jigsaw,binary,SVM,smote,,,accuracy,0.939509,
+09_imbalance_ablation,SQ4,jigsaw,binary,SVM,smote,,,auc_roc,0.945832,
+09_imbalance_ablation,SQ4,jigsaw,binary,Random Forest,smote,,,f1_macro,0.834464,
+09_imbalance_ablation,SQ4,jigsaw,binary,Random Forest,smote,,,recall_macro,0.781532,
+09_imbalance_ablation,SQ4,jigsaw,binary,Random Forest,smote,,,minority_class_f1,0.696465,
+09_imbalance_ablation,SQ4,jigsaw,binary,Random Forest,smote,,,accuracy,0.949506,
+09_imbalance_ablation,SQ4,jigsaw,binary,Random Forest,smote,,,auc_roc,0.960022,
+09_imbalance_ablation,SQ4,jigsaw,harmonised4,Logistic Regression,class_weight,,,f1_macro,0.596292,
+09_imbalance_ablation,SQ4,jigsaw,harmonised4,Logistic Regression,class_weight,,,recall_macro,0.62633,
+09_imbalance_ablation,SQ4,jigsaw,harmonised4,Logistic Regression,class_weight,,,minority_class_f1,0.246057,
+09_imbalance_ablation,SQ4,jigsaw,harmonised4,Logistic Regression,class_weight,,,accuracy,0.927914,
+09_imbalance_ablation,SQ4,jigsaw,harmonised4,Logistic Regression,class_weight,,,auc_roc,0.946867,
+09_imbalance_ablation,SQ4,jigsaw,harmonised4,Logistic Regression,none,,,f1_macro,0.581857,
+09_imbalance_ablation,SQ4,jigsaw,harmonised4,Logistic Regression,none,,,recall_macro,0.536365,
+09_imbalance_ablation,SQ4,jigsaw,harmonised4,Logistic Regression,none,,,minority_class_f1,0.166163,
+09_imbalance_ablation,SQ4,jigsaw,harmonised4,Logistic Regression,none,,,accuracy,0.948078,
+09_imbalance_ablation,SQ4,jigsaw,harmonised4,Logistic Regression,none,,,auc_roc,0.958197,
+09_imbalance_ablation,SQ4,jigsaw,harmonised4,Logistic Regression,smote,,,f1_macro,0.583266,
+09_imbalance_ablation,SQ4,jigsaw,harmonised4,Logistic Regression,smote,,,recall_macro,0.64845,
+09_imbalance_ablation,SQ4,jigsaw,harmonised4,Logistic Regression,smote,,,minority_class_f1,0.235225,
+09_imbalance_ablation,SQ4,jigsaw,harmonised4,Logistic Regression,smote,,,accuracy,0.908339,
+09_imbalance_ablation,SQ4,jigsaw,harmonised4,Logistic Regression,smote,,,auc_roc,0.936831,
+09_imbalance_ablation,SQ4,jigsaw,harmonised4,SVM,class_weight,,,f1_macro,0.599336,
+09_imbalance_ablation,SQ4,jigsaw,harmonised4,SVM,class_weight,,,recall_macro,0.579808,
+09_imbalance_ablation,SQ4,jigsaw,harmonised4,SVM,class_weight,,,minority_class_f1,0.251277,
+09_imbalance_ablation,SQ4,jigsaw,harmonised4,SVM,class_weight,,,accuracy,0.942365,
+09_imbalance_ablation,SQ4,jigsaw,harmonised4,SVM,class_weight,,,auc_roc,0.959928,
+09_imbalance_ablation,SQ4,jigsaw,harmonised4,SVM,none,,,f1_macro,0.561129,
+09_imbalance_ablation,SQ4,jigsaw,harmonised4,SVM,none,,,recall_macro,0.520022,
+09_imbalance_ablation,SQ4,jigsaw,harmonised4,SVM,none,,,minority_class_f1,0.130933,
+09_imbalance_ablation,SQ4,jigsaw,harmonised4,SVM,none,,,accuracy,0.947742,
+09_imbalance_ablation,SQ4,jigsaw,harmonised4,SVM,none,,,auc_roc,0.952014,
+09_imbalance_ablation,SQ4,jigsaw,harmonised4,SVM,smote,,,f1_macro,0.568656,
+09_imbalance_ablation,SQ4,jigsaw,harmonised4,SVM,smote,,,recall_macro,0.639343,
+09_imbalance_ablation,SQ4,jigsaw,harmonised4,SVM,smote,,,minority_class_f1,0.223733,
+09_imbalance_ablation,SQ4,jigsaw,harmonised4,SVM,smote,,,accuracy,0.904516,
+09_imbalance_ablation,SQ4,jigsaw,harmonised4,SVM,smote,,,auc_roc,0.923414,
+09_imbalance_ablation,SQ4,jigsaw,harmonised4,Random Forest,smote,,,f1_macro,0.559428,
+09_imbalance_ablation,SQ4,jigsaw,harmonised4,Random Forest,smote,,,recall_macro,0.506532,
+09_imbalance_ablation,SQ4,jigsaw,harmonised4,Random Forest,smote,,,minority_class_f1,0.143284,
+09_imbalance_ablation,SQ4,jigsaw,harmonised4,Random Forest,smote,,,accuracy,0.93829,
+09_imbalance_ablation,SQ4,jigsaw,harmonised4,Random Forest,smote,,,auc_roc,0.94324,
+09_imbalance_ablation,SQ4,twitter,binary,Logistic Regression,class_weight,,,f1_macro,0.788462,
+09_imbalance_ablation,SQ4,twitter,binary,Logistic Regression,class_weight,,,recall_macro,0.842738,
+09_imbalance_ablation,SQ4,twitter,binary,Logistic Regression,class_weight,,,minority_class_f1,0.650421,
+09_imbalance_ablation,SQ4,twitter,binary,Logistic Regression,class_weight,,,accuracy,0.878541,
+09_imbalance_ablation,SQ4,twitter,binary,Logistic Regression,class_weight,,,auc_roc,0.938873,
+09_imbalance_ablation,SQ4,twitter,binary,Logistic Regression,none,,,f1_macro,0.781692,
+09_imbalance_ablation,SQ4,twitter,binary,Logistic Regression,none,,,recall_macro,0.745805,
+09_imbalance_ablation,SQ4,twitter,binary,Logistic Regression,none,,,minority_class_f1,0.615877,
+09_imbalance_ablation,SQ4,twitter,binary,Logistic Regression,none,,,accuracy,0.907635,
+09_imbalance_ablation,SQ4,twitter,binary,Logistic Regression,none,,,auc_roc,0.936956,
+09_imbalance_ablation,SQ4,twitter,binary,Logistic Regression,smote,,,f1_macro,0.79411,
+09_imbalance_ablation,SQ4,twitter,binary,Logistic Regression,smote,,,recall_macro,0.798225,
+09_imbalance_ablation,SQ4,twitter,binary,Logistic Regression,smote,,,minority_class_f1,0.647902,
+09_imbalance_ablation,SQ4,twitter,binary,Logistic Regression,smote,,,accuracy,0.897937,
+09_imbalance_ablation,SQ4,twitter,binary,Logistic Regression,smote,,,auc_roc,0.935261,
+09_imbalance_ablation,SQ4,twitter,binary,SVM,class_weight,,,f1_macro,0.791309,
+09_imbalance_ablation,SQ4,twitter,binary,SVM,class_weight,,,recall_macro,0.823094,
+09_imbalance_ablation,SQ4,twitter,binary,SVM,class_weight,,,minority_class_f1,0.649761,
+09_imbalance_ablation,SQ4,twitter,binary,SVM,class_weight,,,accuracy,0.887315,
+09_imbalance_ablation,SQ4,twitter,binary,SVM,class_weight,,,auc_roc,0.9242,
+09_imbalance_ablation,SQ4,twitter,binary,SVM,none,,,f1_macro,0.78381,
+09_imbalance_ablation,SQ4,twitter,binary,SVM,none,,,recall_macro,0.751299,
+09_imbalance_ablation,SQ4,twitter,binary,SVM,none,,,minority_class_f1,0.620603,
+09_imbalance_ablation,SQ4,twitter,binary,SVM,none,,,accuracy,0.90702,
+09_imbalance_ablation,SQ4,twitter,binary,SVM,none,,,auc_roc,0.922251,
+09_imbalance_ablation,SQ4,twitter,binary,SVM,smote,,,f1_macro,0.790986,
+09_imbalance_ablation,SQ4,twitter,binary,SVM,smote,,,recall_macro,0.799941,
+09_imbalance_ablation,SQ4,twitter,binary,SVM,smote,,,minority_class_f1,0.64375,
+09_imbalance_ablation,SQ4,twitter,binary,SVM,smote,,,accuracy,0.894704,
+09_imbalance_ablation,SQ4,twitter,binary,SVM,smote,,,auc_roc,0.910042,
+09_imbalance_ablation,SQ4,twitter,binary,Random Forest,smote,,,f1_macro,0.787539,
+09_imbalance_ablation,SQ4,twitter,binary,Random Forest,smote,,,recall_macro,0.77508,
+09_imbalance_ablation,SQ4,twitter,binary,Random Forest,smote,,,minority_class_f1,0.632479,
+09_imbalance_ablation,SQ4,twitter,binary,Random Forest,smote,,,accuracy,0.900708,
+09_imbalance_ablation,SQ4,twitter,binary,Random Forest,smote,,,auc_roc,0.938296,
+09_imbalance_ablation,SQ4,twitter,harmonised4,Logistic Regression,class_weight,,,f1_macro,0.769381,
+09_imbalance_ablation,SQ4,twitter,harmonised4,Logistic Regression,class_weight,,,recall_macro,0.779616,
+09_imbalance_ablation,SQ4,twitter,harmonised4,Logistic Regression,class_weight,,,minority_class_f1,0.600536,
+09_imbalance_ablation,SQ4,twitter,harmonised4,Logistic Regression,class_weight,,,accuracy,0.846367,
+09_imbalance_ablation,SQ4,twitter,harmonised4,Logistic Regression,class_weight,,,auc_roc,0.96199,
+09_imbalance_ablation,SQ4,twitter,harmonised4,Logistic Regression,none,,,f1_macro,0.766077,
+09_imbalance_ablation,SQ4,twitter,harmonised4,Logistic Regression,none,,,recall_macro,0.758211,
+09_imbalance_ablation,SQ4,twitter,harmonised4,Logistic Regression,none,,,minority_class_f1,0.60106,
+09_imbalance_ablation,SQ4,twitter,harmonised4,Logistic Regression,none,,,accuracy,0.851139,
+09_imbalance_ablation,SQ4,twitter,harmonised4,Logistic Regression,none,,,auc_roc,0.96268,
+09_imbalance_ablation,SQ4,twitter,harmonised4,Logistic Regression,smote,,,f1_macro,0.7751,
+09_imbalance_ablation,SQ4,twitter,harmonised4,Logistic Regression,smote,,,recall_macro,0.773942,
+09_imbalance_ablation,SQ4,twitter,harmonised4,Logistic Regression,smote,,,minority_class_f1,0.625,
+09_imbalance_ablation,SQ4,twitter,harmonised4,Logistic Regression,smote,,,accuracy,0.854834,
+09_imbalance_ablation,SQ4,twitter,harmonised4,Logistic Regression,smote,,,auc_roc,0.963693,
+09_imbalance_ablation,SQ4,twitter,harmonised4,SVM,class_weight,,,f1_macro,0.780409,
+09_imbalance_ablation,SQ4,twitter,harmonised4,SVM,class_weight,,,recall_macro,0.782336,
+09_imbalance_ablation,SQ4,twitter,harmonised4,SVM,class_weight,,,minority_class_f1,0.621234,
+09_imbalance_ablation,SQ4,twitter,harmonised4,SVM,class_weight,,,accuracy,0.859144,
+09_imbalance_ablation,SQ4,twitter,harmonised4,SVM,class_weight,,,auc_roc,0.954958,
+09_imbalance_ablation,SQ4,twitter,harmonised4,SVM,none,,,f1_macro,0.774856,
+09_imbalance_ablation,SQ4,twitter,harmonised4,SVM,none,,,recall_macro,0.766561,
+09_imbalance_ablation,SQ4,twitter,harmonised4,SVM,none,,,minority_class_f1,0.616923,
+09_imbalance_ablation,SQ4,twitter,harmonised4,SVM,none,,,accuracy,0.857297,
+09_imbalance_ablation,SQ4,twitter,harmonised4,SVM,none,,,auc_roc,0.954003,
+09_imbalance_ablation,SQ4,twitter,harmonised4,SVM,smote,,,f1_macro,0.778926,
+09_imbalance_ablation,SQ4,twitter,harmonised4,SVM,smote,,,recall_macro,0.776918,
+09_imbalance_ablation,SQ4,twitter,harmonised4,SVM,smote,,,minority_class_f1,0.627533,
+09_imbalance_ablation,SQ4,twitter,harmonised4,SVM,smote,,,accuracy,0.857759,
+09_imbalance_ablation,SQ4,twitter,harmonised4,SVM,smote,,,auc_roc,0.949013,
+09_imbalance_ablation,SQ4,twitter,harmonised4,Random Forest,smote,,,f1_macro,0.767157,
+09_imbalance_ablation,SQ4,twitter,harmonised4,Random Forest,smote,,,recall_macro,0.76493,
+09_imbalance_ablation,SQ4,twitter,harmonised4,Random Forest,smote,,,minority_class_f1,0.584387,
+09_imbalance_ablation,SQ4,twitter,harmonised4,Random Forest,smote,,,accuracy,0.851755,
+09_imbalance_ablation,SQ4,twitter,harmonised4,Random Forest,smote,,,auc_roc,0.96248,
+09_imbalance_ablation,SQ4,twitter,native6,Logistic Regression,class_weight,,,f1_macro,0.865968,
+09_imbalance_ablation,SQ4,twitter,native6,Logistic Regression,class_weight,,,recall_macro,0.866434,
+09_imbalance_ablation,SQ4,twitter,native6,Logistic Regression,class_weight,,,minority_class_f1,0.679121,
+09_imbalance_ablation,SQ4,twitter,native6,Logistic Regression,class_weight,,,accuracy,0.87931,
+09_imbalance_ablation,SQ4,twitter,native6,Logistic Regression,class_weight,,,auc_roc,0.980136,
+09_imbalance_ablation,SQ4,twitter,native6,Logistic Regression,none,,,f1_macro,0.865074,
+09_imbalance_ablation,SQ4,twitter,native6,Logistic Regression,none,,,recall_macro,0.865647,
+09_imbalance_ablation,SQ4,twitter,native6,Logistic Regression,none,,,minority_class_f1,0.673719,
+09_imbalance_ablation,SQ4,twitter,native6,Logistic Regression,none,,,accuracy,0.879464,
+09_imbalance_ablation,SQ4,twitter,native6,Logistic Regression,none,,,auc_roc,0.98024,
+09_imbalance_ablation,SQ4,twitter,native6,Logistic Regression,smote,,,f1_macro,0.865074,
+09_imbalance_ablation,SQ4,twitter,native6,Logistic Regression,smote,,,recall_macro,0.865647,
+09_imbalance_ablation,SQ4,twitter,native6,Logistic Regression,smote,,,minority_class_f1,0.673719,
+09_imbalance_ablation,SQ4,twitter,native6,Logistic Regression,smote,,,accuracy,0.879464,
+09_imbalance_ablation,SQ4,twitter,native6,Logistic Regression,smote,,,auc_roc,0.98024,
+09_imbalance_ablation,SQ4,twitter,native6,SVM,class_weight,,,f1_macro,0.865984,
+09_imbalance_ablation,SQ4,twitter,native6,SVM,class_weight,,,recall_macro,0.866742,
+09_imbalance_ablation,SQ4,twitter,native6,SVM,class_weight,,,minority_class_f1,0.677985,
+09_imbalance_ablation,SQ4,twitter,native6,SVM,class_weight,,,accuracy,0.880542,
+09_imbalance_ablation,SQ4,twitter,native6,SVM,class_weight,,,auc_roc,0.979706,
+09_imbalance_ablation,SQ4,twitter,native6,SVM,none,,,f1_macro,0.865781,
+09_imbalance_ablation,SQ4,twitter,native6,SVM,none,,,recall_macro,0.866373,
+09_imbalance_ablation,SQ4,twitter,native6,SVM,none,,,minority_class_f1,0.682074,
+09_imbalance_ablation,SQ4,twitter,native6,SVM,none,,,accuracy,0.880696,
+09_imbalance_ablation,SQ4,twitter,native6,SVM,none,,,auc_roc,0.979702,
+09_imbalance_ablation,SQ4,twitter,native6,SVM,smote,,,f1_macro,0.865781,
+09_imbalance_ablation,SQ4,twitter,native6,SVM,smote,,,recall_macro,0.866373,
+09_imbalance_ablation,SQ4,twitter,native6,SVM,smote,,,minority_class_f1,0.682074,
+09_imbalance_ablation,SQ4,twitter,native6,SVM,smote,,,accuracy,0.880696,
+09_imbalance_ablation,SQ4,twitter,native6,SVM,smote,,,auc_roc,0.979702,
+09_imbalance_ablation,SQ4,twitter,native6,Random Forest,smote,,,f1_macro,0.857406,
+09_imbalance_ablation,SQ4,twitter,native6,Random Forest,smote,,,recall_macro,0.85778,
+09_imbalance_ablation,SQ4,twitter,native6,Random Forest,smote,,,minority_class_f1,0.65227,
+09_imbalance_ablation,SQ4,twitter,native6,Random Forest,smote,,,accuracy,0.871613,
+09_imbalance_ablation,SQ4,twitter,native6,Random Forest,smote,,,auc_roc,0.97949,
+10_cross_dataset,SQ4,jigsaw,binary,Logistic Regression,,twitter,,f1_macro_in_domain,0.845847,
+10_cross_dataset,SQ4,jigsaw,binary,Logistic Regression,,twitter,,f1_macro_cross,0.511608,
+10_cross_dataset,SQ4,jigsaw,binary,Logistic Regression,,twitter,,f1_drop,0.33424,
+10_cross_dataset,SQ4,jigsaw,binary,Logistic Regression,,twitter,,f1_drop_pct,39.515391,
+10_cross_dataset,SQ4,jigsaw,binary,Logistic Regression,,twitter,,auc_roc_in_domain,0.951471,
+10_cross_dataset,SQ4,jigsaw,binary,Logistic Regression,,twitter,,auc_roc_cross,0.646353,
+10_cross_dataset,SQ4,jigsaw,binary,SVM,,twitter,,f1_macro_in_domain,0.845757,
+10_cross_dataset,SQ4,jigsaw,binary,SVM,,twitter,,f1_macro_cross,0.50741,
+10_cross_dataset,SQ4,jigsaw,binary,SVM,,twitter,,f1_drop,0.338347,
+10_cross_dataset,SQ4,jigsaw,binary,SVM,,twitter,,f1_drop_pct,40.005267,
+10_cross_dataset,SQ4,jigsaw,binary,SVM,,twitter,,auc_roc_in_domain,0.945832,
+10_cross_dataset,SQ4,jigsaw,binary,SVM,,twitter,,auc_roc_cross,0.634302,
+10_cross_dataset,SQ4,jigsaw,binary,Random Forest,,twitter,,f1_macro_in_domain,0.834464,
+10_cross_dataset,SQ4,jigsaw,binary,Random Forest,,twitter,,f1_macro_cross,0.443607,
+10_cross_dataset,SQ4,jigsaw,binary,Random Forest,,twitter,,f1_drop,0.390856,
+10_cross_dataset,SQ4,jigsaw,binary,Random Forest,,twitter,,f1_drop_pct,46.839215,
+10_cross_dataset,SQ4,jigsaw,binary,Random Forest,,twitter,,auc_roc_in_domain,0.960022,
+10_cross_dataset,SQ4,jigsaw,binary,Random Forest,,twitter,,auc_roc_cross,0.721442,
+10_cross_dataset,SQ4,jigsaw,binary,BiLSTM,,twitter,,f1_macro_in_domain,0.860267,
+10_cross_dataset,SQ4,jigsaw,binary,BiLSTM,,twitter,,f1_macro_cross,0.512928,
+10_cross_dataset,SQ4,jigsaw,binary,BiLSTM,,twitter,,f1_drop,0.347339,
+10_cross_dataset,SQ4,jigsaw,binary,BiLSTM,,twitter,,f1_drop_pct,40.375719,
+10_cross_dataset,SQ4,jigsaw,binary,BiLSTM,,twitter,,auc_roc_in_domain,0.964035,
+10_cross_dataset,SQ4,jigsaw,binary,BiLSTM,,twitter,,auc_roc_cross,0.662858,
+10_cross_dataset,SQ4,twitter,binary,Logistic Regression,,jigsaw,,f1_macro_in_domain,0.79411,
+10_cross_dataset,SQ4,twitter,binary,Logistic Regression,,jigsaw,,f1_macro_cross,0.266201,
+10_cross_dataset,SQ4,twitter,binary,Logistic Regression,,jigsaw,,f1_drop,0.527909,
+10_cross_dataset,SQ4,twitter,binary,Logistic Regression,,jigsaw,,f1_drop_pct,66.478055,
+10_cross_dataset,SQ4,twitter,binary,Logistic Regression,,jigsaw,,auc_roc_in_domain,0.935261,
+10_cross_dataset,SQ4,twitter,binary,Logistic Regression,,jigsaw,,auc_roc_cross,0.562719,
+10_cross_dataset,SQ4,twitter,binary,SVM,,jigsaw,,f1_macro_in_domain,0.790986,
+10_cross_dataset,SQ4,twitter,binary,SVM,,jigsaw,,f1_macro_cross,0.281206,
+10_cross_dataset,SQ4,twitter,binary,SVM,,jigsaw,,f1_drop,0.50978,
+10_cross_dataset,SQ4,twitter,binary,SVM,,jigsaw,,f1_drop_pct,64.448661,
+10_cross_dataset,SQ4,twitter,binary,SVM,,jigsaw,,auc_roc_in_domain,0.910042,
+10_cross_dataset,SQ4,twitter,binary,SVM,,jigsaw,,auc_roc_cross,0.559317,
+10_cross_dataset,SQ4,twitter,binary,Random Forest,,jigsaw,,f1_macro_in_domain,0.787539,
+10_cross_dataset,SQ4,twitter,binary,Random Forest,,jigsaw,,f1_macro_cross,0.282461,
+10_cross_dataset,SQ4,twitter,binary,Random Forest,,jigsaw,,f1_drop,0.505078,
+10_cross_dataset,SQ4,twitter,binary,Random Forest,,jigsaw,,f1_drop_pct,64.133687,
+10_cross_dataset,SQ4,twitter,binary,Random Forest,,jigsaw,,auc_roc_in_domain,0.938296,
+10_cross_dataset,SQ4,twitter,binary,Random Forest,,jigsaw,,auc_roc_cross,0.650387,
+10_cross_dataset,SQ4,twitter,binary,BiLSTM,,jigsaw,,f1_macro_in_domain,0.776149,
+10_cross_dataset,SQ4,twitter,binary,BiLSTM,,jigsaw,,f1_macro_cross,0.347283,
+10_cross_dataset,SQ4,twitter,binary,BiLSTM,,jigsaw,,f1_drop,0.428866,
+10_cross_dataset,SQ4,twitter,binary,BiLSTM,,jigsaw,,f1_drop_pct,55.255657,
+10_cross_dataset,SQ4,twitter,binary,BiLSTM,,jigsaw,,auc_roc_in_domain,0.929132,
+10_cross_dataset,SQ4,twitter,binary,BiLSTM,,jigsaw,,auc_roc_cross,0.500032,
+11_pairwise_tests,SQ2 / H1b,jigsaw,binary,Logistic Regression vs SVM,,,,f1_diff_a_minus_b,9e-05,
+11_pairwise_tests,SQ2 / H1b,jigsaw,binary,Logistic Regression vs SVM,,,,diff_ci_low,-0.00233,
+11_pairwise_tests,SQ2 / H1b,jigsaw,binary,Logistic Regression vs SVM,,,,diff_ci_high,0.002497,
+11_pairwise_tests,SQ2 / H1b,jigsaw,binary,Logistic Regression vs SVM,,,,bootstrap_p,0.976,
+11_pairwise_tests,SQ2 / H1b,jigsaw,binary,Logistic Regression vs SVM,,,,mcnemar_p,0.535878,
+11_pairwise_tests,SQ2 / H1b,jigsaw,binary,Logistic Regression vs SVM,,,,mcnemar_p_holm,1.0,
+11_pairwise_tests,SQ2 / H1b,jigsaw,binary,Logistic Regression vs SVM,,,,significant,False,
+11_pairwise_tests,SQ2 / H1b,jigsaw,binary,Logistic Regression vs Random Forest,,,,f1_diff_a_minus_b,0.011384,
+11_pairwise_tests,SQ2 / H1b,jigsaw,binary,Logistic Regression vs Random Forest,,,,diff_ci_low,0.002057,
+11_pairwise_tests,SQ2 / H1b,jigsaw,binary,Logistic Regression vs Random Forest,,,,diff_ci_high,0.019734,
+11_pairwise_tests,SQ2 / H1b,jigsaw,binary,Logistic Regression vs Random Forest,,,,bootstrap_p,0.02,
+11_pairwise_tests,SQ2 / H1b,jigsaw,binary,Logistic Regression vs Random Forest,,,,mcnemar_p,0.0,
+11_pairwise_tests,SQ2 / H1b,jigsaw,binary,Logistic Regression vs Random Forest,,,,mcnemar_p_holm,0.0,
+11_pairwise_tests,SQ2 / H1b,jigsaw,binary,Logistic Regression vs Random Forest,,,,significant,True,
+11_pairwise_tests,SQ2 / H1b,jigsaw,binary,Logistic Regression vs BiLSTM,,,,f1_diff_a_minus_b,-0.014419,
+11_pairwise_tests,SQ2 / H1b,jigsaw,binary,Logistic Regression vs BiLSTM,,,,diff_ci_low,-0.021347,
+11_pairwise_tests,SQ2 / H1b,jigsaw,binary,Logistic Regression vs BiLSTM,,,,diff_ci_high,-0.007491,
+11_pairwise_tests,SQ2 / H1b,jigsaw,binary,Logistic Regression vs BiLSTM,,,,bootstrap_p,0.0,
+11_pairwise_tests,SQ2 / H1b,jigsaw,binary,Logistic Regression vs BiLSTM,,,,mcnemar_p,0.001192,
+11_pairwise_tests,SQ2 / H1b,jigsaw,binary,Logistic Regression vs BiLSTM,,,,mcnemar_p_holm,0.023833,
+11_pairwise_tests,SQ2 / H1b,jigsaw,binary,Logistic Regression vs BiLSTM,,,,significant,True,
+11_pairwise_tests,SQ2 / H1b,jigsaw,binary,SVM vs Random Forest,,,,f1_diff_a_minus_b,0.011293,
+11_pairwise_tests,SQ2 / H1b,jigsaw,binary,SVM vs Random Forest,,,,diff_ci_low,0.002678,
+11_pairwise_tests,SQ2 / H1b,jigsaw,binary,SVM vs Random Forest,,,,diff_ci_high,0.019424,
+11_pairwise_tests,SQ2 / H1b,jigsaw,binary,SVM vs Random Forest,,,,bootstrap_p,0.018,
+11_pairwise_tests,SQ2 / H1b,jigsaw,binary,SVM vs Random Forest,,,,mcnemar_p,0.0,
+11_pairwise_tests,SQ2 / H1b,jigsaw,binary,SVM vs Random Forest,,,,mcnemar_p_holm,0.0,
+11_pairwise_tests,SQ2 / H1b,jigsaw,binary,SVM vs Random Forest,,,,significant,True,
+11_pairwise_tests,SQ2 / H1b,jigsaw,binary,SVM vs BiLSTM,,,,f1_diff_a_minus_b,-0.01451,
+11_pairwise_tests,SQ2 / H1b,jigsaw,binary,SVM vs BiLSTM,,,,diff_ci_low,-0.021347,
+11_pairwise_tests,SQ2 / H1b,jigsaw,binary,SVM vs BiLSTM,,,,diff_ci_high,-0.007549,
+11_pairwise_tests,SQ2 / H1b,jigsaw,binary,SVM vs BiLSTM,,,,bootstrap_p,0.0,
+11_pairwise_tests,SQ2 / H1b,jigsaw,binary,SVM vs BiLSTM,,,,mcnemar_p,0.002929,
+11_pairwise_tests,SQ2 / H1b,jigsaw,binary,SVM vs BiLSTM,,,,mcnemar_p_holm,0.04979,
+11_pairwise_tests,SQ2 / H1b,jigsaw,binary,SVM vs BiLSTM,,,,significant,True,
+11_pairwise_tests,SQ2 / H1b,jigsaw,binary,Random Forest vs BiLSTM,,,,f1_diff_a_minus_b,-0.025803,
+11_pairwise_tests,SQ2 / H1b,jigsaw,binary,Random Forest vs BiLSTM,,,,diff_ci_low,-0.034941,
+11_pairwise_tests,SQ2 / H1b,jigsaw,binary,Random Forest vs BiLSTM,,,,diff_ci_high,-0.016599,
+11_pairwise_tests,SQ2 / H1b,jigsaw,binary,Random Forest vs BiLSTM,,,,bootstrap_p,0.0,
+11_pairwise_tests,SQ2 / H1b,jigsaw,binary,Random Forest vs BiLSTM,,,,mcnemar_p,0.001674,
+11_pairwise_tests,SQ2 / H1b,jigsaw,binary,Random Forest vs BiLSTM,,,,mcnemar_p_holm,0.031802,
+11_pairwise_tests,SQ2 / H1b,jigsaw,binary,Random Forest vs BiLSTM,,,,significant,True,
+11_pairwise_tests,SQ2 / H1b,jigsaw,harmonised4,Logistic Regression vs SVM,,,,f1_diff_a_minus_b,0.01461,
+11_pairwise_tests,SQ2 / H1b,jigsaw,harmonised4,Logistic Regression vs SVM,,,,diff_ci_low,0.006427,
+11_pairwise_tests,SQ2 / H1b,jigsaw,harmonised4,Logistic Regression vs SVM,,,,diff_ci_high,0.023413,
+11_pairwise_tests,SQ2 / H1b,jigsaw,harmonised4,Logistic Regression vs SVM,,,,bootstrap_p,0.0,
+11_pairwise_tests,SQ2 / H1b,jigsaw,harmonised4,Logistic Regression vs SVM,,,,mcnemar_p,6e-06,
+11_pairwise_tests,SQ2 / H1b,jigsaw,harmonised4,Logistic Regression vs SVM,,,,mcnemar_p_holm,0.000124,
+11_pairwise_tests,SQ2 / H1b,jigsaw,harmonised4,Logistic Regression vs SVM,,,,significant,True,
+11_pairwise_tests,SQ2 / H1b,jigsaw,harmonised4,Logistic Regression vs Random Forest,,,,f1_diff_a_minus_b,0.023839,
+11_pairwise_tests,SQ2 / H1b,jigsaw,harmonised4,Logistic Regression vs Random Forest,,,,diff_ci_low,0.004371,
+11_pairwise_tests,SQ2 / H1b,jigsaw,harmonised4,Logistic Regression vs Random Forest,,,,diff_ci_high,0.043187,
+11_pairwise_tests,SQ2 / H1b,jigsaw,harmonised4,Logistic Regression vs Random Forest,,,,bootstrap_p,0.018,
+11_pairwise_tests,SQ2 / H1b,jigsaw,harmonised4,Logistic Regression vs Random Forest,,,,mcnemar_p,0.0,
+11_pairwise_tests,SQ2 / H1b,jigsaw,harmonised4,Logistic Regression vs Random Forest,,,,mcnemar_p_holm,0.0,
+11_pairwise_tests,SQ2 / H1b,jigsaw,harmonised4,Logistic Regression vs Random Forest,,,,significant,True,
+11_pairwise_tests,SQ2 / H1b,jigsaw,harmonised4,Logistic Regression vs BiLSTM,,,,f1_diff_a_minus_b,-0.014598,
+11_pairwise_tests,SQ2 / H1b,jigsaw,harmonised4,Logistic Regression vs BiLSTM,,,,diff_ci_low,-0.030061,
+11_pairwise_tests,SQ2 / H1b,jigsaw,harmonised4,Logistic Regression vs BiLSTM,,,,diff_ci_high,0.000583,
+11_pairwise_tests,SQ2 / H1b,jigsaw,harmonised4,Logistic Regression vs BiLSTM,,,,bootstrap_p,0.062,
+11_pairwise_tests,SQ2 / H1b,jigsaw,harmonised4,Logistic Regression vs BiLSTM,,,,mcnemar_p,0.527711,
+11_pairwise_tests,SQ2 / H1b,jigsaw,harmonised4,Logistic Regression vs BiLSTM,,,,mcnemar_p_holm,1.0,
+11_pairwise_tests,SQ2 / H1b,jigsaw,harmonised4,Logistic Regression vs BiLSTM,,,,significant,False,
+11_pairwise_tests,SQ2 / H1b,jigsaw,harmonised4,SVM vs Random Forest,,,,f1_diff_a_minus_b,0.009229,
+11_pairwise_tests,SQ2 / H1b,jigsaw,harmonised4,SVM vs Random Forest,,,,diff_ci_low,-0.01174,
+11_pairwise_tests,SQ2 / H1b,jigsaw,harmonised4,SVM vs Random Forest,,,,diff_ci_high,0.029706,
+11_pairwise_tests,SQ2 / H1b,jigsaw,harmonised4,SVM vs Random Forest,,,,bootstrap_p,0.392,
+11_pairwise_tests,SQ2 / H1b,jigsaw,harmonised4,SVM vs Random Forest,,,,mcnemar_p,0.0,
+11_pairwise_tests,SQ2 / H1b,jigsaw,harmonised4,SVM vs Random Forest,,,,mcnemar_p_holm,0.0,
+11_pairwise_tests,SQ2 / H1b,jigsaw,harmonised4,SVM vs Random Forest,,,,significant,True,
+11_pairwise_tests,SQ2 / H1b,jigsaw,harmonised4,SVM vs BiLSTM,,,,f1_diff_a_minus_b,-0.029208,
+11_pairwise_tests,SQ2 / H1b,jigsaw,harmonised4,SVM vs BiLSTM,,,,diff_ci_low,-0.044414,
+11_pairwise_tests,SQ2 / H1b,jigsaw,harmonised4,SVM vs BiLSTM,,,,diff_ci_high,-0.014692,
+11_pairwise_tests,SQ2 / H1b,jigsaw,harmonised4,SVM vs BiLSTM,,,,bootstrap_p,0.0,
+11_pairwise_tests,SQ2 / H1b,jigsaw,harmonised4,SVM vs BiLSTM,,,,mcnemar_p,0.007398,
+11_pairwise_tests,SQ2 / H1b,jigsaw,harmonised4,SVM vs BiLSTM,,,,mcnemar_p_holm,0.110975,
+11_pairwise_tests,SQ2 / H1b,jigsaw,harmonised4,SVM vs BiLSTM,,,,significant,False,
+11_pairwise_tests,SQ2 / H1b,jigsaw,harmonised4,Random Forest vs BiLSTM,,,,f1_diff_a_minus_b,-0.038437,
+11_pairwise_tests,SQ2 / H1b,jigsaw,harmonised4,Random Forest vs BiLSTM,,,,diff_ci_low,-0.05905,
+11_pairwise_tests,SQ2 / H1b,jigsaw,harmonised4,Random Forest vs BiLSTM,,,,diff_ci_high,-0.01929,
+11_pairwise_tests,SQ2 / H1b,jigsaw,harmonised4,Random Forest vs BiLSTM,,,,bootstrap_p,0.0,
+11_pairwise_tests,SQ2 / H1b,jigsaw,harmonised4,Random Forest vs BiLSTM,,,,mcnemar_p,0.0,
+11_pairwise_tests,SQ2 / H1b,jigsaw,harmonised4,Random Forest vs BiLSTM,,,,mcnemar_p_holm,0.0,
+11_pairwise_tests,SQ2 / H1b,jigsaw,harmonised4,Random Forest vs BiLSTM,,,,significant,True,
+11_pairwise_tests,SQ2 / H1b,twitter,binary,Logistic Regression vs SVM,,,,f1_diff_a_minus_b,0.003124,
+11_pairwise_tests,SQ2 / H1b,twitter,binary,Logistic Regression vs SVM,,,,diff_ci_low,-0.00139,
+11_pairwise_tests,SQ2 / H1b,twitter,binary,Logistic Regression vs SVM,,,,diff_ci_high,0.007707,
+11_pairwise_tests,SQ2 / H1b,twitter,binary,Logistic Regression vs SVM,,,,bootstrap_p,0.178,
+11_pairwise_tests,SQ2 / H1b,twitter,binary,Logistic Regression vs SVM,,,,mcnemar_p,0.020921,
+11_pairwise_tests,SQ2 / H1b,twitter,binary,Logistic Regression vs SVM,,,,mcnemar_p_holm,0.271977,
+11_pairwise_tests,SQ2 / H1b,twitter,binary,Logistic Regression vs SVM,,,,significant,False,
+11_pairwise_tests,SQ2 / H1b,twitter,binary,Logistic Regression vs Random Forest,,,,f1_diff_a_minus_b,0.006571,
+11_pairwise_tests,SQ2 / H1b,twitter,binary,Logistic Regression vs Random Forest,,,,diff_ci_low,-0.004328,
+11_pairwise_tests,SQ2 / H1b,twitter,binary,Logistic Regression vs Random Forest,,,,diff_ci_high,0.017746,
+11_pairwise_tests,SQ2 / H1b,twitter,binary,Logistic Regression vs Random Forest,,,,bootstrap_p,0.224,
+11_pairwise_tests,SQ2 / H1b,twitter,binary,Logistic Regression vs Random Forest,,,,mcnemar_p,0.349366,
+11_pairwise_tests,SQ2 / H1b,twitter,binary,Logistic Regression vs Random Forest,,,,mcnemar_p_holm,1.0,
+11_pairwise_tests,SQ2 / H1b,twitter,binary,Logistic Regression vs Random Forest,,,,significant,False,
+11_pairwise_tests,SQ2 / H1b,twitter,binary,Logistic Regression vs BiLSTM,,,,f1_diff_a_minus_b,0.017961,
+11_pairwise_tests,SQ2 / H1b,twitter,binary,Logistic Regression vs BiLSTM,,,,diff_ci_low,0.005903,
+11_pairwise_tests,SQ2 / H1b,twitter,binary,Logistic Regression vs BiLSTM,,,,diff_ci_high,0.031559,
+11_pairwise_tests,SQ2 / H1b,twitter,binary,Logistic Regression vs BiLSTM,,,,bootstrap_p,0.004,
+11_pairwise_tests,SQ2 / H1b,twitter,binary,Logistic Regression vs BiLSTM,,,,mcnemar_p,0.0,
+11_pairwise_tests,SQ2 / H1b,twitter,binary,Logistic Regression vs BiLSTM,,,,mcnemar_p_holm,0.0,
+11_pairwise_tests,SQ2 / H1b,twitter,binary,Logistic Regression vs BiLSTM,,,,significant,True,
+11_pairwise_tests,SQ2 / H1b,twitter,binary,SVM vs Random Forest,,,,f1_diff_a_minus_b,0.003447,
+11_pairwise_tests,SQ2 / H1b,twitter,binary,SVM vs Random Forest,,,,diff_ci_low,-0.007478,
+11_pairwise_tests,SQ2 / H1b,twitter,binary,SVM vs Random Forest,,,,diff_ci_high,0.014502,
+11_pairwise_tests,SQ2 / H1b,twitter,binary,SVM vs Random Forest,,,,bootstrap_p,0.52,
+11_pairwise_tests,SQ2 / H1b,twitter,binary,SVM vs Random Forest,,,,mcnemar_p,0.039608,
+11_pairwise_tests,SQ2 / H1b,twitter,binary,SVM vs Random Forest,,,,mcnemar_p_holm,0.435686,
+11_pairwise_tests,SQ2 / H1b,twitter,binary,SVM vs Random Forest,,,,significant,False,
+11_pairwise_tests,SQ2 / H1b,twitter,binary,SVM vs BiLSTM,,,,f1_diff_a_minus_b,0.014837,
+11_pairwise_tests,SQ2 / H1b,twitter,binary,SVM vs BiLSTM,,,,diff_ci_low,0.002201,
+11_pairwise_tests,SQ2 / H1b,twitter,binary,SVM vs BiLSTM,,,,diff_ci_high,0.028785,
+11_pairwise_tests,SQ2 / H1b,twitter,binary,SVM vs BiLSTM,,,,bootstrap_p,0.016,
+11_pairwise_tests,SQ2 / H1b,twitter,binary,SVM vs BiLSTM,,,,mcnemar_p,0.0,
+11_pairwise_tests,SQ2 / H1b,twitter,binary,SVM vs BiLSTM,,,,mcnemar_p_holm,0.0,
+11_pairwise_tests,SQ2 / H1b,twitter,binary,SVM vs BiLSTM,,,,significant,True,
+11_pairwise_tests,SQ2 / H1b,twitter,binary,Random Forest vs BiLSTM,,,,f1_diff_a_minus_b,0.01139,
+11_pairwise_tests,SQ2 / H1b,twitter,binary,Random Forest vs BiLSTM,,,,diff_ci_low,-0.003672,
+11_pairwise_tests,SQ2 / H1b,twitter,binary,Random Forest vs BiLSTM,,,,diff_ci_high,0.026506,
+11_pairwise_tests,SQ2 / H1b,twitter,binary,Random Forest vs BiLSTM,,,,bootstrap_p,0.12,
+11_pairwise_tests,SQ2 / H1b,twitter,binary,Random Forest vs BiLSTM,,,,mcnemar_p,0.0,
+11_pairwise_tests,SQ2 / H1b,twitter,binary,Random Forest vs BiLSTM,,,,mcnemar_p_holm,0.0,
+11_pairwise_tests,SQ2 / H1b,twitter,binary,Random Forest vs BiLSTM,,,,significant,True,
+11_pairwise_tests,SQ2 / H1b,twitter,harmonised4,Logistic Regression vs SVM,,,,f1_diff_a_minus_b,-0.003825,
+11_pairwise_tests,SQ2 / H1b,twitter,harmonised4,Logistic Regression vs SVM,,,,diff_ci_low,-0.009193,
+11_pairwise_tests,SQ2 / H1b,twitter,harmonised4,Logistic Regression vs SVM,,,,diff_ci_high,0.001545,
+11_pairwise_tests,SQ2 / H1b,twitter,harmonised4,Logistic Regression vs SVM,,,,bootstrap_p,0.188,
+11_pairwise_tests,SQ2 / H1b,twitter,harmonised4,Logistic Regression vs SVM,,,,mcnemar_p,0.150844,
+11_pairwise_tests,SQ2 / H1b,twitter,harmonised4,Logistic Regression vs SVM,,,,mcnemar_p_holm,1.0,
+11_pairwise_tests,SQ2 / H1b,twitter,harmonised4,Logistic Regression vs SVM,,,,significant,False,
+11_pairwise_tests,SQ2 / H1b,twitter,harmonised4,Logistic Regression vs Random Forest,,,,f1_diff_a_minus_b,0.007943,
+11_pairwise_tests,SQ2 / H1b,twitter,harmonised4,Logistic Regression vs Random Forest,,,,diff_ci_low,-0.003576,
+11_pairwise_tests,SQ2 / H1b,twitter,harmonised4,Logistic Regression vs Random Forest,,,,diff_ci_high,0.020267,
+11_pairwise_tests,SQ2 / H1b,twitter,harmonised4,Logistic Regression vs Random Forest,,,,bootstrap_p,0.188,
+11_pairwise_tests,SQ2 / H1b,twitter,harmonised4,Logistic Regression vs Random Forest,,,,mcnemar_p,0.410079,
+11_pairwise_tests,SQ2 / H1b,twitter,harmonised4,Logistic Regression vs Random Forest,,,,mcnemar_p_holm,1.0,
+11_pairwise_tests,SQ2 / H1b,twitter,harmonised4,Logistic Regression vs Random Forest,,,,significant,False,
+11_pairwise_tests,SQ2 / H1b,twitter,harmonised4,Logistic Regression vs BiLSTM,,,,f1_diff_a_minus_b,0.005743,
+11_pairwise_tests,SQ2 / H1b,twitter,harmonised4,Logistic Regression vs BiLSTM,,,,diff_ci_low,-0.005614,
+11_pairwise_tests,SQ2 / H1b,twitter,harmonised4,Logistic Regression vs BiLSTM,,,,diff_ci_high,0.01718,
+11_pairwise_tests,SQ2 / H1b,twitter,harmonised4,Logistic Regression vs BiLSTM,,,,bootstrap_p,0.354,
+11_pairwise_tests,SQ2 / H1b,twitter,harmonised4,Logistic Regression vs BiLSTM,,,,mcnemar_p,0.002697,
+11_pairwise_tests,SQ2 / H1b,twitter,harmonised4,Logistic Regression vs BiLSTM,,,,mcnemar_p_holm,0.048551,
+11_pairwise_tests,SQ2 / H1b,twitter,harmonised4,Logistic Regression vs BiLSTM,,,,significant,True,
+11_pairwise_tests,SQ2 / H1b,twitter,harmonised4,SVM vs Random Forest,,,,f1_diff_a_minus_b,0.011768,
+11_pairwise_tests,SQ2 / H1b,twitter,harmonised4,SVM vs Random Forest,,,,diff_ci_low,0.000315,
+11_pairwise_tests,SQ2 / H1b,twitter,harmonised4,SVM vs Random Forest,,,,diff_ci_high,0.023605,
+11_pairwise_tests,SQ2 / H1b,twitter,harmonised4,SVM vs Random Forest,,,,bootstrap_p,0.046,
+11_pairwise_tests,SQ2 / H1b,twitter,harmonised4,SVM vs Random Forest,,,,mcnemar_p,0.108004,
+11_pairwise_tests,SQ2 / H1b,twitter,harmonised4,SVM vs Random Forest,,,,mcnemar_p_holm,0.864034,
+11_pairwise_tests,SQ2 / H1b,twitter,harmonised4,SVM vs Random Forest,,,,significant,False,
+11_pairwise_tests,SQ2 / H1b,twitter,harmonised4,SVM vs BiLSTM,,,,f1_diff_a_minus_b,0.009568,
+11_pairwise_tests,SQ2 / H1b,twitter,harmonised4,SVM vs BiLSTM,,,,diff_ci_low,-0.001907,
+11_pairwise_tests,SQ2 / H1b,twitter,harmonised4,SVM vs BiLSTM,,,,diff_ci_high,0.020991,
+11_pairwise_tests,SQ2 / H1b,twitter,harmonised4,SVM vs BiLSTM,,,,bootstrap_p,0.094,
+11_pairwise_tests,SQ2 / H1b,twitter,harmonised4,SVM vs BiLSTM,,,,mcnemar_p,0.000188,
+11_pairwise_tests,SQ2 / H1b,twitter,harmonised4,SVM vs BiLSTM,,,,mcnemar_p_holm,0.003955,
+11_pairwise_tests,SQ2 / H1b,twitter,harmonised4,SVM vs BiLSTM,,,,significant,True,
+11_pairwise_tests,SQ2 / H1b,twitter,harmonised4,Random Forest vs BiLSTM,,,,f1_diff_a_minus_b,-0.0022,
+11_pairwise_tests,SQ2 / H1b,twitter,harmonised4,Random Forest vs BiLSTM,,,,diff_ci_low,-0.014951,
+11_pairwise_tests,SQ2 / H1b,twitter,harmonised4,Random Forest vs BiLSTM,,,,diff_ci_high,0.010177,
+11_pairwise_tests,SQ2 / H1b,twitter,harmonised4,Random Forest vs BiLSTM,,,,bootstrap_p,0.758,
+11_pairwise_tests,SQ2 / H1b,twitter,harmonised4,Random Forest vs BiLSTM,,,,mcnemar_p,0.049182,
+11_pairwise_tests,SQ2 / H1b,twitter,harmonised4,Random Forest vs BiLSTM,,,,mcnemar_p_holm,0.491815,
+11_pairwise_tests,SQ2 / H1b,twitter,harmonised4,Random Forest vs BiLSTM,,,,significant,False,
+11_pairwise_tests,SQ2 / H1b,twitter,native6,Logistic Regression vs SVM,,,,f1_diff_a_minus_b,-0.000707,
+11_pairwise_tests,SQ2 / H1b,twitter,native6,Logistic Regression vs SVM,,,,diff_ci_low,-0.004797,
+11_pairwise_tests,SQ2 / H1b,twitter,native6,Logistic Regression vs SVM,,,,diff_ci_high,0.003558,
+11_pairwise_tests,SQ2 / H1b,twitter,native6,Logistic Regression vs SVM,,,,bootstrap_p,0.722,
+11_pairwise_tests,SQ2 / H1b,twitter,native6,Logistic Regression vs SVM,,,,mcnemar_p,0.570188,
+11_pairwise_tests,SQ2 / H1b,twitter,native6,Logistic Regression vs SVM,,,,mcnemar_p_holm,1.0,
+11_pairwise_tests,SQ2 / H1b,twitter,native6,Logistic Regression vs SVM,,,,significant,False,
+11_pairwise_tests,SQ2 / H1b,twitter,native6,Logistic Regression vs Random Forest,,,,f1_diff_a_minus_b,0.007669,
+11_pairwise_tests,SQ2 / H1b,twitter,native6,Logistic Regression vs Random Forest,,,,diff_ci_low,0.000799,
+11_pairwise_tests,SQ2 / H1b,twitter,native6,Logistic Regression vs Random Forest,,,,diff_ci_high,0.014581,
+11_pairwise_tests,SQ2 / H1b,twitter,native6,Logistic Regression vs Random Forest,,,,bootstrap_p,0.026,
+11_pairwise_tests,SQ2 / H1b,twitter,native6,Logistic Regression vs Random Forest,,,,mcnemar_p,0.015054,
+11_pairwise_tests,SQ2 / H1b,twitter,native6,Logistic Regression vs Random Forest,,,,mcnemar_p_holm,0.210753,
+11_pairwise_tests,SQ2 / H1b,twitter,native6,Logistic Regression vs Random Forest,,,,significant,False,
+11_pairwise_tests,SQ2 / H1b,twitter,native6,Logistic Regression vs BiLSTM,,,,f1_diff_a_minus_b,0.005019,
+11_pairwise_tests,SQ2 / H1b,twitter,native6,Logistic Regression vs BiLSTM,,,,diff_ci_low,-0.001565,
+11_pairwise_tests,SQ2 / H1b,twitter,native6,Logistic Regression vs BiLSTM,,,,diff_ci_high,0.01166,
+11_pairwise_tests,SQ2 / H1b,twitter,native6,Logistic Regression vs BiLSTM,,,,bootstrap_p,0.14,
+11_pairwise_tests,SQ2 / H1b,twitter,native6,Logistic Regression vs BiLSTM,,,,mcnemar_p,0.061504,
+11_pairwise_tests,SQ2 / H1b,twitter,native6,Logistic Regression vs BiLSTM,,,,mcnemar_p_holm,0.553532,
+11_pairwise_tests,SQ2 / H1b,twitter,native6,Logistic Regression vs BiLSTM,,,,significant,False,
+11_pairwise_tests,SQ2 / H1b,twitter,native6,SVM vs Random Forest,,,,f1_diff_a_minus_b,0.008376,
+11_pairwise_tests,SQ2 / H1b,twitter,native6,SVM vs Random Forest,,,,diff_ci_low,0.001473,
+11_pairwise_tests,SQ2 / H1b,twitter,native6,SVM vs Random Forest,,,,diff_ci_high,0.015209,
+11_pairwise_tests,SQ2 / H1b,twitter,native6,SVM vs Random Forest,,,,bootstrap_p,0.02,
+11_pairwise_tests,SQ2 / H1b,twitter,native6,SVM vs Random Forest,,,,mcnemar_p,0.005969,
+11_pairwise_tests,SQ2 / H1b,twitter,native6,SVM vs Random Forest,,,,mcnemar_p_holm,0.095509,
+11_pairwise_tests,SQ2 / H1b,twitter,native6,SVM vs Random Forest,,,,significant,False,
+11_pairwise_tests,SQ2 / H1b,twitter,native6,SVM vs BiLSTM,,,,f1_diff_a_minus_b,0.005725,
+11_pairwise_tests,SQ2 / H1b,twitter,native6,SVM vs BiLSTM,,,,diff_ci_low,-0.001019,
+11_pairwise_tests,SQ2 / H1b,twitter,native6,SVM vs BiLSTM,,,,diff_ci_high,0.012177,
+11_pairwise_tests,SQ2 / H1b,twitter,native6,SVM vs BiLSTM,,,,bootstrap_p,0.108,
+11_pairwise_tests,SQ2 / H1b,twitter,native6,SVM vs BiLSTM,,,,mcnemar_p,0.024624,
+11_pairwise_tests,SQ2 / H1b,twitter,native6,SVM vs BiLSTM,,,,mcnemar_p_holm,0.295491,
+11_pairwise_tests,SQ2 / H1b,twitter,native6,SVM vs BiLSTM,,,,significant,False,
+11_pairwise_tests,SQ2 / H1b,twitter,native6,Random Forest vs BiLSTM,,,,f1_diff_a_minus_b,-0.00265,
+11_pairwise_tests,SQ2 / H1b,twitter,native6,Random Forest vs BiLSTM,,,,diff_ci_low,-0.010387,
+11_pairwise_tests,SQ2 / H1b,twitter,native6,Random Forest vs BiLSTM,,,,diff_ci_high,0.005248,
+11_pairwise_tests,SQ2 / H1b,twitter,native6,Random Forest vs BiLSTM,,,,bootstrap_p,0.522,
+11_pairwise_tests,SQ2 / H1b,twitter,native6,Random Forest vs BiLSTM,,,,mcnemar_p,0.640253,
+11_pairwise_tests,SQ2 / H1b,twitter,native6,Random Forest vs BiLSTM,,,,mcnemar_p_holm,1.0,
+11_pairwise_tests,SQ2 / H1b,twitter,native6,Random Forest vs BiLSTM,,,,significant,False,
+12_hypotheses,H1a,,,,,,Transformers outperform classical ML,decision,,Not tested - not enough models trained
+12_hypotheses,H1b_part1,,,,,,BiLSTM outperforms classical ML,comparisons,15,
+12_hypotheses,H1b_part1,,,,,,BiLSTM outperforms classical ML,significantly_better,4,
+12_hypotheses,H1b_part1,,,,,,BiLSTM outperforms classical ML,significantly_worse,5,
+12_hypotheses,H1b_part1,,,,,,BiLSTM outperforms classical ML,not_significant,6,
+12_hypotheses,H1b_part1,,,,,,BiLSTM outperforms classical ML,mean_f1_diff,0.004772,
+12_hypotheses,H1b_part1,,,,,,BiLSTM outperforms classical ML,decision,,Fail to reject H0: deep_learning significantly better in only 4/15 comparisons
+12_hypotheses,H1b_part2,,,,,,Transformers outperform BiLSTM,decision,,Not tested - not enough models trained
+12_hypotheses,SQ2,,,,,,friedman_all_models,friedman_chi2,7.32,
+12_hypotheses,SQ2,,,,,,friedman_all_models,friedman_p_value,0.062368,
+12_hypotheses,SQ2,,,Logistic Regression,,,friedman_all_models,average_rank,1.8,
+12_hypotheses,SQ2,,,SVM,,,friedman_all_models,average_rank,2.0,
+12_hypotheses,SQ2,,,BiLSTM,,,friedman_all_models,average_rank,2.4,
+12_hypotheses,SQ2,,,Random Forest,,,friedman_all_models,average_rank,3.8,
+12_hypotheses,H1c,,,,,,H1c: lower performance on implicit than explicit cyberbullying,pairs,8,
+12_hypotheses,H1c,,,,,,H1c: lower performance on implicit than explicit cyberbullying,models_with_lower_implicit_f1,8,
+12_hypotheses,H1c,,,,,,H1c: lower performance on implicit than explicit cyberbullying,median_f1_gap_explicit_minus_implicit,0.368821,
+12_hypotheses,H1c,,,,,,H1c: lower performance on implicit than explicit cyberbullying,wilcoxon_stat,36.0,
+12_hypotheses,H1c,,,,,,H1c: lower performance on implicit than explicit cyberbullying,wilcoxon_p,0.003906,
+12_hypotheses,H1c,,,,,,H1c: lower performance on implicit than explicit cyberbullying,decision,,Reject H0: implicit cyberbullying is detected significantly worse than explicit cyberbullying
+13_post_length,SQ4,jigsaw,binary,BiLSTM,,,"tokens (0.999, 17.0]",f1_macro,0.873428,n=6299
+13_post_length,SQ4,jigsaw,binary,BiLSTM,,,"tokens (17.0, 36.0]",f1_macro,0.85648,n=5740
+13_post_length,SQ4,jigsaw,binary,BiLSTM,,,"tokens (36.0, 76.0]",f1_macro,0.851498,n=5899
+13_post_length,SQ4,jigsaw,binary,BiLSTM,,,"tokens (76.0, 1250.0]",f1_macro,0.837022,n=5867
+13_post_length,SQ4,jigsaw,binary,Logistic Regression,,,"tokens (0.999, 17.0]",f1_macro,0.823219,n=6299
+13_post_length,SQ4,jigsaw,binary,Logistic Regression,,,"tokens (17.0, 36.0]",f1_macro,0.86786,n=5740
+13_post_length,SQ4,jigsaw,binary,Logistic Regression,,,"tokens (36.0, 76.0]",f1_macro,0.859208,n=5899
+13_post_length,SQ4,jigsaw,binary,Logistic Regression,,,"tokens (76.0, 1250.0]",f1_macro,0.826056,n=5867
+13_post_length,SQ4,jigsaw,binary,Random Forest,,,"tokens (0.999, 17.0]",f1_macro,0.884092,n=6299
+13_post_length,SQ4,jigsaw,binary,Random Forest,,,"tokens (17.0, 36.0]",f1_macro,0.829007,n=5740
+13_post_length,SQ4,jigsaw,binary,Random Forest,,,"tokens (36.0, 76.0]",f1_macro,0.779489,n=5899
+13_post_length,SQ4,jigsaw,binary,Random Forest,,,"tokens (76.0, 1250.0]",f1_macro,0.751197,n=5867
+13_post_length,SQ4,jigsaw,binary,SVM,,,"tokens (0.999, 17.0]",f1_macro,0.823903,n=6299
+13_post_length,SQ4,jigsaw,binary,SVM,,,"tokens (17.0, 36.0]",f1_macro,0.869993,n=5740
+13_post_length,SQ4,jigsaw,binary,SVM,,,"tokens (36.0, 76.0]",f1_macro,0.857187,n=5899
+13_post_length,SQ4,jigsaw,binary,SVM,,,"tokens (76.0, 1250.0]",f1_macro,0.821917,n=5867
+13_post_length,SQ4,twitter,binary,BiLSTM,,,"tokens (0.999, 13.0]",f1_macro,0.740974,n=1707
+13_post_length,SQ4,twitter,binary,BiLSTM,,,"tokens (13.0, 21.0]",f1_macro,0.744881,n=1735
+13_post_length,SQ4,twitter,binary,BiLSTM,,,"tokens (21.0, 35.0]",f1_macro,0.732101,n=1441
+13_post_length,SQ4,twitter,binary,BiLSTM,,,"tokens (35.0, 269.0]",f1_macro,0.497821,n=1613
+13_post_length,SQ4,twitter,binary,Logistic Regression,,,"tokens (0.999, 13.0]",f1_macro,0.763171,n=1707
+13_post_length,SQ4,twitter,binary,Logistic Regression,,,"tokens (13.0, 21.0]",f1_macro,0.766696,n=1735
+13_post_length,SQ4,twitter,binary,Logistic Regression,,,"tokens (21.0, 35.0]",f1_macro,0.732151,n=1441
+13_post_length,SQ4,twitter,binary,Logistic Regression,,,"tokens (35.0, 269.0]",f1_macro,0.499535,n=1613
+13_post_length,SQ4,twitter,binary,Random Forest,,,"tokens (0.999, 13.0]",f1_macro,0.76326,n=1707
+13_post_length,SQ4,twitter,binary,Random Forest,,,"tokens (13.0, 21.0]",f1_macro,0.75932,n=1735
+13_post_length,SQ4,twitter,binary,Random Forest,,,"tokens (21.0, 35.0]",f1_macro,0.706967,n=1441
+13_post_length,SQ4,twitter,binary,Random Forest,,,"tokens (35.0, 269.0]",f1_macro,1.0,n=1613
+13_post_length,SQ4,twitter,binary,SVM,,,"tokens (0.999, 13.0]",f1_macro,0.756399,n=1707
+13_post_length,SQ4,twitter,binary,SVM,,,"tokens (13.0, 21.0]",f1_macro,0.762268,n=1735
+13_post_length,SQ4,twitter,binary,SVM,,,"tokens (21.0, 35.0]",f1_macro,0.736639,n=1441
+13_post_length,SQ4,twitter,binary,SVM,,,"tokens (35.0, 269.0]",f1_macro,0.49969,n=1613
+14_language,SQ4,jigsaw,binary,BiLSTM,,,english,accuracy,0.945448,n=23079
+14_language,SQ4,jigsaw,binary,BiLSTM,,,english,f1_macro,0.858582,n=23079
+14_language,SQ4,jigsaw,binary,BiLSTM,,,non_english/undetermined,accuracy,0.904959,n=726
+14_language,SQ4,jigsaw,binary,BiLSTM,,,non_english/undetermined,f1_macro,0.873278,n=726
+14_language,SQ4,jigsaw,binary,Logistic Regression,,,english,accuracy,0.942459,n=23079
+14_language,SQ4,jigsaw,binary,Logistic Regression,,,english,f1_macro,0.847018,n=23079
+14_language,SQ4,jigsaw,binary,Logistic Regression,,,non_english/undetermined,accuracy,0.833333,n=726
+14_language,SQ4,jigsaw,binary,Logistic Regression,,,non_english/undetermined,f1_macro,0.80195,n=726
+14_language,SQ4,jigsaw,binary,Random Forest,,,english,accuracy,0.950258,n=23079
+14_language,SQ4,jigsaw,binary,Random Forest,,,english,f1_macro,0.828808,n=23079
+14_language,SQ4,jigsaw,binary,Random Forest,,,non_english/undetermined,accuracy,0.92562,n=726
+14_language,SQ4,jigsaw,binary,Random Forest,,,non_english/undetermined,f1_macro,0.891773,n=726
+14_language,SQ4,jigsaw,binary,SVM,,,english,accuracy,0.942978,n=23079
+14_language,SQ4,jigsaw,binary,SVM,,,english,f1_macro,0.847176,n=23079
+14_language,SQ4,jigsaw,binary,SVM,,,non_english/undetermined,accuracy,0.829201,n=726
+14_language,SQ4,jigsaw,binary,SVM,,,non_english/undetermined,f1_macro,0.797826,n=726
+14_language,SQ4,twitter,binary,BiLSTM,,,english,accuracy,0.878158,n=6057
+14_language,SQ4,twitter,binary,BiLSTM,,,english,f1_macro,0.763329,n=6057
+14_language,SQ4,twitter,binary,BiLSTM,,,non_english/undetermined,accuracy,0.749431,n=439
+14_language,SQ4,twitter,binary,BiLSTM,,,non_english/undetermined,f1_macro,0.748615,n=439
+14_language,SQ4,twitter,binary,Logistic Regression,,,english,accuracy,0.907215,n=6057
+14_language,SQ4,twitter,binary,Logistic Regression,,,english,f1_macro,0.777195,n=6057
+14_language,SQ4,twitter,binary,Logistic Regression,,,non_english/undetermined,accuracy,0.769932,n=439
+14_language,SQ4,twitter,binary,Logistic Regression,,,non_english/undetermined,f1_macro,0.769697,n=439
+14_language,SQ4,twitter,binary,Random Forest,,,english,accuracy,0.909856,n=6057
+14_language,SQ4,twitter,binary,Random Forest,,,english,f1_macro,0.766648,n=6057
+14_language,SQ4,twitter,binary,Random Forest,,,non_english/undetermined,accuracy,0.774487,n=439
+14_language,SQ4,twitter,binary,Random Forest,,,non_english/undetermined,f1_macro,0.774469,n=439
+14_language,SQ4,twitter,binary,SVM,,,english,accuracy,0.904078,n=6057
+14_language,SQ4,twitter,binary,SVM,,,english,f1_macro,0.773894,n=6057
+14_language,SQ4,twitter,binary,SVM,,,non_english/undetermined,accuracy,0.765376,n=439
+14_language,SQ4,twitter,binary,SVM,,,non_english/undetermined,f1_macro,0.764888,n=439
+14_language,SQ4,twitter,,,,,en,percent_of_posts,93.28,n=40393
+14_language,SQ4,twitter,,,,,und,percent_of_posts,1.3,n=561
+14_language,SQ4,twitter,,,,,pt,percent_of_posts,0.7,n=304
+14_language,SQ4,twitter,,,,,da,percent_of_posts,0.55,n=237
+14_language,SQ4,twitter,,,,,af,percent_of_posts,0.46,n=198
+14_language,SQ4,twitter,,,,,cy,percent_of_posts,0.44,n=189
+14_language,SQ4,twitter,,,,,so,percent_of_posts,0.42,n=180
+14_language,SQ4,twitter,,,,,no,percent_of_posts,0.32,n=140
+14_language,SQ4,twitter,,,,,id,percent_of_posts,0.3,n=128
+14_language,SQ4,twitter,,,,,es,percent_of_posts,0.29,n=127
+14_language,SQ4,twitter,,,,,fr,percent_of_posts,0.24,n=103
+14_language,SQ4,twitter,,,,,tl,percent_of_posts,0.23,n=100
+14_language,SQ4,twitter,,,,,sv,percent_of_posts,0.21,n=93
+14_language,SQ4,twitter,,,,,it,percent_of_posts,0.2,n=87
+14_language,SQ4,twitter,,,,,ca,percent_of_posts,0.18,n=80
+14_language,SQ4,twitter,,,,,et,percent_of_posts,0.16,n=68
+14_language,SQ4,twitter,,,,,nl,percent_of_posts,0.1,n=43
+14_language,SQ4,twitter,,,,,fi,percent_of_posts,0.09,n=40
+14_language,SQ4,twitter,,,,,tr,percent_of_posts,0.08,n=33
+14_language,SQ4,twitter,,,,,hr,percent_of_posts,0.07,n=32
+14_language,SQ4,twitter,,,,,sw,percent_of_posts,0.07,n=32
+14_language,SQ4,twitter,,,,,sq,percent_of_posts,0.06,n=28
+14_language,SQ4,twitter,,,,,ro,percent_of_posts,0.06,n=25
+14_language,SQ4,twitter,,,,,de,percent_of_posts,0.04,n=17
+14_language,SQ4,twitter,,,,,sl,percent_of_posts,0.03,n=15
+14_language,SQ4,twitter,,,,,sk,percent_of_posts,0.03,n=13
+14_language,SQ4,twitter,,,,,pl,percent_of_posts,0.03,n=11
+14_language,SQ4,twitter,,,,,cs,percent_of_posts,0.02,n=7
+14_language,SQ4,twitter,,,,,hu,percent_of_posts,0.01,n=5
+14_language,SQ4,twitter,,,,,ja,percent_of_posts,0.01,n=4
+14_language,SQ4,twitter,,,,,lv,percent_of_posts,0.01,n=3
+14_language,SQ4,twitter,,,,,lt,percent_of_posts,0.01,n=3
+14_language,SQ4,twitter,,,,,vi,percent_of_posts,0.0,n=2
+14_language,SQ4,jigsaw,,,,,en,percent_of_posts,96.93,n=153831
+14_language,SQ4,jigsaw,,,,,fr,percent_of_posts,0.31,n=494
+14_language,SQ4,jigsaw,,,,,af,percent_of_posts,0.27,n=424
+14_language,SQ4,jigsaw,,,,,cy,percent_of_posts,0.22,n=347
+14_language,SQ4,jigsaw,,,,,und,percent_of_posts,0.19,n=307
+14_language,SQ4,jigsaw,,,,,sv,percent_of_posts,0.19,n=294
+14_language,SQ4,jigsaw,,,,,no,percent_of_posts,0.17,n=271
+14_language,SQ4,jigsaw,,,,,ca,percent_of_posts,0.15,n=244
+14_language,SQ4,jigsaw,,,,,nl,percent_of_posts,0.15,n=239
+14_language,SQ4,jigsaw,,,,,it,percent_of_posts,0.14,n=227
+14_language,SQ4,jigsaw,,,,,so,percent_of_posts,0.14,n=221
+14_language,SQ4,jigsaw,,,,,da,percent_of_posts,0.13,n=204
+14_language,SQ4,jigsaw,,,,,id,percent_of_posts,0.12,n=194
+14_language,SQ4,jigsaw,,,,,et,percent_of_posts,0.11,n=173
+14_language,SQ4,jigsaw,,,,,tl,percent_of_posts,0.1,n=166
+14_language,SQ4,jigsaw,,,,,es,percent_of_posts,0.1,n=155
+14_language,SQ4,jigsaw,,,,,ro,percent_of_posts,0.08,n=132
+14_language,SQ4,jigsaw,,,,,fi,percent_of_posts,0.07,n=107
+14_language,SQ4,jigsaw,,,,,tr,percent_of_posts,0.06,n=95
+14_language,SQ4,jigsaw,,,,,pl,percent_of_posts,0.05,n=79
+14_language,SQ4,jigsaw,,,,,hr,percent_of_posts,0.04,n=69
+14_language,SQ4,jigsaw,,,,,sw,percent_of_posts,0.04,n=62
+14_language,SQ4,jigsaw,,,,,sl,percent_of_posts,0.03,n=55
+14_language,SQ4,jigsaw,,,,,hu,percent_of_posts,0.03,n=55
+14_language,SQ4,jigsaw,,,,,de,percent_of_posts,0.03,n=54
+14_language,SQ4,jigsaw,,,,,pt,percent_of_posts,0.03,n=52
+14_language,SQ4,jigsaw,,,,,sk,percent_of_posts,0.03,n=44
+14_language,SQ4,jigsaw,,,,,sq,percent_of_posts,0.03,n=40
+14_language,SQ4,jigsaw,,,,,cs,percent_of_posts,0.02,n=28
+14_language,SQ4,jigsaw,,,,,lt,percent_of_posts,0.01,n=13
+14_language,SQ4,jigsaw,,,,,lv,percent_of_posts,0.01,n=10
+14_language,SQ4,jigsaw,,,,,vi,percent_of_posts,0.0,n=6
+14_language,SQ4,jigsaw,,,,,el,percent_of_posts,0.0,n=1
+14_language,SQ4,jigsaw,,,,,bg,percent_of_posts,0.0,n=1
+14_language,SQ4,jigsaw,,,,,mk,percent_of_posts,0.0,n=1
+14_language,SQ4,jigsaw,,,,,uk,percent_of_posts,0.0,n=1
+14_language,SQ4,jigsaw,,,,,ja,percent_of_posts,0.0,n=1
+15_confusions,SQ3,jigsaw,binary,BiLSTM,,,not_cyberbullying -> cyberbullying,count,925,
+15_confusions,SQ3,jigsaw,binary,BiLSTM,,,cyberbullying -> not_cyberbullying,count,403,
+15_confusions,SQ3,jigsaw,harmonised4,BiLSTM,,,not_cyberbullying -> implicit_cyberbullying,count,967,
+15_confusions,SQ3,jigsaw,harmonised4,BiLSTM,,,not_cyberbullying -> explicit_cyberbullying,count,370,
+15_confusions,SQ3,jigsaw,harmonised4,BiLSTM,,,implicit_cyberbullying -> not_cyberbullying,count,194,
+15_confusions,SQ3,jigsaw,harmonised4,BiLSTM,,,explicit_cyberbullying -> implicit_cyberbullying,count,145,
+15_confusions,SQ3,jigsaw,harmonised4,BiLSTM,,,explicit_cyberbullying -> not_cyberbullying,count,128,
+15_confusions,SQ3,jigsaw,harmonised4,BiLSTM,,,explicit_cyberbullying -> hate_speech,count,122,
+15_confusions,SQ3,jigsaw,harmonised4,BiLSTM,,,not_cyberbullying -> hate_speech,count,68,
+15_confusions,SQ3,jigsaw,harmonised4,BiLSTM,,,hate_speech -> explicit_cyberbullying,count,60,
+15_confusions,SQ3,jigsaw,harmonised4,BiLSTM,,,implicit_cyberbullying -> explicit_cyberbullying,count,51,
+15_confusions,SQ3,jigsaw,harmonised4,BiLSTM,,,implicit_cyberbullying -> hate_speech,count,21,
+15_confusions,SQ3,jigsaw,harmonised4,BiLSTM,,,hate_speech -> implicit_cyberbullying,count,18,
+15_confusions,SQ3,jigsaw,harmonised4,BiLSTM,,,hate_speech -> not_cyberbullying,count,10,
+15_confusions,SQ3,twitter,binary,Logistic Regression,,,cyberbullying -> not_cyberbullying,count,347,
+15_confusions,SQ3,twitter,binary,Logistic Regression,,,not_cyberbullying -> cyberbullying,count,316,
+15_confusions,SQ3,twitter,harmonised4,SVM,,,not_cyberbullying -> implicit_cyberbullying,count,158,
+15_confusions,SQ3,twitter,harmonised4,SVM,,,not_cyberbullying -> hate_speech,count,115,
+15_confusions,SQ3,twitter,harmonised4,SVM,,,implicit_cyberbullying -> explicit_cyberbullying,count,105,
+15_confusions,SQ3,twitter,harmonised4,SVM,,,implicit_cyberbullying -> not_cyberbullying,count,96,
+15_confusions,SQ3,twitter,harmonised4,SVM,,,hate_speech -> not_cyberbullying,count,85,
+15_confusions,SQ3,twitter,harmonised4,SVM,,,not_cyberbullying -> explicit_cyberbullying,count,70,
+15_confusions,SQ3,twitter,harmonised4,SVM,,,hate_speech -> implicit_cyberbullying,count,63,
+15_confusions,SQ3,twitter,harmonised4,SVM,,,explicit_cyberbullying -> implicit_cyberbullying,count,57,
+15_confusions,SQ3,twitter,harmonised4,SVM,,,implicit_cyberbullying -> hate_speech,count,54,
+15_confusions,SQ3,twitter,harmonised4,SVM,,,explicit_cyberbullying -> not_cyberbullying,count,52,
+15_confusions,SQ3,twitter,harmonised4,SVM,,,explicit_cyberbullying -> hate_speech,count,41,
+15_confusions,SQ3,twitter,harmonised4,SVM,,,hate_speech -> explicit_cyberbullying,count,28,
+15_confusions,SQ3,twitter,native6,SVM,,,not_cyberbullying -> other_cyberbullying,count,189,
+15_confusions,SQ3,twitter,native6,SVM,,,other_cyberbullying -> not_cyberbullying,count,150,
+15_confusions,SQ3,twitter,native6,SVM,,,gender -> other_cyberbullying,count,73,
+15_confusions,SQ3,twitter,native6,SVM,,,gender -> not_cyberbullying,count,56,
+15_confusions,SQ3,twitter,native6,SVM,,,not_cyberbullying -> religion,count,44,
+15_confusions,SQ3,twitter,native6,SVM,,,not_cyberbullying -> age,count,39,
+15_confusions,SQ3,twitter,native6,SVM,,,other_cyberbullying -> gender,count,39,
+15_confusions,SQ3,twitter,native6,SVM,,,not_cyberbullying -> gender,count,36,
+15_confusions,SQ3,twitter,native6,SVM,,,religion -> not_cyberbullying,count,22,
+15_confusions,SQ3,twitter,native6,SVM,,,other_cyberbullying -> age,count,18,
+15_confusions,SQ3,twitter,native6,SVM,,,religion -> other_cyberbullying,count,14,
+15_confusions,SQ3,twitter,native6,SVM,,,other_cyberbullying -> ethnicity,count,14,
+15_confusions,SQ3,twitter,native6,SVM,,,not_cyberbullying -> ethnicity,count,13,
+15_confusions,SQ3,twitter,native6,SVM,,,age -> not_cyberbullying,count,10,
+15_confusions,SQ3,twitter,native6,SVM,,,age -> other_cyberbullying,count,9,
+15_confusions,SQ3,twitter,native6,SVM,,,gender -> religion,count,8,
+15_confusions,SQ3,twitter,native6,SVM,,,other_cyberbullying -> religion,count,7,
+15_confusions,SQ3,twitter,native6,SVM,,,gender -> ethnicity,count,5,
+15_confusions,SQ3,twitter,native6,SVM,,,ethnicity -> not_cyberbullying,count,5,
+15_confusions,SQ3,twitter,native6,SVM,,,gender -> age,count,4,
+15_confusions,SQ3,twitter,native6,SVM,,,religion -> gender,count,4,
+15_confusions,SQ3,twitter,native6,SVM,,,age -> gender,count,4,
+15_confusions,SQ3,twitter,native6,SVM,,,religion -> age,count,3,
+15_confusions,SQ3,twitter,native6,SVM,,,age -> religion,count,3,
+15_confusions,SQ3,twitter,native6,SVM,,,age -> ethnicity,count,2,
+15_confusions,SQ3,twitter,native6,SVM,,,ethnicity -> other_cyberbullying,count,2,
+15_confusions,SQ3,twitter,native6,SVM,,,ethnicity -> religion,count,1,
+15_confusions,SQ3,twitter,native6,SVM,,,ethnicity -> age,count,1,
+16_feature_importance,SQ3,jigsaw,binary,Logistic Regression,,,cyberbullying,importance,31.014017,rank 1: fuck
+16_feature_importance,SQ3,jigsaw,binary,Logistic Regression,,,cyberbullying,importance,25.065335,rank 2: fucking
+16_feature_importance,SQ3,jigsaw,binary,Logistic Regression,,,cyberbullying,importance,22.679743,rank 3: shit
+16_feature_importance,SQ3,jigsaw,binary,Logistic Regression,,,cyberbullying,importance,22.158858,rank 4: idiot
+16_feature_importance,SQ3,jigsaw,binary,Logistic Regression,,,cyberbullying,importance,18.625675,rank 5: stupid
+16_feature_importance,SQ3,jigsaw,binary,Logistic Regression,,,cyberbullying,importance,17.892742,rank 6: as
+16_feature_importance,SQ3,jigsaw,binary,Logistic Regression,,,cyberbullying,importance,16.613403,rank 7: asshole
+16_feature_importance,SQ3,jigsaw,binary,Logistic Regression,,,cyberbullying,importance,16.594848,rank 8: bullshit
+16_feature_importance,SQ3,jigsaw,binary,Logistic Regression,,,cyberbullying,importance,15.753088,rank 9: suck
+16_feature_importance,SQ3,jigsaw,binary,Logistic Regression,,,cyberbullying,importance,14.753878,rank 10: bitch
+16_feature_importance,SQ3,jigsaw,binary,Random Forest,,,all,importance,0.039915,rank 1: fuck
+16_feature_importance,SQ3,jigsaw,binary,Random Forest,,,all,importance,0.02615,rank 2: you
+16_feature_importance,SQ3,jigsaw,binary,Random Forest,,,all,importance,0.023837,rank 3: fucking
+16_feature_importance,SQ3,jigsaw,binary,Random Forest,,,all,importance,0.018449,rank 4: shit
+16_feature_importance,SQ3,jigsaw,binary,Random Forest,,,all,importance,0.017051,rank 5: not
+16_feature_importance,SQ3,jigsaw,binary,Random Forest,,,all,importance,0.01622,rank 6: article
+16_feature_importance,SQ3,jigsaw,binary,Random Forest,,,all,importance,0.013965,rank 7: suck
+16_feature_importance,SQ3,jigsaw,binary,Random Forest,,,all,importance,0.012996,rank 8: fuck you
+16_feature_importance,SQ3,jigsaw,binary,Random Forest,,,all,importance,0.012552,rank 9: idiot
+16_feature_importance,SQ3,jigsaw,binary,Random Forest,,,all,importance,0.011789,rank 10: talk
+16_feature_importance,SQ3,jigsaw,harmonised4,Logistic Regression,,,explicit_cyberbullying,importance,12.384712,rank 1: fuck
+16_feature_importance,SQ3,jigsaw,harmonised4,Logistic Regression,,,explicit_cyberbullying,importance,11.65345,rank 2: idiot
+16_feature_importance,SQ3,jigsaw,harmonised4,Logistic Regression,,,explicit_cyberbullying,importance,10.148353,rank 3: fucking
+16_feature_importance,SQ3,jigsaw,harmonised4,Logistic Regression,,,explicit_cyberbullying,importance,10.125635,rank 4: shit
+16_feature_importance,SQ3,jigsaw,harmonised4,Logistic Regression,,,explicit_cyberbullying,importance,9.354058,rank 5: stupid
+16_feature_importance,SQ3,jigsaw,harmonised4,Logistic Regression,,,explicit_cyberbullying,importance,8.69228,rank 6: as
+16_feature_importance,SQ3,jigsaw,harmonised4,Logistic Regression,,,explicit_cyberbullying,importance,8.647341,rank 7: crap
+16_feature_importance,SQ3,jigsaw,harmonised4,Logistic Regression,,,explicit_cyberbullying,importance,8.030909,rank 8: suck
+16_feature_importance,SQ3,jigsaw,harmonised4,Logistic Regression,,,explicit_cyberbullying,importance,7.538119,rank 9: asshole
+16_feature_importance,SQ3,jigsaw,harmonised4,Logistic Regression,,,explicit_cyberbullying,importance,7.301512,rank 10: dick
+16_feature_importance,SQ3,jigsaw,harmonised4,Logistic Regression,,,hate_speech,importance,12.89489,rank 1: nigger
+16_feature_importance,SQ3,jigsaw,harmonised4,Logistic Regression,,,hate_speech,importance,11.644672,rank 2: fuck
+16_feature_importance,SQ3,jigsaw,harmonised4,Logistic Regression,,,hate_speech,importance,10.585984,rank 3: fucking
+16_feature_importance,SQ3,jigsaw,harmonised4,Logistic Regression,,,hate_speech,importance,8.871933,rank 4: homosexual
+16_feature_importance,SQ3,jigsaw,harmonised4,Logistic Regression,,,hate_speech,importance,8.360729,rank 5: shit
+16_feature_importance,SQ3,jigsaw,harmonised4,Logistic Regression,,,hate_speech,importance,8.238388,rank 6: nigga
+16_feature_importance,SQ3,jigsaw,harmonised4,Logistic Regression,,,hate_speech,importance,8.233949,rank 7: jew
+16_feature_importance,SQ3,jigsaw,harmonised4,Logistic Regression,,,hate_speech,importance,8.178608,rank 8: stupid
+16_feature_importance,SQ3,jigsaw,harmonised4,Logistic Regression,,,hate_speech,importance,7.873503,rank 9: gay
+16_feature_importance,SQ3,jigsaw,harmonised4,Logistic Regression,,,hate_speech,importance,7.457432,rank 10: faggot
+16_feature_importance,SQ3,jigsaw,harmonised4,Logistic Regression,,,implicit_cyberbullying,importance,5.149826,rank 1: hell
+16_feature_importance,SQ3,jigsaw,harmonised4,Logistic Regression,,,implicit_cyberbullying,importance,5.10771,rank 2: ridiculous
+16_feature_importance,SQ3,jigsaw,harmonised4,Logistic Regression,,,implicit_cyberbullying,importance,4.821699,rank 3: gay
+16_feature_importance,SQ3,jigsaw,harmonised4,Logistic Regression,,,implicit_cyberbullying,importance,4.289121,rank 4: porn
+16_feature_importance,SQ3,jigsaw,harmonised4,Logistic Regression,,,implicit_cyberbullying,importance,4.21958,rank 5: nazi
+16_feature_importance,SQ3,jigsaw,harmonised4,Logistic Regression,,,implicit_cyberbullying,importance,3.945606,rank 6: piss
+16_feature_importance,SQ3,jigsaw,harmonised4,Logistic Regression,,,implicit_cyberbullying,importance,3.866865,rank 7: racist
+16_feature_importance,SQ3,jigsaw,harmonised4,Logistic Regression,,,implicit_cyberbullying,importance,3.622448,rank 8: sex
+16_feature_importance,SQ3,jigsaw,harmonised4,Logistic Regression,,,implicit_cyberbullying,importance,3.525241,rank 9: nerd
+16_feature_importance,SQ3,jigsaw,harmonised4,Logistic Regression,,,implicit_cyberbullying,importance,3.470193,rank 10: sockpuppet
+16_feature_importance,SQ3,jigsaw,harmonised4,Random Forest,,,all,importance,0.023717,rank 1: fuck
+16_feature_importance,SQ3,jigsaw,harmonised4,Random Forest,,,all,importance,0.01967,rank 2: gay
+16_feature_importance,SQ3,jigsaw,harmonised4,Random Forest,,,all,importance,0.015484,rank 3: faggot
+16_feature_importance,SQ3,jigsaw,harmonised4,Random Forest,,,all,importance,0.015435,rank 4: you
+16_feature_importance,SQ3,jigsaw,harmonised4,Random Forest,,,all,importance,0.014232,rank 5: fucking
+16_feature_importance,SQ3,jigsaw,harmonised4,Random Forest,,,all,importance,0.014134,rank 6: nigger
+16_feature_importance,SQ3,jigsaw,harmonised4,Random Forest,,,all,importance,0.011329,rank 7: shit
+16_feature_importance,SQ3,jigsaw,harmonised4,Random Forest,,,all,importance,0.009905,rank 8: article
+16_feature_importance,SQ3,jigsaw,harmonised4,Random Forest,,,all,importance,0.009862,rank 9: not
+16_feature_importance,SQ3,jigsaw,harmonised4,Random Forest,,,all,importance,0.008335,rank 10: fuck you
+16_feature_importance,SQ3,twitter,binary,Logistic Regression,,,cyberbullying,importance,11.710181,rank 1: idiot
+16_feature_importance,SQ3,twitter,binary,Logistic Regression,,,cyberbullying,importance,11.479772,rank 2: muslim
+16_feature_importance,SQ3,twitter,binary,Logistic Regression,,,cyberbullying,importance,11.438714,rank 3: nigger
+16_feature_importance,SQ3,twitter,binary,Logistic Regression,,,cyberbullying,importance,10.439039,rank 4: rape
+16_feature_importance,SQ3,twitter,binary,Logistic Regression,,,cyberbullying,importance,9.221334,rank 5: bitch
+16_feature_importance,SQ3,twitter,binary,Logistic Regression,,,cyberbullying,importance,9.120581,rank 6: gay
+16_feature_importance,SQ3,twitter,binary,Logistic Regression,,,cyberbullying,importance,8.961889,rank 7: girl
+16_feature_importance,SQ3,twitter,binary,Logistic Regression,,,cyberbullying,importance,8.848298,rank 8: feminazi
+16_feature_importance,SQ3,twitter,binary,Logistic Regression,,,cyberbullying,importance,8.839253,rank 9: dumb
+16_feature_importance,SQ3,twitter,binary,Logistic Regression,,,cyberbullying,importance,8.817789,rank 10: school bully
+16_feature_importance,SQ3,twitter,binary,Random Forest,,,all,importance,0.024658,rank 1: mkr
+16_feature_importance,SQ3,twitter,binary,Random Forest,,,all,importance,0.014538,rank 2: you
+16_feature_importance,SQ3,twitter,binary,Random Forest,,,all,importance,0.014417,rank 3: nigger
+16_feature_importance,SQ3,twitter,binary,Random Forest,,,all,importance,0.013439,rank 4: dumb
+16_feature_importance,SQ3,twitter,binary,Random Forest,,,all,importance,0.012641,rank 5: muslim
+16_feature_importance,SQ3,twitter,binary,Random Forest,,,all,importance,0.011891,rank 6: school
+16_feature_importance,SQ3,twitter,binary,Random Forest,,,all,importance,0.011469,rank 7: fuck
+16_feature_importance,SQ3,twitter,binary,Random Forest,,,all,importance,0.011021,rank 8: idiot
+16_feature_importance,SQ3,twitter,binary,Random Forest,,,all,importance,0.010794,rank 9: bullying
+16_feature_importance,SQ3,twitter,binary,Random Forest,,,all,importance,0.010705,rank 10: gay
+16_feature_importance,SQ3,twitter,harmonised4,Logistic Regression,,,explicit_cyberbullying,importance,17.642111,rank 1: bullied
+16_feature_importance,SQ3,twitter,harmonised4,Logistic Regression,,,explicit_cyberbullying,importance,10.359365,rank 2: idiot
+16_feature_importance,SQ3,twitter,harmonised4,Logistic Regression,,,explicit_cyberbullying,importance,9.867034,rank 3: fucking
+16_feature_importance,SQ3,twitter,harmonised4,Logistic Regression,,,explicit_cyberbullying,importance,9.807744,rank 4: bully
+16_feature_importance,SQ3,twitter,harmonised4,Logistic Regression,,,explicit_cyberbullying,importance,9.136087,rank 5: school
+16_feature_importance,SQ3,twitter,harmonised4,Logistic Regression,,,explicit_cyberbullying,importance,8.124456,rank 6: bullying
+16_feature_importance,SQ3,twitter,harmonised4,Logistic Regression,,,explicit_cyberbullying,importance,7.993122,rank 7: girl
+16_feature_importance,SQ3,twitter,harmonised4,Logistic Regression,,,explicit_cyberbullying,importance,6.13935,rank 8: as
+16_feature_importance,SQ3,twitter,harmonised4,Logistic Regression,,,explicit_cyberbullying,importance,5.877275,rank 9: fuck
+16_feature_importance,SQ3,twitter,harmonised4,Logistic Regression,,,explicit_cyberbullying,importance,5.130336,rank 10: stupid
+16_feature_importance,SQ3,twitter,harmonised4,Logistic Regression,,,hate_speech,importance,16.361267,rank 1: muslim
+16_feature_importance,SQ3,twitter,harmonised4,Logistic Regression,,,hate_speech,importance,14.25885,rank 2: nigger
+16_feature_importance,SQ3,twitter,harmonised4,Logistic Regression,,,hate_speech,importance,11.257658,rank 3: rape
+16_feature_importance,SQ3,twitter,harmonised4,Logistic Regression,,,hate_speech,importance,10.858166,rank 4: gay
+16_feature_importance,SQ3,twitter,harmonised4,Logistic Regression,,,hate_speech,importance,10.53157,rank 5: dumb
+16_feature_importance,SQ3,twitter,harmonised4,Logistic Regression,,,hate_speech,importance,8.278591,rank 6: christian
+16_feature_importance,SQ3,twitter,harmonised4,Logistic Regression,,,hate_speech,importance,7.434228,rank 7: notsexist
+16_feature_importance,SQ3,twitter,harmonised4,Logistic Regression,,,hate_speech,importance,7.336298,rank 8: bitch
+16_feature_importance,SQ3,twitter,harmonised4,Logistic Regression,,,hate_speech,importance,7.303833,rank 9: sexist
+16_feature_importance,SQ3,twitter,harmonised4,Logistic Regression,,,hate_speech,importance,7.207448,rank 10: black
+16_feature_importance,SQ3,twitter,harmonised4,Logistic Regression,,,implicit_cyberbullying,importance,7.088725,rank 1: school bully
+16_feature_importance,SQ3,twitter,harmonised4,Logistic Regression,,,implicit_cyberbullying,importance,5.230253,rank 2: high school
+16_feature_importance,SQ3,twitter,harmonised4,Logistic Regression,,,implicit_cyberbullying,importance,4.505713,rank 3: bully school
+16_feature_importance,SQ3,twitter,harmonised4,Logistic Regression,,,implicit_cyberbullying,importance,4.451468,rank 4: blameonenotall
+16_feature_importance,SQ3,twitter,harmonised4,Logistic Regression,,,implicit_cyberbullying,importance,3.225485,rank 5: harassment
+16_feature_importance,SQ3,twitter,harmonised4,Logistic Regression,,,implicit_cyberbullying,importance,3.034454,rank 6: bully high
+16_feature_importance,SQ3,twitter,harmonised4,Logistic Regression,,,implicit_cyberbullying,importance,2.782253,rank 7: gg
+16_feature_importance,SQ3,twitter,harmonised4,Logistic Regression,,,implicit_cyberbullying,importance,2.717853,rank 8: wadhwa
+16_feature_importance,SQ3,twitter,harmonised4,Logistic Regression,,,implicit_cyberbullying,importance,2.65292,rank 9: abuse
+16_feature_importance,SQ3,twitter,harmonised4,Logistic Regression,,,implicit_cyberbullying,importance,2.389141,rank 10: fix
+16_feature_importance,SQ3,twitter,harmonised4,Random Forest,,,all,importance,0.025475,rank 1: school
+16_feature_importance,SQ3,twitter,harmonised4,Random Forest,,,all,importance,0.023602,rank 2: bully
+16_feature_importance,SQ3,twitter,harmonised4,Random Forest,,,all,importance,0.020775,rank 3: bullied
+16_feature_importance,SQ3,twitter,harmonised4,Random Forest,,,all,importance,0.016077,rank 4: high
+16_feature_importance,SQ3,twitter,harmonised4,Random Forest,,,all,importance,0.016034,rank 5: nigger
+16_feature_importance,SQ3,twitter,harmonised4,Random Forest,,,all,importance,0.015091,rank 6: high school
+16_feature_importance,SQ3,twitter,harmonised4,Random Forest,,,all,importance,0.014977,rank 7: muslim
+16_feature_importance,SQ3,twitter,harmonised4,Random Forest,,,all,importance,0.014897,rank 8: mkr
+16_feature_importance,SQ3,twitter,harmonised4,Random Forest,,,all,importance,0.013947,rank 9: girl
+16_feature_importance,SQ3,twitter,harmonised4,Random Forest,,,all,importance,0.011953,rank 10: dumb
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,age,importance,22.268338,rank 1: school
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,age,importance,10.843751,rank 2: high
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,age,importance,9.689151,rank 3: bully
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,age,importance,9.585813,rank 4: girl
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,age,importance,8.624127,rank 5: school bully
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,age,importance,8.480091,rank 6: bullied
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,age,importance,5.885452,rank 7: high school
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,age,importance,4.855571,rank 8: bully school
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,age,importance,4.789408,rank 9: kid
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,age,importance,4.039996,rank 10: teacher
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,ethnicity,importance,18.983894,rank 1: nigger
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,ethnicity,importance,14.414951,rank 2: dumb
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,ethnicity,importance,10.464371,rank 3: black
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,ethnicity,importance,10.077457,rank 4: past
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,ethnicity,importance,9.833713,rank 5: negro
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,ethnicity,importance,9.793969,rank 6: ur
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,ethnicity,importance,9.299841,rank 7: racism
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,ethnicity,importance,9.124781,rank 8: colored
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,ethnicity,importance,8.826115,rank 9: first
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,ethnicity,importance,8.287524,rank 10: white
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,gender,importance,13.459233,rank 1: rape
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,gender,importance,12.746692,rank 2: gay
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,gender,importance,8.759523,rank 3: female
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,gender,importance,8.608515,rank 4: joke
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,gender,importance,8.484903,rank 5: sexist
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,gender,importance,7.983371,rank 6: bitch
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,gender,importance,7.954819,rank 7: notsexist
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,gender,importance,7.687413,rank 8: feminazi
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,gender,importance,5.759177,rank 9: rape joke
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,gender,importance,5.734698,rank 10: not sexist
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,other_cyberbullying,importance,6.304075,rank 1: idiot
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,other_cyberbullying,importance,5.131257,rank 2: bully
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,other_cyberbullying,importance,4.638527,rank 3: blameonenotall
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,other_cyberbullying,importance,3.891871,rank 4: fucking
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,other_cyberbullying,importance,3.882723,rank 5: bullied
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,other_cyberbullying,importance,3.274547,rank 6: harassment
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,other_cyberbullying,importance,2.701661,rank 7: bullying me
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,other_cyberbullying,importance,2.568432,rank 8: gg
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,other_cyberbullying,importance,2.430401,rank 9: wadhwa
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,other_cyberbullying,importance,2.230319,rank 10: gamergate
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,religion,importance,20.729002,rank 1: muslim
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,religion,importance,12.437561,rank 2: christian
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,religion,importance,10.343025,rank 3: christian woman
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,religion,importance,9.555177,rank 4: islam
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,religion,importance,9.251411,rank 5: idiot
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,religion,importance,7.888024,rank 6: terrorist
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,religion,importance,7.671009,rank 7: radical
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,religion,importance,7.445918,rank 8: islamic
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,religion,importance,7.172469,rank 9: terrorism
+16_feature_importance,SQ3,twitter,native6,Logistic Regression,,,religion,importance,6.602503,rank 10: islamic terrorism
+16_feature_importance,SQ3,twitter,native6,Random Forest,,,all,importance,0.042204,rank 1: school
+16_feature_importance,SQ3,twitter,native6,Random Forest,,,all,importance,0.02425,rank 2: dumb
+16_feature_importance,SQ3,twitter,native6,Random Forest,,,all,importance,0.022473,rank 3: nigger
+16_feature_importance,SQ3,twitter,native6,Random Forest,,,all,importance,0.022262,rank 4: muslim
+16_feature_importance,SQ3,twitter,native6,Random Forest,,,all,importance,0.020805,rank 5: bully
+16_feature_importance,SQ3,twitter,native6,Random Forest,,,all,importance,0.019526,rank 6: rape
+16_feature_importance,SQ3,twitter,native6,Random Forest,,,all,importance,0.01874,rank 7: fuck
+16_feature_importance,SQ3,twitter,native6,Random Forest,,,all,importance,0.016785,rank 8: bullied
+16_feature_importance,SQ3,twitter,native6,Random Forest,,,all,importance,0.016772,rank 9: high school
+16_feature_importance,SQ3,twitter,native6,Random Forest,,,all,importance,0.016249,rank 10: gay
+17_deployment,SQ5,jigsaw,binary,BiLSTM,,,,f1_in_domain,0.860267,
+17_deployment,SQ5,jigsaw,binary,BiLSTM,,,,f1_cross_mean,0.512928,
+17_deployment,SQ5,jigsaw,binary,BiLSTM,,,,selection_score,0.686597,
+17_deployment,SQ5,jigsaw,binary,BiLSTM,,,,latency_ms,0.648052,
+17_deployment,SQ5,jigsaw,binary,Logistic Regression,,,,f1_in_domain,0.845847,
+17_deployment,SQ5,jigsaw,binary,Logistic Regression,,,,f1_cross_mean,0.511608,
+17_deployment,SQ5,jigsaw,binary,Logistic Regression,,,,selection_score,0.678727,
+17_deployment,SQ5,jigsaw,binary,Logistic Regression,,,,latency_ms,0.155845,
+17_deployment,SQ5,jigsaw,binary,SVM,,,,f1_in_domain,0.845757,
+17_deployment,SQ5,jigsaw,binary,SVM,,,,f1_cross_mean,0.50741,
+17_deployment,SQ5,jigsaw,binary,SVM,,,,selection_score,0.676583,
+17_deployment,SQ5,jigsaw,binary,SVM,,,,latency_ms,0.160308,
+17_deployment,SQ5,jigsaw,binary,Random Forest,,,,f1_in_domain,0.834464,
+17_deployment,SQ5,jigsaw,binary,Random Forest,,,,f1_cross_mean,0.443607,
+17_deployment,SQ5,jigsaw,binary,Random Forest,,,,selection_score,0.639036,
+17_deployment,SQ5,jigsaw,binary,Random Forest,,,,latency_ms,0.102359,
+17_deployment,SQ5,twitter,binary,BiLSTM,,,,f1_in_domain,0.776149,
+17_deployment,SQ5,twitter,binary,BiLSTM,,,,f1_cross_mean,0.347283,
+17_deployment,SQ5,twitter,binary,BiLSTM,,,,selection_score,0.561716,
+17_deployment,SQ5,twitter,binary,BiLSTM,,,,latency_ms,0.596806,
+17_deployment,SQ5,twitter,binary,SVM,,,,f1_in_domain,0.790986,
+17_deployment,SQ5,twitter,binary,SVM,,,,f1_cross_mean,0.281206,
+17_deployment,SQ5,twitter,binary,SVM,,,,selection_score,0.536096,
+17_deployment,SQ5,twitter,binary,SVM,,,,latency_ms,0.021705,
+17_deployment,SQ5,twitter,binary,Random Forest,,,,f1_in_domain,0.787539,
+17_deployment,SQ5,twitter,binary,Random Forest,,,,f1_cross_mean,0.282461,
+17_deployment,SQ5,twitter,binary,Random Forest,,,,selection_score,0.535,
+17_deployment,SQ5,twitter,binary,Random Forest,,,,latency_ms,0.495786,
+17_deployment,SQ5,twitter,binary,Logistic Regression,,,,f1_in_domain,0.79411,
+17_deployment,SQ5,twitter,binary,Logistic Regression,,,,f1_cross_mean,0.266201,
+17_deployment,SQ5,twitter,binary,Logistic Regression,,,,selection_score,0.530156,
+17_deployment,SQ5,twitter,binary,Logistic Regression,,,,latency_ms,0.029072,
+17_deployment,SQ5,jigsaw,,BiLSTM,,,,recommended_model,,mean of in-domain and cross-dataset macro F1 on the binary task
+17_deployment,SQ5,jigsaw,,Logistic Regression,,,,lightweight_alternative,,
+17_deployment,SQ5,,,,,,,threshold_flag_for_review,0.5,
+17_deployment,SQ5,,,,,,,threshold_auto_hide,0.85,
