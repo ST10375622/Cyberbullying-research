@@ -1,0 +1,6 @@
+outputs/data/
+outputs/models/
+outputs_quick/models/
+*.joblib
+*.keras
+*.pkl

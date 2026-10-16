@@ -1,0 +1,361 @@
+dataset,task,model,class,feature,importance
+jigsaw,binary,logreg,cyberbullying,fuck,31.01401728122874
+jigsaw,binary,logreg,cyberbullying,fucking,25.065334587063422
+jigsaw,binary,logreg,cyberbullying,shit,22.679743264265056
+jigsaw,binary,logreg,cyberbullying,idiot,22.158858141427352
+jigsaw,binary,logreg,cyberbullying,stupid,18.625675020447083
+jigsaw,binary,logreg,cyberbullying,as,17.89274220289132
+jigsaw,binary,logreg,cyberbullying,asshole,16.613403481432584
+jigsaw,binary,logreg,cyberbullying,bullshit,16.594848164147518
+jigsaw,binary,logreg,cyberbullying,suck,15.753087609471995
+jigsaw,binary,logreg,cyberbullying,bitch,14.753877766840546
+jigsaw,binary,logreg,cyberbullying,moron,14.553427295759889
+jigsaw,binary,logreg,cyberbullying,crap,13.821403114640422
+jigsaw,binary,logreg,cyberbullying,dick,13.421348581677254
+jigsaw,binary,logreg,cyberbullying,cunt,12.24542191352552
+jigsaw,binary,logreg,cyberbullying,faggot,11.629371011122316
+jigsaw,binary,logreg,cyberbullying,fuck you,11.303338771528969
+jigsaw,binary,logreg,cyberbullying,fucked,11.160198698006031
+jigsaw,binary,logreg,cyberbullying,bastard,10.83749952088931
+jigsaw,binary,logreg,cyberbullying,penis,10.549345961776684
+jigsaw,binary,logreg,cyberbullying,loser,9.861457770952207
+jigsaw,binary,random_forest,all,fuck,0.039915336732444795
+jigsaw,binary,random_forest,all,you,0.026150272620328107
+jigsaw,binary,random_forest,all,fucking,0.023837261158640235
+jigsaw,binary,random_forest,all,shit,0.018449192508479043
+jigsaw,binary,random_forest,all,not,0.0170512557834996
+jigsaw,binary,random_forest,all,article,0.016220064116086286
+jigsaw,binary,random_forest,all,suck,0.01396486598865581
+jigsaw,binary,random_forest,all,fuck you,0.012995690089664542
+jigsaw,binary,random_forest,all,idiot,0.01255166988758724
+jigsaw,binary,random_forest,all,talk,0.01178894666660123
+jigsaw,binary,random_forest,all,stupid,0.011750204937260816
+jigsaw,binary,random_forest,all,as,0.011471568393554338
+jigsaw,binary,random_forest,all,bitch,0.011336103112277993
+jigsaw,binary,random_forest,all,your,0.009434001487537846
+jigsaw,binary,random_forest,all,asshole,0.00927565444125276
+jigsaw,binary,random_forest,all,gay,0.00892053285436248
+jigsaw,binary,random_forest,all,dick,0.008525208861442974
+jigsaw,binary,random_forest,all,please,0.007987649262942143
+jigsaw,binary,random_forest,all,cunt,0.007303278630325931
+jigsaw,binary,random_forest,all,thanks,0.0072278734976647906
+jigsaw,harmonised4,logreg,explicit_cyberbullying,fuck,12.384712355823313
+jigsaw,harmonised4,logreg,explicit_cyberbullying,idiot,11.653450260103433
+jigsaw,harmonised4,logreg,explicit_cyberbullying,fucking,10.148352658609921
+jigsaw,harmonised4,logreg,explicit_cyberbullying,shit,10.125634529008488
+jigsaw,harmonised4,logreg,explicit_cyberbullying,stupid,9.354058069887966
+jigsaw,harmonised4,logreg,explicit_cyberbullying,as,8.692280270395129
+jigsaw,harmonised4,logreg,explicit_cyberbullying,crap,8.647341427543738
+jigsaw,harmonised4,logreg,explicit_cyberbullying,suck,8.030908691900844
+jigsaw,harmonised4,logreg,explicit_cyberbullying,asshole,7.538118512941347
+jigsaw,harmonised4,logreg,explicit_cyberbullying,dick,7.301512258303165
+jigsaw,harmonised4,logreg,explicit_cyberbullying,moron,7.1843027635650865
+jigsaw,harmonised4,logreg,explicit_cyberbullying,loser,6.453841721095923
+jigsaw,harmonised4,logreg,explicit_cyberbullying,bullshit,6.367095099750432
+jigsaw,harmonised4,logreg,explicit_cyberbullying,bitch,6.215493691590415
+jigsaw,harmonised4,logreg,explicit_cyberbullying,pathetic,5.743920664324467
+jigsaw,harmonised4,logreg,explicit_cyberbullying,jerk,5.599015000892737
+jigsaw,harmonised4,logreg,explicit_cyberbullying,damn,5.3531946882845
+jigsaw,harmonised4,logreg,explicit_cyberbullying,cunt,5.298890802306929
+jigsaw,harmonised4,logreg,explicit_cyberbullying,idiotic,5.2436329545008435
+jigsaw,harmonised4,logreg,explicit_cyberbullying,dickhead,5.048531957505248
+jigsaw,harmonised4,logreg,implicit_cyberbullying,hell,5.149825968969835
+jigsaw,harmonised4,logreg,implicit_cyberbullying,ridiculous,5.10771037901171
+jigsaw,harmonised4,logreg,implicit_cyberbullying,gay,4.821698889018103
+jigsaw,harmonised4,logreg,implicit_cyberbullying,porn,4.289121421562957
+jigsaw,harmonised4,logreg,implicit_cyberbullying,nazi,4.219579831068125
+jigsaw,harmonised4,logreg,implicit_cyberbullying,piss,3.945606245216121
+jigsaw,harmonised4,logreg,implicit_cyberbullying,racist,3.8668646560633153
+jigsaw,harmonised4,logreg,implicit_cyberbullying,sex,3.6224480018292895
+jigsaw,harmonised4,logreg,implicit_cyberbullying,nerd,3.525240910633325
+jigsaw,harmonised4,logreg,implicit_cyberbullying,sockpuppet,3.4701933953908815
+jigsaw,harmonised4,logreg,implicit_cyberbullying,rubbish,3.414721308769349
+jigsaw,harmonised4,logreg,implicit_cyberbullying,worst,3.379551796756507
+jigsaw,harmonised4,logreg,implicit_cyberbullying,me,3.1775282329991215
+jigsaw,harmonised4,logreg,implicit_cyberbullying,penis,3.1456538822630566
+jigsaw,harmonised4,logreg,implicit_cyberbullying,troll,3.0819479346611853
+jigsaw,harmonised4,logreg,implicit_cyberbullying,hypocrite,3.078404358357007
+jigsaw,harmonised4,logreg,implicit_cyberbullying,wtf,3.010673402752031
+jigsaw,harmonised4,logreg,implicit_cyberbullying,horrible,2.9668816964764364
+jigsaw,harmonised4,logreg,implicit_cyberbullying,not care,2.9560976059533854
+jigsaw,harmonised4,logreg,implicit_cyberbullying,wiki,2.9237560840653694
+jigsaw,harmonised4,logreg,hate_speech,nigger,12.89488959269657
+jigsaw,harmonised4,logreg,hate_speech,fuck,11.644671942826834
+jigsaw,harmonised4,logreg,hate_speech,fucking,10.585984318057035
+jigsaw,harmonised4,logreg,hate_speech,homosexual,8.87193270175353
+jigsaw,harmonised4,logreg,hate_speech,shit,8.360729019559997
+jigsaw,harmonised4,logreg,hate_speech,nigga,8.238387567566004
+jigsaw,harmonised4,logreg,hate_speech,jew,8.233948609054531
+jigsaw,harmonised4,logreg,hate_speech,stupid,8.178608015300053
+jigsaw,harmonised4,logreg,hate_speech,gay,7.873503334152954
+jigsaw,harmonised4,logreg,hate_speech,faggot,7.457432240579945
+jigsaw,harmonised4,logreg,hate_speech,as,7.161715371902172
+jigsaw,harmonised4,logreg,hate_speech,suck,6.828903591125006
+jigsaw,harmonised4,logreg,hate_speech,bitch,6.629254982294963
+jigsaw,harmonised4,logreg,hate_speech,homo,5.595383891967213
+jigsaw,harmonised4,logreg,hate_speech,asshole,5.446707540988415
+jigsaw,harmonised4,logreg,hate_speech,nig,5.396462020135861
+jigsaw,harmonised4,logreg,hate_speech,muslim,5.3662347264440236
+jigsaw,harmonised4,logreg,hate_speech,negro,5.297844729999431
+jigsaw,harmonised4,logreg,hate_speech,asian,5.249272620312353
+jigsaw,harmonised4,logreg,hate_speech,lesbian,5.093228657526326
+jigsaw,harmonised4,random_forest,all,fuck,0.023717171800093865
+jigsaw,harmonised4,random_forest,all,gay,0.019670038605995407
+jigsaw,harmonised4,random_forest,all,faggot,0.015484385681889944
+jigsaw,harmonised4,random_forest,all,you,0.015434563432270674
+jigsaw,harmonised4,random_forest,all,fucking,0.014232363203977477
+jigsaw,harmonised4,random_forest,all,nigger,0.014133846989715378
+jigsaw,harmonised4,random_forest,all,shit,0.011328659859956382
+jigsaw,harmonised4,random_forest,all,article,0.009904665131480217
+jigsaw,harmonised4,random_forest,all,not,0.009861723916569773
+jigsaw,harmonised4,random_forest,all,fuck you,0.008335150487171624
+jigsaw,harmonised4,random_forest,all,bitch,0.0079612300336784
+jigsaw,harmonised4,random_forest,all,suck,0.007811461641736673
+jigsaw,harmonised4,random_forest,all,talk,0.0076357785195622615
+jigsaw,harmonised4,random_forest,all,stupid,0.007455163043105642
+jigsaw,harmonised4,random_forest,all,idiot,0.007402897921924449
+jigsaw,harmonised4,random_forest,all,as,0.00729597848429639
+jigsaw,harmonised4,random_forest,all,your,0.006523992876843565
+jigsaw,harmonised4,random_forest,all,jew,0.0059593190725609965
+jigsaw,harmonised4,random_forest,all,asshole,0.005623370806265341
+jigsaw,harmonised4,random_forest,all,thanks,0.00513802774290311
+twitter,binary,logreg,cyberbullying,idiot,11.710181389706026
+twitter,binary,logreg,cyberbullying,muslim,11.479772042002834
+twitter,binary,logreg,cyberbullying,nigger,11.438714472949417
+twitter,binary,logreg,cyberbullying,rape,10.439038708201057
+twitter,binary,logreg,cyberbullying,bitch,9.221334170189252
+twitter,binary,logreg,cyberbullying,gay,9.120580845540601
+twitter,binary,logreg,cyberbullying,girl,8.961888573181236
+twitter,binary,logreg,cyberbullying,feminazi,8.848298450406615
+twitter,binary,logreg,cyberbullying,dumb,8.839252749704688
+twitter,binary,logreg,cyberbullying,school bully,8.817788846999516
+twitter,binary,logreg,cyberbullying,fuck,7.910702584515925
+twitter,binary,logreg,cyberbullying,bullied,7.208423796052988
+twitter,binary,logreg,cyberbullying,ur,6.991460697274725
+twitter,binary,logreg,cyberbullying,fucking,6.824022494909042
+twitter,binary,logreg,cyberbullying,terrorist,6.718956733501765
+twitter,binary,logreg,cyberbullying,christian,6.622434948464641
+twitter,binary,logreg,cyberbullying,white,6.448405336504298
+twitter,binary,logreg,cyberbullying,coon,6.3080486991272755
+twitter,binary,logreg,cyberbullying,joke,6.261083869856796
+twitter,binary,logreg,cyberbullying,radical,5.868953635725974
+twitter,binary,random_forest,all,mkr,0.02465807657725267
+twitter,binary,random_forest,all,you,0.014537516456327388
+twitter,binary,random_forest,all,nigger,0.014417480442183694
+twitter,binary,random_forest,all,dumb,0.013438536554263534
+twitter,binary,random_forest,all,muslim,0.012641164655402633
+twitter,binary,random_forest,all,school,0.011891177871259137
+twitter,binary,random_forest,all,fuck,0.011469090308367047
+twitter,binary,random_forest,all,idiot,0.011021418766844902
+twitter,binary,random_forest,all,bullying,0.010793758375891043
+twitter,binary,random_forest,all,gay,0.01070498768385498
+twitter,binary,random_forest,all,joke,0.01063820183837659
+twitter,binary,random_forest,all,bully,0.010036858827611541
+twitter,binary,random_forest,all,not,0.009303457864052839
+twitter,binary,random_forest,all,high,0.008903198547932619
+twitter,binary,random_forest,all,rape,0.0086418703151053
+twitter,binary,random_forest,all,girl,0.008179858087680621
+twitter,binary,random_forest,all,high school,0.007756747157521485
+twitter,binary,random_forest,all,bullied,0.007425786627928609
+twitter,binary,random_forest,all,bitch,0.00675488837617873
+twitter,binary,random_forest,all,me,0.006178131152822864
+twitter,harmonised4,logreg,explicit_cyberbullying,bullied,17.642111433561023
+twitter,harmonised4,logreg,explicit_cyberbullying,idiot,10.359365078295152
+twitter,harmonised4,logreg,explicit_cyberbullying,fucking,9.867034393800573
+twitter,harmonised4,logreg,explicit_cyberbullying,bully,9.80774445499699
+twitter,harmonised4,logreg,explicit_cyberbullying,school,9.136087249304367
+twitter,harmonised4,logreg,explicit_cyberbullying,bullying,8.124455650503558
+twitter,harmonised4,logreg,explicit_cyberbullying,girl,7.993121774622633
+twitter,harmonised4,logreg,explicit_cyberbullying,as,6.139349569854007
+twitter,harmonised4,logreg,explicit_cyberbullying,fuck,5.877275353014629
+twitter,harmonised4,logreg,explicit_cyberbullying,stupid,5.130335596400903
+twitter,harmonised4,logreg,explicit_cyberbullying,shit,4.715941259326136
+twitter,harmonised4,logreg,explicit_cyberbullying,asshole,4.686773668199909
+twitter,harmonised4,logreg,explicit_cyberbullying,high,4.481858990172184
+twitter,harmonised4,logreg,explicit_cyberbullying,damn,4.3196776246329724
+twitter,harmonised4,logreg,explicit_cyberbullying,hate,4.275280146909043
+twitter,harmonised4,logreg,explicit_cyberbullying,bitch,4.208629014718049
+twitter,harmonised4,logreg,explicit_cyberbullying,bullied me,3.9837962729774214
+twitter,harmonised4,logreg,explicit_cyberbullying,girl bullied,3.8971080949190116
+twitter,harmonised4,logreg,explicit_cyberbullying,bully me,3.857091059089748
+twitter,harmonised4,logreg,explicit_cyberbullying,fucked,3.7836958459497247
+twitter,harmonised4,logreg,implicit_cyberbullying,school bully,7.088724736793293
+twitter,harmonised4,logreg,implicit_cyberbullying,high school,5.230253313279073
+twitter,harmonised4,logreg,implicit_cyberbullying,bully school,4.505713438165496
+twitter,harmonised4,logreg,implicit_cyberbullying,blameonenotall,4.4514681684460395
+twitter,harmonised4,logreg,implicit_cyberbullying,harassment,3.2254849210230274
+twitter,harmonised4,logreg,implicit_cyberbullying,bully high,3.034454262535747
+twitter,harmonised4,logreg,implicit_cyberbullying,gg,2.78225302221097
+twitter,harmonised4,logreg,implicit_cyberbullying,wadhwa,2.717853074373379
+twitter,harmonised4,logreg,implicit_cyberbullying,abuse,2.652920154601093
+twitter,harmonised4,logreg,implicit_cyberbullying,fix,2.3891411710781028
+twitter,harmonised4,logreg,implicit_cyberbullying,called feminazi,2.3786625675290543
+twitter,harmonised4,logreg,implicit_cyberbullying,gdc,2.3530821167145644
+twitter,harmonised4,logreg,implicit_cyberbullying,gamergate,2.284112364921337
+twitter,harmonised4,logreg,implicit_cyberbullying,luca,2.2828318174892517
+twitter,harmonised4,logreg,implicit_cyberbullying,randi,2.2238975338770146
+twitter,harmonised4,logreg,implicit_cyberbullying,sock,2.2059538699018706
+twitter,harmonised4,logreg,implicit_cyberbullying,high,2.145222320574
+twitter,harmonised4,logreg,implicit_cyberbullying,like you,2.1261344040690444
+twitter,harmonised4,logreg,implicit_cyberbullying,blizzard,2.1248714701134457
+twitter,harmonised4,logreg,implicit_cyberbullying,account,2.092481661436544
+twitter,harmonised4,logreg,hate_speech,muslim,16.361267148029878
+twitter,harmonised4,logreg,hate_speech,nigger,14.258850413863007
+twitter,harmonised4,logreg,hate_speech,rape,11.257658128933995
+twitter,harmonised4,logreg,hate_speech,gay,10.858166423418002
+twitter,harmonised4,logreg,hate_speech,dumb,10.531569689057367
+twitter,harmonised4,logreg,hate_speech,christian,8.278590718626928
+twitter,harmonised4,logreg,hate_speech,notsexist,7.434228355810545
+twitter,harmonised4,logreg,hate_speech,bitch,7.336298317761743
+twitter,harmonised4,logreg,hate_speech,sexist,7.303833035247927
+twitter,harmonised4,logreg,hate_speech,black,7.207448348437063
+twitter,harmonised4,logreg,hate_speech,ur,6.872107581559046
+twitter,harmonised4,logreg,hate_speech,islam,6.756529733318103
+twitter,harmonised4,logreg,hate_speech,negro,6.634075194611348
+twitter,harmonised4,logreg,hate_speech,terrorist,6.59288395054147
+twitter,harmonised4,logreg,hate_speech,radical,6.333957607067368
+twitter,harmonised4,logreg,hate_speech,colored,6.2826705652875985
+twitter,harmonised4,logreg,hate_speech,past,6.070240258368268
+twitter,harmonised4,logreg,hate_speech,racism,6.035384032990479
+twitter,harmonised4,logreg,hate_speech,white,5.920470600928556
+twitter,harmonised4,logreg,hate_speech,christian woman,5.9052649096863785
+twitter,harmonised4,random_forest,all,school,0.02547480052576633
+twitter,harmonised4,random_forest,all,bully,0.023601597739772977
+twitter,harmonised4,random_forest,all,bullied,0.020775402375886244
+twitter,harmonised4,random_forest,all,high,0.016077014523736867
+twitter,harmonised4,random_forest,all,nigger,0.016033648414947567
+twitter,harmonised4,random_forest,all,high school,0.01509130243418091
+twitter,harmonised4,random_forest,all,muslim,0.014976723833660811
+twitter,harmonised4,random_forest,all,mkr,0.014896873367171803
+twitter,harmonised4,random_forest,all,girl,0.013946680653882548
+twitter,harmonised4,random_forest,all,dumb,0.011953078617605396
+twitter,harmonised4,random_forest,all,joke,0.011518056436179187
+twitter,harmonised4,random_forest,all,you,0.011020412808086315
+twitter,harmonised4,random_forest,all,gay,0.010621954643278085
+twitter,harmonised4,random_forest,all,fuck,0.010527315449993864
+twitter,harmonised4,random_forest,all,idiot,0.009613321292232442
+twitter,harmonised4,random_forest,all,bullying,0.009277153535906206
+twitter,harmonised4,random_forest,all,rape,0.00803995380870841
+twitter,harmonised4,random_forest,all,girl bullied,0.00597222640558023
+twitter,harmonised4,random_forest,all,bitch,0.005655461645753337
+twitter,harmonised4,random_forest,all,fucking,0.005397673310392897
+twitter,native6,logreg,age,school,22.268337765591454
+twitter,native6,logreg,age,high,10.843750831896445
+twitter,native6,logreg,age,bully,9.689150971844851
+twitter,native6,logreg,age,girl,9.585813331241038
+twitter,native6,logreg,age,school bully,8.624127107463382
+twitter,native6,logreg,age,bullied,8.480090948323221
+twitter,native6,logreg,age,high school,5.885452354406347
+twitter,native6,logreg,age,bully school,4.85557112236247
+twitter,native6,logreg,age,kid,4.789408109544586
+twitter,native6,logreg,age,teacher,4.039995838186739
+twitter,native6,logreg,age,adult,3.465083674916807
+twitter,native6,logreg,age,my,3.295120410322833
+twitter,native6,logreg,age,girl bullied,3.100435370864606
+twitter,native6,logreg,age,grade,3.0942037201760635
+twitter,native6,logreg,age,he,3.09228764741912
+twitter,native6,logreg,age,middle,2.9476739084365313
+twitter,native6,logreg,age,middle school,2.8835665191753646
+twitter,native6,logreg,age,school yard,2.8796757988938766
+twitter,native6,logreg,age,boy,2.6818030857382245
+twitter,native6,logreg,age,her,2.6369014611871315
+twitter,native6,logreg,ethnicity,nigger,18.98389375755119
+twitter,native6,logreg,ethnicity,dumb,14.414950662657501
+twitter,native6,logreg,ethnicity,black,10.464370839061786
+twitter,native6,logreg,ethnicity,past,10.077457010891242
+twitter,native6,logreg,ethnicity,negro,9.833712901844073
+twitter,native6,logreg,ethnicity,ur,9.79396938346781
+twitter,native6,logreg,ethnicity,racism,9.299841068535088
+twitter,native6,logreg,ethnicity,colored,9.124780941487352
+twitter,native6,logreg,ethnicity,first,8.82611485939221
+twitter,native6,logreg,ethnicity,white,8.287524235741547
+twitter,native6,logreg,ethnicity,anything,8.238495126252175
+twitter,native6,logreg,ethnicity,nigga,7.01286432924408
+twitter,native6,logreg,ethnicity,called,6.647759839325817
+twitter,native6,logreg,ethnicity,fuck,6.119629681053494
+twitter,native6,logreg,ethnicity,dumb fuck,4.5768396389444135
+twitter,native6,logreg,ethnicity,dumb nigger,4.47741449848518
+twitter,native6,logreg,ethnicity,one,4.372646406203179
+twitter,native6,logreg,ethnicity,coon,4.185876310452583
+twitter,native6,logreg,ethnicity,disgusting,4.022926414599874
+twitter,native6,logreg,ethnicity,incident,3.9742542375557233
+twitter,native6,logreg,gender,rape,13.459232578452879
+twitter,native6,logreg,gender,gay,12.746691550665844
+twitter,native6,logreg,gender,female,8.759523285071348
+twitter,native6,logreg,gender,joke,8.608514823825045
+twitter,native6,logreg,gender,sexist,8.484903054045633
+twitter,native6,logreg,gender,bitch,7.983370823200917
+twitter,native6,logreg,gender,notsexist,7.954819100436984
+twitter,native6,logreg,gender,feminazi,7.68741275041982
+twitter,native6,logreg,gender,rape joke,5.759177123534111
+twitter,native6,logreg,gender,not sexist,5.734697936047543
+twitter,native6,logreg,gender,kat,5.506855402453411
+twitter,native6,logreg,gender,call,5.269866482742337
+twitter,native6,logreg,gender,mkr,5.244712202896066
+twitter,native6,logreg,gender,feminist,5.015703081842469
+twitter,native6,logreg,gender,woman,4.638303606627662
+twitter,native6,logreg,gender,feminism,4.234863944211345
+twitter,native6,logreg,gender,hoe,3.956887772206749
+twitter,native6,logreg,gender,men,3.377247819277251
+twitter,native6,logreg,gender,girl,3.365178451999504
+twitter,native6,logreg,gender,model,3.330516941840235
+twitter,native6,logreg,religion,muslim,20.72900168036734
+twitter,native6,logreg,religion,christian,12.437561338425935
+twitter,native6,logreg,religion,christian woman,10.343024791458078
+twitter,native6,logreg,religion,islam,9.555176561541932
+twitter,native6,logreg,religion,idiot,9.251410994616748
+twitter,native6,logreg,religion,terrorist,7.8880238061572605
+twitter,native6,logreg,religion,radical,7.671008756609472
+twitter,native6,logreg,religion,islamic,7.445918241536603
+twitter,native6,logreg,religion,terrorism,7.172468666603369
+twitter,native6,logreg,religion,islamic terrorism,6.602503299638767
+twitter,native6,logreg,religion,quran,5.999182890288025
+twitter,native6,logreg,religion,mohammed,5.713975389141683
+twitter,native6,logreg,religion,jihad,5.579107715821408
+twitter,native6,logreg,religion,humanity,5.470128018589149
+twitter,native6,logreg,religion,support,5.245490743042955
+twitter,native6,logreg,religion,religion,5.2050496911082424
+twitter,native6,logreg,religion,hindu,4.21764117001034
+twitter,native6,logreg,religion,prophet,4.0554123221259495
+twitter,native6,logreg,religion,isi,3.695618904909627
+twitter,native6,logreg,religion,right,3.310395845126171
+twitter,native6,logreg,other_cyberbullying,idiot,6.3040754858077115
+twitter,native6,logreg,other_cyberbullying,bully,5.13125655408859
+twitter,native6,logreg,other_cyberbullying,blameonenotall,4.638526670502666
+twitter,native6,logreg,other_cyberbullying,fucking,3.891871360364198
+twitter,native6,logreg,other_cyberbullying,bullied,3.882722577747081
+twitter,native6,logreg,other_cyberbullying,harassment,3.274546558391964
+twitter,native6,logreg,other_cyberbullying,bullying me,2.7016612727314286
+twitter,native6,logreg,other_cyberbullying,gg,2.5684315438822174
+twitter,native6,logreg,other_cyberbullying,wadhwa,2.4304013924129007
+twitter,native6,logreg,other_cyberbullying,gamergate,2.2303187681670873
+twitter,native6,logreg,other_cyberbullying,feminazi,2.203076146548352
+twitter,native6,logreg,other_cyberbullying,account,2.0651909606417522
+twitter,native6,logreg,other_cyberbullying,tech,2.0292311061614225
+twitter,native6,logreg,other_cyberbullying,sock,2.0047762331819796
+twitter,native6,logreg,other_cyberbullying,code,2.00199159844132
+twitter,native6,logreg,other_cyberbullying,kickstarter,1.9941000633183956
+twitter,native6,logreg,other_cyberbullying,gaters,1.9308868039493552
+twitter,native6,logreg,other_cyberbullying,called feminazi,1.9008250737960308
+twitter,native6,logreg,other_cyberbullying,bad bitch,1.8996696302359581
+twitter,native6,logreg,other_cyberbullying,retard,1.892918463792971
+twitter,native6,random_forest,all,school,0.042203689620660866
+twitter,native6,random_forest,all,dumb,0.024249879548029374
+twitter,native6,random_forest,all,nigger,0.022472659707063997
+twitter,native6,random_forest,all,muslim,0.022261859160421425
+twitter,native6,random_forest,all,bully,0.02080475335349135
+twitter,native6,random_forest,all,rape,0.019526311913131655
+twitter,native6,random_forest,all,fuck,0.018740053821209097
+twitter,native6,random_forest,all,bullied,0.016785190789522134
+twitter,native6,random_forest,all,high school,0.016772223696589
+twitter,native6,random_forest,all,gay,0.016248787759994526
+twitter,native6,random_forest,all,idiot,0.0159064955316689
+twitter,native6,random_forest,all,joke,0.014927379982219059
+twitter,native6,random_forest,all,high,0.013135922144140414
+twitter,native6,random_forest,all,mkr,0.010689647414093999
+twitter,native6,random_forest,all,girl,0.010232729262051932
+twitter,native6,random_forest,all,christian,0.010130230416976378
+twitter,native6,random_forest,all,rape joke,0.008554255169079527
+twitter,native6,random_forest,all,you,0.007939284225265996
+twitter,native6,random_forest,all,islam,0.006963960380698422
+twitter,native6,random_forest,all,sexist,0.005973269602716313

@@ -1,0 +1,92 @@
+{
+  "run_id": "twitter__harmonised4__svm__class_weight__on_twitter",
+  "train_dataset": "twitter",
+  "eval_dataset": "twitter",
+  "cross_dataset": false,
+  "task": "harmonised4",
+  "model": "svm",
+  "model_family": "classical",
+  "variant": "class_weight",
+  "is_main": false,
+  "labels": [
+    "not_cyberbullying",
+    "explicit_cyberbullying",
+    "implicit_cyberbullying",
+    "hate_speech"
+  ],
+  "n_test": 6496,
+  "quick_mode": false,
+  "accuracy": 0.8591440886699507,
+  "precision_macro": 0.7788218225392378,
+  "recall_macro": 0.7823358801078261,
+  "f1_macro": 0.7804086514025463,
+  "f1_macro_ci_low": 0.7682348912603579,
+  "f1_macro_ci_high": 0.7932177942546168,
+  "precision_weighted": 0.8592875648098294,
+  "recall_weighted": 0.8591440886699507,
+  "f1_weighted": 0.8590614056145491,
+  "auc_roc": 0.954957500951241,
+  "per_class": {
+    "not_cyberbullying": {
+      "precision": 0.6742671009771987,
+      "recall": 0.6706263498920086,
+      "f1": 0.6724417975094749,
+      "support": 926
+    },
+    "explicit_cyberbullying": {
+      "precision": 0.8579348579348579,
+      "recall": 0.902332361516035,
+      "f1": 0.8795737122557726,
+      "support": 1372
+    },
+    "implicit_cyberbullying": {
+      "precision": 0.6275362318840579,
+      "recall": 0.6150568181818182,
+      "f1": 0.6212338593974175,
+      "support": 704
+    },
+    "hate_speech": {
+      "precision": 0.9555490993608368,
+      "recall": 0.9413279908414425,
+      "f1": 0.9483852364475202,
+      "support": 3494
+    }
+  },
+  "confusion_matrix": [
+    [
+      621,
+      72,
+      143,
+      90
+    ],
+    [
+      55,
+      1238,
+      51,
+      28
+    ],
+    [
+      134,
+      102,
+      433,
+      35
+    ],
+    [
+      111,
+      31,
+      63,
+      3289
+    ]
+  ],
+  "imbalance_strategy": "class_weight",
+  "best_params": {
+    "C": 0.5
+  },
+  "val_f1_macro": 0.7697270224814668,
+  "train_time_s": 3.405229900003178,
+  "inference_ms_per_post": 0.08107744766057473,
+  "n_train": 30310,
+  "n_train_original": 30310,
+  "smote": {},
+  "n_features": 50000
+}

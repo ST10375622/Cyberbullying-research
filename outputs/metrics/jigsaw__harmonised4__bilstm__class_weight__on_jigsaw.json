@@ -1,0 +1,134 @@
+{
+  "run_id": "jigsaw__harmonised4__bilstm__class_weight__on_jigsaw",
+  "train_dataset": "jigsaw",
+  "eval_dataset": "jigsaw",
+  "cross_dataset": false,
+  "task": "harmonised4",
+  "model": "bilstm",
+  "model_family": "deep_learning",
+  "variant": "class_weight",
+  "is_main": true,
+  "labels": [
+    "not_cyberbullying",
+    "explicit_cyberbullying",
+    "implicit_cyberbullying",
+    "hate_speech"
+  ],
+  "n_test": 23805,
+  "quick_mode": false,
+  "accuracy": 0.9095148078134846,
+  "precision_macro": 0.5602688580050977,
+  "recall_macro": 0.6820795718872179,
+  "f1_macro": 0.5978646998230439,
+  "f1_macro_ci_low": 0.5817900463259438,
+  "f1_macro_ci_high": 0.6141674319241418,
+  "precision_weighted": 0.9435807308436045,
+  "recall_weighted": 0.9095148078134846,
+  "f1_weighted": 0.9243701612695395,
+  "auc_roc": 0.9464656636669176,
+  "per_class": {
+    "not_cyberbullying": {
+      "precision": 0.9836582004331561,
+      "recall": 0.9343120295478985,
+      "f1": 0.958350317707709,
+      "support": 21389
+    },
+    "explicit_cyberbullying": {
+      "precision": 0.7349862258953168,
+      "recall": 0.7715442452284558,
+      "f1": 0.7528216704288939,
+      "support": 1729
+    },
+    "implicit_cyberbullying": {
+      "precision": 0.15797317436661698,
+      "recall": 0.4435146443514644,
+      "f1": 0.23296703296703297,
+      "support": 478
+    },
+    "hate_speech": {
+      "precision": 0.3644578313253012,
+      "recall": 0.5789473684210527,
+      "f1": 0.44731977818853974,
+      "support": 209
+    }
+  },
+  "confusion_matrix": [
+    [
+      19984,
+      370,
+      967,
+      68
+    ],
+    [
+      128,
+      1334,
+      145,
+      122
+    ],
+    [
+      194,
+      51,
+      212,
+      21
+    ],
+    [
+      10,
+      60,
+      18,
+      121
+    ]
+  ],
+  "imbalance_strategy": "class_weight",
+  "train_time_s": 2453.5472345000017,
+  "inference_ms_per_post": 0.5455013778621307,
+  "n_train": 111087,
+  "best_epoch": 4,
+  "val_f1_macro": 0.5985706016723743,
+  "epoch_history": [
+    {
+      "epoch": 1,
+      "val_f1_macro": 0.5396926678321419,
+      "loss": 0.8934107422828674
+    },
+    {
+      "epoch": 2,
+      "val_f1_macro": 0.5807035929602354,
+      "loss": 0.47106269001960754
+    },
+    {
+      "epoch": 3,
+      "val_f1_macro": 0.5695577987444846,
+      "loss": 0.28476017713546753
+    },
+    {
+      "epoch": 4,
+      "val_f1_macro": 0.5985706016723743,
+      "loss": 0.19662438333034515
+    },
+    {
+      "epoch": 5,
+      "val_f1_macro": 0.5771581786585109,
+      "loss": 0.14668811857700348
+    },
+    {
+      "epoch": 6,
+      "val_f1_macro": 0.5709306397057474,
+      "loss": 0.11733420193195343
+    }
+  ],
+  "vocab_size": 50000,
+  "keras_backend": "torch",
+  "hyperparameters": {
+    "max_vocab": 50000,
+    "min_freq": 2,
+    "max_len": 100,
+    "embed_dim": 128,
+    "lstm_units": 64,
+    "dense_units": 64,
+    "dropout": 0.3,
+    "batch_size": 128,
+    "epochs": 8,
+    "patience": 2,
+    "lr": 0.001
+  }
+}

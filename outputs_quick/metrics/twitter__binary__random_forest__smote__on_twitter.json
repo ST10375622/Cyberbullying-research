@@ -57,8 +57,8 @@
     "n_estimators": 50
   },
   "val_f1_macro": 0.7588614393125672,
-  "train_time_s": 0.12329460000000836,
-  "inference_ms_per_post": 0.15513652561276914,
+  "train_time_s": 0.35449830000288785,
+  "inference_ms_per_post": 0.39089977728796166,
   "n_train": 2695,
   "n_train_original": 2094,
   "smote": {

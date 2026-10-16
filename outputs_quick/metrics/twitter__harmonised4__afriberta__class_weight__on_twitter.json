@@ -81,8 +81,8 @@
   "imbalance_strategy": "class_weight",
   "hf_model": "google/bert_uncased_L-2_H-128_A-2",
   "device": "cpu",
-  "train_time_s": 5.125344300000052,
-  "inference_ms_per_post": 0.27934810690413303,
+  "train_time_s": 12.419377200014424,
+  "inference_ms_per_post": 0.5847712695331029,
   "n_train": 2094,
   "hyperparameters": {
     "max_len": 64,

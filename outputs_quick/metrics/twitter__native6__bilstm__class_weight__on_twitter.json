@@ -117,8 +117,8 @@
     ]
   ],
   "imbalance_strategy": "class_weight",
-  "train_time_s": 6.450831799999833,
-  "inference_ms_per_post": 0.27608329621402755,
+  "train_time_s": 16.915426699997624,
+  "inference_ms_per_post": 0.8133318485097881,
   "n_train": 2094,
   "best_epoch": 1,
   "val_f1_macro": 0.5612957593526167,

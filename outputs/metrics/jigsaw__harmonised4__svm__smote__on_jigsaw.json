@@ -1,0 +1,106 @@
+{
+  "run_id": "jigsaw__harmonised4__svm__smote__on_jigsaw",
+  "train_dataset": "jigsaw",
+  "eval_dataset": "jigsaw",
+  "cross_dataset": false,
+  "task": "harmonised4",
+  "model": "svm",
+  "model_family": "classical",
+  "variant": "smote",
+  "is_main": true,
+  "labels": [
+    "not_cyberbullying",
+    "explicit_cyberbullying",
+    "implicit_cyberbullying",
+    "hate_speech"
+  ],
+  "n_test": 23805,
+  "quick_mode": false,
+  "accuracy": 0.9045158580130225,
+  "precision_macro": 0.5349779607991767,
+  "recall_macro": 0.6393433528788013,
+  "f1_macro": 0.5686564220425653,
+  "f1_macro_ci_low": 0.5517640546819784,
+  "f1_macro_ci_high": 0.5850565352012542,
+  "precision_weighted": 0.9311923631025444,
+  "recall_weighted": 0.9045158580130225,
+  "f1_weighted": 0.9163704844786182,
+  "auc_roc": 0.9234135347118935,
+  "per_class": {
+    "not_cyberbullying": {
+      "precision": 0.9757899854156539,
+      "recall": 0.9384262938893824,
+      "f1": 0.9567434876903644,
+      "support": 21389
+    },
+    "explicit_cyberbullying": {
+      "precision": 0.6643757159221076,
+      "recall": 0.6709080393290919,
+      "f1": 0.6676258992805756,
+      "support": 1729
+    },
+    "implicit_cyberbullying": {
+      "precision": 0.1587719298245614,
+      "recall": 0.3786610878661088,
+      "f1": 0.22373300370828184,
+      "support": 478
+    },
+    "hate_speech": {
+      "precision": 0.34097421203438394,
+      "recall": 0.569377990430622,
+      "f1": 0.4265232974910394,
+      "support": 209
+    }
+  },
+  "confusion_matrix": [
+    [
+      20072,
+      467,
+      771,
+      79
+    ],
+    [
+      279,
+      1160,
+      166,
+      124
+    ],
+    [
+      207,
+      63,
+      181,
+      27
+    ],
+    [
+      12,
+      56,
+      22,
+      119
+    ]
+  ],
+  "imbalance_strategy": "smote",
+  "best_params": {
+    "C": 0.1
+  },
+  "val_f1_macro": 0.583061810976915,
+  "train_time_s": 45.27736760000698,
+  "inference_ms_per_post": 0.20453120352862908,
+  "n_train": 249526,
+  "n_train_original": 111087,
+  "smote": {
+    "before": [
+      99811,
+      8069,
+      2233,
+      974
+    ],
+    "after": [
+      99811,
+      49905,
+      49905,
+      49905
+    ],
+    "k_neighbors": 5
+  },
+  "n_features": 50000
+}

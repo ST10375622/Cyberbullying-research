@@ -1,0 +1,92 @@
+{
+  "run_id": "jigsaw__harmonised4__logreg__class_weight__on_jigsaw",
+  "train_dataset": "jigsaw",
+  "eval_dataset": "jigsaw",
+  "cross_dataset": false,
+  "task": "harmonised4",
+  "model": "logreg",
+  "model_family": "classical",
+  "variant": "class_weight",
+  "is_main": false,
+  "labels": [
+    "not_cyberbullying",
+    "explicit_cyberbullying",
+    "implicit_cyberbullying",
+    "hate_speech"
+  ],
+  "n_test": 23805,
+  "quick_mode": false,
+  "accuracy": 0.9279143037177063,
+  "precision_macro": 0.5752835166835335,
+  "recall_macro": 0.6263296409904424,
+  "f1_macro": 0.5962920168917344,
+  "f1_macro_ci_low": 0.5781335292018329,
+  "f1_macro_ci_high": 0.6146977274990025,
+  "precision_weighted": 0.9400262753001017,
+  "recall_weighted": 0.9279143037177063,
+  "f1_weighted": 0.9334785875958038,
+  "auc_roc": 0.9468671775102928,
+  "per_class": {
+    "not_cyberbullying": {
+      "precision": 0.9792671857832131,
+      "recall": 0.9583898265463556,
+      "f1": 0.9687160342138841,
+      "support": 21389
+    },
+    "explicit_cyberbullying": {
+      "precision": 0.7252568956192537,
+      "recall": 0.7755928282244072,
+      "f1": 0.7495807713806596,
+      "support": 1729
+    },
+    "implicit_cyberbullying": {
+      "precision": 0.19746835443037974,
+      "recall": 0.3263598326359833,
+      "f1": 0.24605678233438485,
+      "support": 478
+    },
+    "hate_speech": {
+      "precision": 0.39914163090128757,
+      "recall": 0.4449760765550239,
+      "f1": 0.42081447963800905,
+      "support": 209
+    }
+  },
+  "confusion_matrix": [
+    [
+      20499,
+      350,
+      500,
+      40
+    ],
+    [
+      191,
+      1341,
+      115,
+      82
+    ],
+    [
+      229,
+      75,
+      156,
+      18
+    ],
+    [
+      14,
+      83,
+      19,
+      93
+    ]
+  ],
+  "imbalance_strategy": "class_weight",
+  "best_params": {
+    "C": 8.0
+  },
+  "val_f1_macro": 0.6067556725240582,
+  "train_time_s": 50.09334619998117,
+  "inference_ms_per_post": 0.16469295526197622,
+  "n_train": 111087,
+  "n_train_original": 111087,
+  "smote": {},
+  "n_features": 50000
+}

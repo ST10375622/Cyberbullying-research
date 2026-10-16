@@ -25,7 +25,7 @@
   "precision_weighted": 0.8391443340190728,
   "recall_weighted": 0.8351893095768375,
   "f1_weighted": 0.8366297338153966,
-  "auc_roc": 0.9444993005578318,
+  "auc_roc": 0.9446700072836769,
   "per_class": {
     "not_cyberbullying": {
       "precision": 0.6666666666666666,
@@ -84,8 +84,8 @@
     "n_estimators": 50
   },
   "val_f1_macro": 0.7315064791287618,
-  "train_time_s": 0.13562039999987974,
-  "inference_ms_per_post": 0.16903630289470836,
+  "train_time_s": 0.39510570000857115,
+  "inference_ms_per_post": 0.38006414255108645,
   "n_train": 2820,
   "n_train_original": 2094,
   "smote": {

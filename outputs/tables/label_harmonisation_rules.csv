@@ -1,0 +1,11 @@
+dataset,source_label,harmonised_label
+twitter,not_cyberbullying,not_cyberbullying
+twitter,religion,hate_speech
+twitter,ethnicity,hate_speech
+twitter,gender,hate_speech
+twitter,age,explicit if explicit-abuse lexicon match else implicit
+twitter,other_cyberbullying,explicit if explicit-abuse lexicon match else implicit
+jigsaw,all six labels = 0,not_cyberbullying
+jigsaw,identity_hate = 1,hate_speech
+jigsaw,obscene/insult/threat/severe_toxic = 1 or lexicon match,explicit_cyberbullying
+jigsaw,"toxic = 1 only, no lexicon match",implicit_cyberbullying

@@ -1,0 +1,7 @@
+label_native,explicit_cyberbullying,hate_speech,implicit_cyberbullying,not_cyberbullying
+age,6948,0,1000,0
+ethnicity,0,7823,0,0
+gender,0,7498,0,0
+not_cyberbullying,0,0,0,6177
+other_cyberbullying,2221,0,3668,0
+religion,0,7966,0,0

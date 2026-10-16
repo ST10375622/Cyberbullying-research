@@ -1,0 +1,75 @@
+{
+  "run_id": "twitter__binary__logreg__smote__on_twitter",
+  "train_dataset": "twitter",
+  "eval_dataset": "twitter",
+  "cross_dataset": false,
+  "task": "binary",
+  "model": "logreg",
+  "model_family": "classical",
+  "variant": "smote",
+  "is_main": true,
+  "labels": [
+    "not_cyberbullying",
+    "cyberbullying"
+  ],
+  "n_test": 6496,
+  "quick_mode": false,
+  "accuracy": 0.8979371921182266,
+  "precision_macro": 0.7901792797080756,
+  "recall_macro": 0.7982246375406664,
+  "f1_macro": 0.7941104720677598,
+  "f1_macro_ci_low": 0.7800593332730703,
+  "f1_macro_ci_high": 0.8092492855113231,
+  "precision_weighted": 0.8993952869609654,
+  "recall_weighted": 0.8979371921182266,
+  "f1_weighted": 0.8986349220817132,
+  "auc_roc": 0.9352609241889016,
+  "per_class": {
+    "not_cyberbullying": {
+      "precision": 0.6374085684430512,
+      "recall": 0.6587473002159827,
+      "f1": 0.6479022835900159,
+      "support": 926
+    },
+    "cyberbullying": {
+      "precision": 0.9429499909730998,
+      "recall": 0.9377019748653501,
+      "f1": 0.9403186605455036,
+      "support": 5570
+    }
+  },
+  "confusion_matrix": [
+    [
+      610,
+      316
+    ],
+    [
+      347,
+      5223
+    ]
+  ],
+  "precision_pos": 0.9429499909730998,
+  "recall_pos": 0.9377019748653501,
+  "f1_pos": 0.9403186605455036,
+  "imbalance_strategy": "smote",
+  "best_params": {
+    "C": 2.0
+  },
+  "val_f1_macro": 0.785551870071493,
+  "train_time_s": 1.068615600001067,
+  "inference_ms_per_post": 0.029071721059906474,
+  "n_train": 38979,
+  "n_train_original": 30310,
+  "smote": {
+    "before": [
+      4324,
+      25986
+    ],
+    "after": [
+      12993,
+      25986
+    ],
+    "k_neighbors": 5
+  },
+  "n_features": 50000
+}

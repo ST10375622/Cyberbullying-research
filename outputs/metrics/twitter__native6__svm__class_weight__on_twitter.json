@@ -1,0 +1,130 @@
+{
+  "run_id": "twitter__native6__svm__class_weight__on_twitter",
+  "train_dataset": "twitter",
+  "eval_dataset": "twitter",
+  "cross_dataset": false,
+  "task": "native6",
+  "model": "svm",
+  "model_family": "classical",
+  "variant": "class_weight",
+  "is_main": false,
+  "labels": [
+    "not_cyberbullying",
+    "age",
+    "ethnicity",
+    "gender",
+    "religion",
+    "other_cyberbullying"
+  ],
+  "n_test": 6496,
+  "quick_mode": false,
+  "accuracy": 0.8805418719211823,
+  "precision_macro": 0.8668682203243407,
+  "recall_macro": 0.8667417068033667,
+  "f1_macro": 0.8659839685236679,
+  "f1_macro_ci_low": 0.8572941960367917,
+  "f1_macro_ci_high": 0.8744256663064878,
+  "precision_weighted": 0.8809794148024017,
+  "recall_weighted": 0.8805418719211823,
+  "f1_weighted": 0.8800261998605525,
+  "auc_roc": 0.9797063870178965,
+  "per_class": {
+    "not_cyberbullying": {
+      "precision": 0.7122473246135553,
+      "recall": 0.6468682505399568,
+      "f1": 0.677985285795133,
+      "support": 926
+    },
+    "age": {
+      "precision": 0.951797385620915,
+      "recall": 0.9765297569153395,
+      "f1": 0.9640049648324369,
+      "support": 1193
+    },
+    "ethnicity": {
+      "precision": 0.9732664995822891,
+      "recall": 0.9923339011925043,
+      "f1": 0.9827077182623366,
+      "support": 1174
+    },
+    "gender": {
+      "precision": 0.924618320610687,
+      "recall": 0.8613333333333333,
+      "f1": 0.8918545789231477,
+      "support": 1125
+    },
+    "religion": {
+      "precision": 0.9535655058043118,
+      "recall": 0.9623430962343096,
+      "f1": 0.9579341940857976,
+      "support": 1195
+    },
+    "other_cyberbullying": {
+      "precision": 0.6857142857142857,
+      "recall": 0.7610419026047565,
+      "f1": 0.7214170692431562,
+      "support": 883
+    }
+  },
+  "confusion_matrix": [
+    [
+      599,
+      38,
+      12,
+      35,
+      41,
+      201
+    ],
+    [
+      10,
+      1165,
+      2,
+      4,
+      3,
+      9
+    ],
+    [
+      5,
+      1,
+      1165,
+      0,
+      1,
+      2
+    ],
+    [
+      60,
+      4,
+      5,
+      969,
+      7,
+      80
+    ],
+    [
+      23,
+      2,
+      0,
+      4,
+      1150,
+      16
+    ],
+    [
+      144,
+      14,
+      13,
+      36,
+      4,
+      672
+    ]
+  ],
+  "imbalance_strategy": "class_weight",
+  "best_params": {
+    "C": 0.5
+  },
+  "val_f1_macro": 0.8533813934960724,
+  "train_time_s": 3.9969929000071716,
+  "inference_ms_per_post": 0.06963971674867665,
+  "n_train": 30310,
+  "n_train_original": 30310,
+  "smote": {},
+  "n_features": 50000
+}

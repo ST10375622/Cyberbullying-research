@@ -1,0 +1,75 @@
+{
+  "run_id": "twitter__binary__svm__smote__on_jigsaw",
+  "train_dataset": "twitter",
+  "eval_dataset": "jigsaw",
+  "cross_dataset": true,
+  "task": "binary",
+  "model": "svm",
+  "model_family": "classical",
+  "variant": "smote",
+  "is_main": true,
+  "labels": [
+    "not_cyberbullying",
+    "cyberbullying"
+  ],
+  "n_test": 23805,
+  "quick_mode": false,
+  "accuracy": 0.2924175593362739,
+  "precision_macro": 0.514983874462556,
+  "recall_macro": 0.5287766480511273,
+  "f1_macro": 0.28120621319585204,
+  "f1_macro_ci_low": 0.27559483864900525,
+  "f1_macro_ci_high": 0.2865930893353367,
+  "precision_weighted": 0.8391376087752104,
+  "recall_weighted": 0.2924175593362739,
+  "f1_weighted": 0.3527544373203809,
+  "auc_roc": 0.5593167706430767,
+  "per_class": {
+    "not_cyberbullying": {
+      "precision": 0.9216923362404899,
+      "recall": 0.23222217027444014,
+      "f1": 0.37097617447158115,
+      "support": 21389
+    },
+    "cyberbullying": {
+      "precision": 0.10827541268462207,
+      "recall": 0.8253311258278145,
+      "f1": 0.1914362519201229,
+      "support": 2416
+    }
+  },
+  "confusion_matrix": [
+    [
+      4967,
+      16422
+    ],
+    [
+      422,
+      1994
+    ]
+  ],
+  "precision_pos": 0.10827541268462207,
+  "recall_pos": 0.8253311258278145,
+  "f1_pos": 0.1914362519201229,
+  "imbalance_strategy": "smote",
+  "best_params": {
+    "C": 0.1
+  },
+  "val_f1_macro": 0.7893451186037936,
+  "train_time_s": 0.2546235000190791,
+  "inference_ms_per_post": 0.021704556651268924,
+  "n_train": 38979,
+  "n_train_original": 30310,
+  "smote": {
+    "before": [
+      4324,
+      25986
+    ],
+    "after": [
+      12993,
+      25986
+    ],
+    "k_neighbors": 5
+  },
+  "n_features": 50000
+}

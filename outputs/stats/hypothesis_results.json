@@ -1,0 +1,45 @@
+{
+  "H1a": {
+    "hypothesis": "Transformers outperform classical ML",
+    "status": "not enough models trained"
+  },
+  "H1b_part1": {
+    "hypothesis": "BiLSTM outperforms classical ML",
+    "comparisons": 15,
+    "significantly_better": 4,
+    "significantly_worse": 5,
+    "not_significant": 6,
+    "mean_f1_diff": 0.004772082382996564,
+    "decision": "Fail to reject H0: deep_learning significantly better in only 4/15 comparisons"
+  },
+  "H1b_part2": {
+    "hypothesis": "Transformers outperform BiLSTM",
+    "status": "not enough models trained"
+  },
+  "friedman_all_models": {
+    "blocks": 5,
+    "models": [
+      "logreg",
+      "svm",
+      "random_forest",
+      "bilstm"
+    ],
+    "chi2": 7.319999999999993,
+    "p_value": 0.06236833987892695,
+    "average_rank": {
+      "logreg": 1.8,
+      "svm": 2.0,
+      "bilstm": 2.4,
+      "random_forest": 3.8
+    }
+  },
+  "H1c": {
+    "hypothesis": "H1c: lower performance on implicit than explicit cyberbullying",
+    "pairs": 8,
+    "models_with_lower_implicit_f1": 8,
+    "median_f1_gap_explicit_minus_implicit": 0.3688212395943839,
+    "wilcoxon_stat": 36.0,
+    "wilcoxon_p": 0.00390625,
+    "decision": "Reject H0: implicit cyberbullying is detected significantly worse than explicit cyberbullying"
+  }
+}

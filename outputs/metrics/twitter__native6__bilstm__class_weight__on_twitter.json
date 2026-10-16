@@ -1,0 +1,162 @@
+{
+  "run_id": "twitter__native6__bilstm__class_weight__on_twitter",
+  "train_dataset": "twitter",
+  "eval_dataset": "twitter",
+  "cross_dataset": false,
+  "task": "native6",
+  "model": "bilstm",
+  "model_family": "deep_learning",
+  "variant": "class_weight",
+  "is_main": true,
+  "labels": [
+    "not_cyberbullying",
+    "age",
+    "ethnicity",
+    "gender",
+    "religion",
+    "other_cyberbullying"
+  ],
+  "n_test": 6496,
+  "quick_mode": false,
+  "accuracy": 0.8734605911330049,
+  "precision_macro": 0.8614541565678359,
+  "recall_macro": 0.86014307346113,
+  "f1_macro": 0.8600556629623995,
+  "f1_macro_ci_low": 0.8514048705991907,
+  "f1_macro_ci_high": 0.8684840531737018,
+  "precision_weighted": 0.8771669405709469,
+  "recall_weighted": 0.8734605911330049,
+  "f1_weighted": 0.8746172131942949,
+  "auc_roc": 0.9795971129128733,
+  "per_class": {
+    "not_cyberbullying": {
+      "precision": 0.683461117196057,
+      "recall": 0.673866090712743,
+      "f1": 0.6786296900489397,
+      "support": 926
+    },
+    "age": {
+      "precision": 0.9666388657214345,
+      "recall": 0.9715004191114837,
+      "f1": 0.9690635451505016,
+      "support": 1193
+    },
+    "ethnicity": {
+      "precision": 0.990484429065744,
+      "recall": 0.975298126064736,
+      "f1": 0.9828326180257511,
+      "support": 1174
+    },
+    "gender": {
+      "precision": 0.9273797841020608,
+      "recall": 0.84,
+      "f1": 0.8815298507462687,
+      "support": 1125
+    },
+    "religion": {
+      "precision": 0.9371428571428572,
+      "recall": 0.9606694560669456,
+      "f1": 0.9487603305785124,
+      "support": 1195
+    },
+    "other_cyberbullying": {
+      "precision": 0.6636178861788617,
+      "recall": 0.739524348810872,
+      "f1": 0.6995179432244242,
+      "support": 883
+    }
+  },
+  "confusion_matrix": [
+    [
+      624,
+      15,
+      1,
+      38,
+      47,
+      201
+    ],
+    [
+      17,
+      1159,
+      1,
+      3,
+      4,
+      9
+    ],
+    [
+      10,
+      4,
+      1145,
+      2,
+      5,
+      8
+    ],
+    [
+      59,
+      1,
+      3,
+      945,
+      13,
+      104
+    ],
+    [
+      30,
+      1,
+      2,
+      5,
+      1148,
+      9
+    ],
+    [
+      173,
+      19,
+      4,
+      26,
+      8,
+      653
+    ]
+  ],
+  "imbalance_strategy": "class_weight",
+  "train_time_s": 1195.4303335000004,
+  "inference_ms_per_post": 2.563825985221072,
+  "n_train": 30310,
+  "best_epoch": 2,
+  "val_f1_macro": 0.848753943708033,
+  "epoch_history": [
+    {
+      "epoch": 1,
+      "val_f1_macro": 0.8382817898630881,
+      "loss": 0.7322357296943665
+    },
+    {
+      "epoch": 2,
+      "val_f1_macro": 0.848753943708033,
+      "loss": 0.33312416076660156
+    },
+    {
+      "epoch": 3,
+      "val_f1_macro": 0.8459321107178233,
+      "loss": 0.23230662941932678
+    },
+    {
+      "epoch": 4,
+      "val_f1_macro": 0.840655218791726,
+      "loss": 0.17953357100486755
+    }
+  ],
+  "vocab_size": 13904,
+  "keras_backend": "torch",
+  "hyperparameters": {
+    "max_vocab": 50000,
+    "min_freq": 2,
+    "max_len": 100,
+    "embed_dim": 128,
+    "lstm_units": 64,
+    "dense_units": 64,
+    "dropout": 0.3,
+    "batch_size": 128,
+    "epochs": 8,
+    "patience": 2,
+    "lr": 0.001
+  }
+}

@@ -1,0 +1,3 @@
+dataset,n_raw,n_empty_after_cleaning,n_conflicting_duplicates_removed,n_exact_duplicates_removed,n_empty_after_stopwords_removed,n_final,n_train,n_val,n_test
+twitter,47692,285,3454,578,74,43301,30310,6495,6496
+jigsaw,159571,14,73,735,52,158697,111087,23805,23805

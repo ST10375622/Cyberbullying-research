@@ -1,0 +1,107 @@
+{
+  "run_id": "jigsaw__binary__bilstm__class_weight__on_jigsaw",
+  "train_dataset": "jigsaw",
+  "eval_dataset": "jigsaw",
+  "cross_dataset": false,
+  "task": "binary",
+  "model": "bilstm",
+  "model_family": "deep_learning",
+  "variant": "class_weight",
+  "is_main": true,
+  "labels": [
+    "not_cyberbullying",
+    "cyberbullying"
+  ],
+  "n_test": 23805,
+  "quick_mode": false,
+  "accuracy": 0.9442134005461038,
+  "precision_macro": 0.8329235911200448,
+  "recall_macro": 0.8949744178244743,
+  "f1_macro": 0.8602668304771868,
+  "f1_macro_ci_low": 0.8526358726852703,
+  "f1_macro_ci_high": 0.8669714514075653,
+  "precision_weighted": 0.9506937709538681,
+  "recall_weighted": 0.9442134005461038,
+  "f1_weighted": 0.946588345512554,
+  "auc_roc": 0.964034516411388,
+  "per_class": {
+    "not_cyberbullying": {
+      "precision": 0.9806872094694973,
+      "recall": 0.9567534714105381,
+      "f1": 0.9685725104127224,
+      "support": 21389
+    },
+    "cyberbullying": {
+      "precision": 0.6851599727705923,
+      "recall": 0.8331953642384106,
+      "f1": 0.7519611505416511,
+      "support": 2416
+    }
+  },
+  "confusion_matrix": [
+    [
+      20464,
+      925
+    ],
+    [
+      403,
+      2013
+    ]
+  ],
+  "precision_pos": 0.6851599727705923,
+  "recall_pos": 0.8331953642384106,
+  "f1_pos": 0.7519611505416511,
+  "imbalance_strategy": "class_weight",
+  "train_time_s": 6423.851764200022,
+  "inference_ms_per_post": 0.6480522999367145,
+  "n_train": 111087,
+  "best_epoch": 4,
+  "val_f1_macro": 0.860914515714446,
+  "epoch_history": [
+    {
+      "epoch": 1,
+      "val_f1_macro": 0.8369221223615021,
+      "loss": 0.2602481245994568
+    },
+    {
+      "epoch": 2,
+      "val_f1_macro": 0.8472631252920085,
+      "loss": 0.13042543828487396
+    },
+    {
+      "epoch": 3,
+      "val_f1_macro": 0.8564151598103096,
+      "loss": 0.07996349781751633
+    },
+    {
+      "epoch": 4,
+      "val_f1_macro": 0.860914515714446,
+      "loss": 0.05092102661728859
+    },
+    {
+      "epoch": 5,
+      "val_f1_macro": 0.8467450193531497,
+      "loss": 0.034313518553972244
+    },
+    {
+      "epoch": 6,
+      "val_f1_macro": 0.846965127568829,
+      "loss": 0.0244109109044075
+    }
+  ],
+  "vocab_size": 50000,
+  "keras_backend": "torch",
+  "hyperparameters": {
+    "max_vocab": 50000,
+    "min_freq": 2,
+    "max_len": 100,
+    "embed_dim": 128,
+    "lstm_units": 64,
+    "dense_units": 64,
+    "dropout": 0.3,
+    "batch_size": 128,
+    "epochs": 8,
+    "patience": 2,
+    "lr": 0.001
+  }
+}

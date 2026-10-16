@@ -1,0 +1,16 @@
+split,dataset,task,cyberbullying,not_cyberbullying,n,explicit_cyberbullying,hate_speech,implicit_cyberbullying,age,ethnicity,gender,other_cyberbullying,religion
+test,twitter,binary,0.8575,0.1425,6496,,,,,,,,
+train,twitter,binary,0.8573,0.1427,30310,,,,,,,,
+val,twitter,binary,0.8573,0.1427,6495,,,,,,,,
+test,twitter,harmonised4,,0.1425,6496,0.2112,0.5379,0.1084,,,,,
+train,twitter,harmonised4,,0.1427,30310,0.2116,0.5378,0.108,,,,,
+val,twitter,harmonised4,,0.1427,6495,0.2131,0.5376,0.1065,,,,,
+test,twitter,native6,,0.1425,6496,,,,0.1837,0.1807,0.1732,0.1359,0.184
+train,twitter,native6,,0.1427,30310,,,,0.1835,0.1807,0.1732,0.136,0.184
+val,twitter,native6,,0.1427,6495,,,,0.1835,0.1806,0.1731,0.1361,0.184
+test,jigsaw,binary,0.1015,0.8985,23805,,,,,,,,
+train,jigsaw,binary,0.1015,0.8985,111087,,,,,,,,
+val,jigsaw,binary,0.1015,0.8985,23805,,,,,,,,
+test,jigsaw,harmonised4,,0.8985,23805,0.0726,0.0088,0.0201,,,,,
+train,jigsaw,harmonised4,,0.8985,111087,0.0726,0.0088,0.0201,,,,,
+val,jigsaw,harmonised4,,0.8985,23805,0.0726,0.0088,0.0201,,,,,

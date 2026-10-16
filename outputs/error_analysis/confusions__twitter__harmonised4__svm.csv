@@ -1,0 +1,13 @@
+true -> predicted,count
+not_cyberbullying -> implicit_cyberbullying,158
+not_cyberbullying -> hate_speech,115
+implicit_cyberbullying -> explicit_cyberbullying,105
+implicit_cyberbullying -> not_cyberbullying,96
+hate_speech -> not_cyberbullying,85
+not_cyberbullying -> explicit_cyberbullying,70
+hate_speech -> implicit_cyberbullying,63
+explicit_cyberbullying -> implicit_cyberbullying,57
+implicit_cyberbullying -> hate_speech,54
+explicit_cyberbullying -> not_cyberbullying,52
+explicit_cyberbullying -> hate_speech,41
+hate_speech -> explicit_cyberbullying,28

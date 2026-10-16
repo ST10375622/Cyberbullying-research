@@ -1,0 +1,6 @@
+dataset,task,n_classes,majority_class,majority_share,minority_class,minority_share,imbalance_ratio
+twitter,binary,2,cyberbullying,0.8573,not_cyberbullying,0.1427,6.01
+twitter,harmonised4,4,hate_speech,0.5378,implicit_cyberbullying,0.1078,4.99
+twitter,native6,6,religion,0.184,other_cyberbullying,0.136,1.35
+jigsaw,binary,2,not_cyberbullying,0.8985,cyberbullying,0.1015,8.85
+jigsaw,harmonised4,4,not_cyberbullying,0.8985,hate_speech,0.0088,102.43

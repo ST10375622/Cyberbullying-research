@@ -83,8 +83,8 @@
     "C": 0.5
   },
   "val_f1_macro": 0.4770434609250399,
-  "train_time_s": 0.06405380000023797,
-  "inference_ms_per_post": 0.052818666666401747,
+  "train_time_s": 0.20121220001601614,
+  "inference_ms_per_post": 0.13257888883041838,
   "n_train": 2097,
   "n_train_original": 2097,
   "smote": {},

@@ -1,0 +1,7 @@
+,n_tokens,n_tokens,n_tokens,n_tokens,n_tokens,n_tokens,n_tokens,n_tokens,n_chars,n_chars,n_chars,n_chars,n_chars,n_chars,n_chars,n_chars
+,count,mean,std,min,25%,50%,75%,max,count,mean,std,min,25%,50%,75%,max
+label_h4,,,,,,,,,,,,,,,,
+explicit_cyberbullying,11527.0,54.84,110.55,2.0,11.0,23.0,52.0,1403.0,11527.0,312.82,632.29,8.0,60.0,131.0,292.0,5000.0
+hate_speech,1392.0,52.61,116.51,2.0,10.0,21.0,45.25,1247.0,1392.0,308.86,692.19,18.0,57.0,115.0,259.25,5000.0
+implicit_cyberbullying,3190.0,45.6,91.48,2.0,12.0,22.0,46.0,1188.0,3190.0,264.86,533.3,19.0,65.0,127.0,262.75,5000.0
+not_cyberbullying,142588.0,69.16,99.41,1.0,17.0,37.0,78.0,1250.0,142588.0,404.44,587.06,8.0,102.0,216.0,452.0,5000.0
