@@ -14,6 +14,6 @@ if __name__ == "__main__":
     ap.add_argument("--lightweight", action="store_true")
     ap.add_argument("--choice", default=None, help="path to deployment_choice.json")
     a = ap.parse_args()
-    det = CyberbullyingDetector(a.choice, "lightweight_alternative" if a.lightweight else "recommended")
+    det = CyberbullyingDetector(a.choice, "lightweight_alternative" if a.lightweight else "calibrated")
     print(f"Model: {det.model_name} ({det.family}) trained on {det.train_dataset}")
     print(json.dumps(det.predict(a.texts), indent=2, ensure_ascii=False))

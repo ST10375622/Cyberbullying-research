@@ -74,11 +74,11 @@ Answered in the literature review chapter (not computational).
 | twitter | native6 | 0.8658 | 0.8601 |
 
 
-- **H1a (Transformers outperform classical ML)**: not enough models trained (mean F1 diff = nan; McNemar, Holm-corrected, alpha=0.05).
+- **H1a (Transformers outperform classical ML)**: not enough models trained (mean F1 diff = nan; paired bootstrap on macro F1, Holm-corrected within the hypothesis, alpha=0.05; McNemar accuracy test as secondary).
 
-- **H1b_part1 (BiLSTM outperforms classical ML)**: Fail to reject H0: deep_learning significantly better in only 4/15 comparisons (mean F1 diff = 0.0048; McNemar, Holm-corrected, alpha=0.05).
+- **H1b_part1 (BiLSTM outperforms classical ML)**: Fail to reject H0: deep_learning significantly better in only 5/15 comparisons (mean F1 diff = 0.0048; paired bootstrap on macro F1, Holm-corrected within the hypothesis, alpha=0.05; McNemar accuracy test as secondary).
 
-- **H1b_part2 (Transformers outperform BiLSTM)**: not enough models trained (mean F1 diff = nan; McNemar, Holm-corrected, alpha=0.05).
+- **H1b_part2 (Transformers outperform BiLSTM)**: not enough models trained (mean F1 diff = nan; paired bootstrap on macro F1, Holm-corrected within the hypothesis, alpha=0.05; McNemar accuracy test as secondary).
 
 - Friedman test over 5 settings: chi2=7.320, p=0.0624. Average rank (1 = best): {'logreg': 1.8, 'svm': 2.0, 'bilstm': 2.4, 'random_forest': 3.8}.
 

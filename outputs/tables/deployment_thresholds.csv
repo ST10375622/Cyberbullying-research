@@ -1,0 +1,3 @@
+policy,auto_hide_threshold,review_threshold,share_auto_hidden,share_human_review,share_allowed,precision_auto_hidden,cyberbullying_share_in_review_queue,share_of_cyberbullying_auto_hidden,share_of_cyberbullying_reviewed,share_of_cyberbullying_missed,false_auto_hides_per_10k_posts
+"original: raw scores, 0.85 / 0.50 (not justified)",0.85,0.5,0.07048939298466708,0.05011552194917034,0.8793950850661626,0.900476758045292,0.34199497066219614,0.6254139072847682,0.16887417218543047,0.20571192052980133,70.15332913253518
+"evidence-based: calibrated, precision>=0.95 / recall>=0.90",0.6926,0.0767,0.061541692921655115,0.14925435832808234,0.7892039487502626,0.9378839590443686,0.2206585983675767,0.5687086092715232,0.32450331125827814,0.10678807947019868,38.2272631800042

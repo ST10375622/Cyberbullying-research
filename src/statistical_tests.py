@@ -5,9 +5,11 @@ H1b/H0b  BiLSTM vs classical ML (and transformers vs BiLSTM)
 H1c/H0c  Performance on explicit vs implicit cyberbullying categories
 
 Tests used
-* McNemar's test (exact binomial when discordant pairs < 25) on paired test-set
-  predictions of two models, Holm-Bonferroni corrected.
-* Paired bootstrap 95% CI of the macro-F1 difference.
+* PRIMARY (F1-based hypotheses): paired bootstrap test of the macro-F1
+  difference (95% CI and two-sided p), Holm-corrected within each hypothesis.
+* SECONDARY (accuracy): McNemar's test (exact binomial when discordant pairs
+  < 25) on paired test-set predictions, Holm-corrected. McNemar compares error
+  rates, i.e. accuracy, not F1, so it can disagree with the bootstrap.
 * Friedman test over all six models (blocks = dataset x task) + average ranks.
 * Two-proportion z-test on recall (explicit vs implicit) per model, and a
   one-sided Wilcoxon signed-rank test over all model x dataset pairs.
@@ -148,8 +150,13 @@ def summarise_family_test(df, fam_a, fam_b, name):
     sub = _orient(df, fam_a, fam_b)
     if sub.empty:
         return {"hypothesis": name, "status": "not enough models trained"}, sub
-    better = int(((sub["f1_diff_a_minus_b"] > 0) & sub["significant"]).sum())
-    worse = int(((sub["f1_diff_a_minus_b"] < 0) & sub["significant"]).sum())
+    # primary test: paired bootstrap on macro F1, Holm-corrected within this hypothesis
+    sub["bootstrap_p_holm"] = holm(sub["bootstrap_p"].to_numpy())
+    sub["significant_f1"] = sub["bootstrap_p_holm"] < config.ALPHA
+    better = int(((sub["f1_diff_a_minus_b"] > 0) & sub["significant_f1"]).sum())
+    worse = int(((sub["f1_diff_a_minus_b"] < 0) & sub["significant_f1"]).sum())
+    mc_better = int(((sub["f1_diff_a_minus_b"] > 0) & sub["significant"]).sum())
+    mc_worse = int(((sub["f1_diff_a_minus_b"] < 0) & sub["significant"]).sum())
     n = len(sub)
     if better == n:
         decision = f"Reject H0: {fam_a} significantly outperforms {fam_b} in all comparisons"
@@ -157,8 +164,10 @@ def summarise_family_test(df, fam_a, fam_b, name):
         decision = f"Partial support for H1: {fam_a} significantly better in {better}/{n} comparisons"
     else:
         decision = f"Fail to reject H0: {fam_a} significantly better in only {better}/{n} comparisons"
-    return {"hypothesis": name, "comparisons": n, "significantly_better": better,
+    return {"hypothesis": name, "primary_test": "paired bootstrap on macro F1, Holm-corrected",
+            "comparisons": n, "significantly_better": better,
             "significantly_worse": worse, "not_significant": n - better - worse,
+            "mcnemar_significantly_better": mc_better, "mcnemar_significantly_worse": mc_worse,
             "mean_f1_diff": float(sub["f1_diff_a_minus_b"].mean()),
             "decision": decision}, sub
 

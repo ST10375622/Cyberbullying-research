@@ -17,7 +17,7 @@ from pydantic import BaseModel
 from predictor import CyberbullyingDetector
 
 detector = CyberbullyingDetector(os.environ.get("CB_DEPLOY_CHOICE"),
-                                 os.environ.get("CB_DEPLOY_MODEL", "recommended"))
+                                 os.environ.get("CB_DEPLOY_MODEL", "calibrated"))
 app = FastAPI(title="Cyberbullying Detection API",
               description="RPDA8412 research prototype - not for production moderation without review.")
 

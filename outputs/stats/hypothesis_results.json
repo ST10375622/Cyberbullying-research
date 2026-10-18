@@ -5,12 +5,15 @@
   },
   "H1b_part1": {
     "hypothesis": "BiLSTM outperforms classical ML",
+    "primary_test": "paired bootstrap on macro F1, Holm-corrected",
     "comparisons": 15,
-    "significantly_better": 4,
-    "significantly_worse": 5,
-    "not_significant": 6,
+    "significantly_better": 5,
+    "significantly_worse": 1,
+    "not_significant": 9,
+    "mcnemar_significantly_better": 4,
+    "mcnemar_significantly_worse": 5,
     "mean_f1_diff": 0.004772082382996564,
-    "decision": "Fail to reject H0: deep_learning significantly better in only 4/15 comparisons"
+    "decision": "Fail to reject H0: deep_learning significantly better in only 5/15 comparisons"
   },
   "H1b_part2": {
     "hypothesis": "Transformers outperform BiLSTM",

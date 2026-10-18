@@ -1242,12 +1242,15 @@
 11_pairwise_tests,SQ2 / H1b,twitter,native6,Random Forest vs BiLSTM,,,,mcnemar_p_holm,1.0,
 11_pairwise_tests,SQ2 / H1b,twitter,native6,Random Forest vs BiLSTM,,,,significant,False,
 12_hypotheses,H1a,,,,,,Transformers outperform classical ML,decision,,Not tested - not enough models trained
+12_hypotheses,H1b_part1,,,,,,BiLSTM outperforms classical ML,primary_test,"paired bootstrap on macro F1, Holm-corrected",
 12_hypotheses,H1b_part1,,,,,,BiLSTM outperforms classical ML,comparisons,15,
-12_hypotheses,H1b_part1,,,,,,BiLSTM outperforms classical ML,significantly_better,4,
-12_hypotheses,H1b_part1,,,,,,BiLSTM outperforms classical ML,significantly_worse,5,
-12_hypotheses,H1b_part1,,,,,,BiLSTM outperforms classical ML,not_significant,6,
+12_hypotheses,H1b_part1,,,,,,BiLSTM outperforms classical ML,significantly_better,5,
+12_hypotheses,H1b_part1,,,,,,BiLSTM outperforms classical ML,significantly_worse,1,
+12_hypotheses,H1b_part1,,,,,,BiLSTM outperforms classical ML,not_significant,9,
+12_hypotheses,H1b_part1,,,,,,BiLSTM outperforms classical ML,mcnemar_significantly_better,4,
+12_hypotheses,H1b_part1,,,,,,BiLSTM outperforms classical ML,mcnemar_significantly_worse,5,
 12_hypotheses,H1b_part1,,,,,,BiLSTM outperforms classical ML,mean_f1_diff,0.004772,
-12_hypotheses,H1b_part1,,,,,,BiLSTM outperforms classical ML,decision,,Fail to reject H0: deep_learning significantly better in only 4/15 comparisons
+12_hypotheses,H1b_part1,,,,,,BiLSTM outperforms classical ML,decision,,Fail to reject H0: deep_learning significantly better in only 5/15 comparisons
 12_hypotheses,H1b_part2,,,,,,Transformers outperform BiLSTM,decision,,Not tested - not enough models trained
 12_hypotheses,SQ2,,,,,,friedman_all_models,friedman_chi2,7.32,
 12_hypotheses,SQ2,,,,,,friedman_all_models,friedman_p_value,0.062368,

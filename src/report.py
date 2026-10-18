@@ -233,7 +233,8 @@ def write_summary(df, main, cross, imb, choice, hyp, chars):
             h = hyp[k]
             L.append(f"\n- **{k} ({h.get('hypothesis')})**: {h.get('decision', h.get('status'))} "
                      f"(mean F1 diff = {h.get('mean_f1_diff', float('nan')):.4f}; "
-                     f"McNemar, Holm-corrected, alpha={config.ALPHA}).")
+                     f"paired bootstrap on macro F1, Holm-corrected within the hypothesis, "
+                     f"alpha={config.ALPHA}; McNemar accuracy test as secondary).")
     fr = hyp.get("friedman_all_models", {})
     if fr:
         L.append(f"\n- Friedman test over {fr.get('blocks')} settings: chi2={fr.get('chi2', float('nan')):.3f}, "

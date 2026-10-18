@@ -14,8 +14,23 @@ from src.preprocessing import clean_text, process_for_classical  # noqa: E402
 
 
 class CyberbullyingDetector:
-    def __init__(self, choice_path=None, which="recommended"):
-        choice_path = Path(choice_path or config.OUTPUT_DIR / "models" / "deployment_choice.json")
+    def __init__(self, choice_path=None, which="calibrated"):
+        """which = "calibrated" (default: calibrated Logistic Regression screening model with
+        validation-derived thresholds, produced by calibrate_deployment.py), "recommended" or
+        "lightweight_alternative" (models listed in deployment_choice.json)."""
+        models_dir = config.OUTPUT_DIR / "models"
+        cal_meta = models_dir / "deployment_calibrated.json"
+        if which == "calibrated" and cal_meta.exists():
+            import joblib
+            meta = json.loads(cal_meta.read_text(encoding="utf-8"))
+            b = joblib.load(models_dir / f"{meta['model']}.joblib")
+            self.vectorizer, self.model, self.labels = b["vectorizer"], b["model"], b["labels"]
+            self.thresholds = meta["thresholds"]
+            self.model_name, self.family, self.train_dataset = "logreg (calibrated)", "classical", "jigsaw"
+            return
+        if which == "calibrated":
+            which = "recommended"
+        choice_path = Path(choice_path or models_dir / "deployment_choice.json")
         if not choice_path.exists():
             raise FileNotFoundError(f"{choice_path} not found - run `python run_all.py --stages report` first.")
         choice = json.loads(choice_path.read_text(encoding="utf-8"))
@@ -66,11 +81,8 @@ class CyberbullyingDetector:
     def predict(self, texts):
         proba = np.asarray(self.predict_proba(texts))
         pos = self.labels.index("cyberbullying")
-        if self.family == "classical":  # SVM decisions come from its decision function
-            X = self.vectorizer.transform([process_for_classical(clean_text(t)) for t in texts])
-            pred = self.model.predict(X)
-        else:
-            pred = proba.argmax(axis=1)
+        # label follows the moderation policy: flagged (hide or review) -> cyberbullying
         return [{"text": t, "cyberbullying_probability": round(float(p[pos]), 4),
-                 "label": self.labels[int(k)], "action": self.action(float(p[pos]))}
-                for t, p, k in zip(texts, proba, pred)]
+                 "label": self.labels[pos] if self.action(float(p[pos])) != "allow" else self.labels[1 - pos],
+                 "action": self.action(float(p[pos]))}
+                for t, p in zip(texts, proba)]
